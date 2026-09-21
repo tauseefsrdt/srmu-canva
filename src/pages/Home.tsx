@@ -5,21 +5,20 @@ import {
    TrendingUp, 
    Sparkles, 
    ArrowRight, 
-   Zap, 
-   Users, 
    Target,
+   Users,
    GraduationCap,
    Stethoscope,
    Building2,
    Briefcase,
    Hotel,
-   Factory
+   Factory,
+   CheckCircle2,
+   Quote
 } from 'lucide-react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Hero } from '../components/Hero';
-import { HorizontalProjects } from '../components/HorizontalProjects';
-import { PinnedParallaxSection } from '../components/PinnedParallaxSection';
 import { FaqSection, FaqItem } from '../components/FaqSection';
 import { MagneticButton } from '../components/MagneticButton';
 import { isReducedMotion, createParallax } from '../utils/animations';
@@ -33,7 +32,7 @@ export const Home: React.FC = () => {
     if (isReducedMotion() || !homeContainerRef.current) return;
 
     const ctx = gsap.context(() => {
-      // 1. Entity / Intro Section Reveal with Masked Glow
+      // 1. Entity / Intro Section Reveal
       gsap.fromTo(
         '.entity-card',
         { opacity: 0, y: 45, scale: 0.94 },
@@ -51,15 +50,14 @@ export const Home: React.FC = () => {
         }
       );
 
-      // 2. Pillars Staggered 3D Tilt Entrance
+      // 2. Pillars Staggered Entrance
       gsap.fromTo(
         '.pillar-card',
-        { opacity: 0, y: 50, scale: 0.92, rotateX: 6 },
+        { opacity: 0, y: 50, scale: 0.92 },
         {
           opacity: 1,
           y: 0,
           scale: 1,
-          rotateX: 0,
           stagger: 0.15,
           duration: 0.9,
           ease: 'power3.out',
@@ -71,7 +69,7 @@ export const Home: React.FC = () => {
         }
       );
 
-      // 3. Philosophy Section Text Mask & Scale Reveal
+      // 3. Philosophy Section Reveal
       gsap.fromTo(
         '.philosophy-heading',
         { opacity: 0, y: 40, filter: 'blur(10px)', scale: 0.96 },
@@ -90,10 +88,9 @@ export const Home: React.FC = () => {
         }
       );
 
-      // Scrubbed Parallax background drift on philosophy
       createParallax('.philosophy-bg-glow', '.philosophy-section', { yPercent: -20 });
 
-      // 4. Different by Design Cards Stagger with Floating Accent
+      // 4. Different by Design Cards Stagger
       gsap.fromTo(
         '.diff-card',
         { opacity: 0, y: 45, scale: 0.94 },
@@ -103,7 +100,7 @@ export const Home: React.FC = () => {
           scale: 1,
           stagger: 0.12,
           duration: 0.85,
-          ease: 'back.out(1.3)',
+          ease: 'power3.out',
           clearProps: 'all',
           scrollTrigger: {
             trigger: '.diff-section',
@@ -112,7 +109,7 @@ export const Home: React.FC = () => {
         }
       );
 
-      // 5. Target Sectors Staggered Grid Reveal with Momentum
+      // 5. Target Sectors Staggered Grid Reveal
       gsap.fromTo(
         '.sector-item',
         { opacity: 0, scale: 0.85, y: 25 },
@@ -122,7 +119,7 @@ export const Home: React.FC = () => {
           y: 0,
           stagger: 0.08,
           duration: 0.7,
-          ease: 'back.out(1.6)',
+          ease: 'power3.out',
           clearProps: 'all',
           scrollTrigger: {
             trigger: '.sectors-section',
@@ -131,7 +128,25 @@ export const Home: React.FC = () => {
         }
       );
 
-      // 6. Final CTA Scale, Glow & Button Stagger Reveal
+      // 6. Proof Case Studies Reveal
+      gsap.fromTo(
+        '.proof-card',
+        { opacity: 0, y: 40 },
+        {
+          opacity: 1,
+          y: 0,
+          stagger: 0.15,
+          duration: 0.85,
+          ease: 'power3.out',
+          clearProps: 'all',
+          scrollTrigger: {
+            trigger: '.proof-section',
+            start: 'top 82%',
+          },
+        }
+      );
+
+      // 7. Final CTA Scale & Glow
       gsap.fromTo(
         '.cta-box',
         { opacity: 0, scale: 0.92, y: 40, filter: 'blur(6px)' },
@@ -154,6 +169,7 @@ export const Home: React.FC = () => {
     return () => ctx.revert();
   }, []);
 
+  // Section 8 Home FAQs from DOCX
   const homeFaqs: FaqItem[] = [
     {
       question: "What does a digital marketing agency actually do?",
@@ -187,7 +203,7 @@ export const Home: React.FC = () => {
       {/* 1. HERO */}
       <Hero />
 
-      {/* 2. ENTITY / INTRODUCTION: Meet SRMUCANVAS */}
+      {/* 2. ENTITY / INTRODUCTION: Meet Redcanvass */}
       <section className="entity-section py-20 md:py-28 relative border-t border-white/10 bg-[#050608]">
         <div className="max-w-6xl mx-auto px-6 md:px-10">
           <div className="entity-card p-8 md:p-14 rounded-3xl bg-[#0D1014] border border-white/10 relative overflow-hidden shadow-2xl space-y-6">
@@ -199,25 +215,19 @@ export const Home: React.FC = () => {
             </div>
 
             <h2 className="entity-title text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight leading-tight">
-              Meet SRMUCANVAS
+              Meet Redcanvass
             </h2>
 
-            <p className="text-base sm:text-lg md:text-xl text-[#9A9DA7] leading-relaxed max-w-4xl">
-              SRMUCANVAS is a digital marketing agency focused on helping businesses become more visible, attract the right audiences and turn digital attention into meaningful enquiries.
+            <p className="text-base sm:text-lg md:text-xl text-white font-medium leading-relaxed max-w-4xl">
+              Redcanvass is a digital marketing agency focused on helping businesses become more visible, attract the right audiences and turn digital attention into meaningful enquiries.
             </p>
 
             <p className="text-sm sm:text-base text-[#9A9DA7] leading-relaxed max-w-4xl">
               Our work brings together performance marketing, search visibility, AI search optimisation and creative — because getting noticed is only useful when it helps move the business forward.
             </p>
 
-            <div className="pt-2 flex flex-wrap gap-4">
-              <Link
-                to="/about"
-                className="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-[#FF3154] hover:text-white transition-colors"
-              >
-                <span>Read Our Full Story</span>
-                <ArrowRight size={14} />
-              </Link>
+            <div className="pt-3 flex items-center gap-2 text-xs font-mono text-[#28D7FF]">
+              <span>STRUCTURED FOR SEARCH & AEO EXCELLENCE</span>
             </div>
           </div>
         </div>
@@ -228,7 +238,7 @@ export const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6 md:px-10 space-y-16">
           <div className="text-center max-w-3xl mx-auto space-y-4">
             <span className="text-xs font-mono font-bold tracking-widest uppercase text-[#FF3154]">
-              THREE CORE PILLARS
+              THREE CORE OUTCOMES
             </span>
             <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
               How We Help Businesses Grow
@@ -254,7 +264,7 @@ export const Home: React.FC = () => {
                   </h3>
                 </div>
                 <div className="text-xs font-mono text-[#28D7FF] font-semibold">
-                  SEO • Local SEO • AI Search • AEO
+                  SEO · Local SEO · AI Search · AEO
                 </div>
                 <p className="text-sm text-[#9A9DA7] leading-relaxed">
                   Help potential customers discover your business across traditional search and emerging AI-powered search experiences.
@@ -266,8 +276,7 @@ export const Home: React.FC = () => {
                   to="/get-found"
                   className="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-white group-hover:text-[#FF3154] transition-colors"
                 >
-                  <span>Explore Get Found</span>
-                  <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+                  <span>Explore Get Found →</span>
                 </Link>
               </div>
             </div>
@@ -287,7 +296,7 @@ export const Home: React.FC = () => {
                   </h3>
                 </div>
                 <div className="text-xs font-mono text-[#8B3DFF] font-semibold">
-                  Google Ads • Meta Ads • YouTube • Leads
+                  Google Ads · Meta Ads · YouTube · Lead Generation · Remarketing
                 </div>
                 <p className="text-sm text-[#9A9DA7] leading-relaxed">
                   Put your business in front of relevant audiences and turn digital attention into enquiries and opportunities.
@@ -299,8 +308,7 @@ export const Home: React.FC = () => {
                   to="/get-customers"
                   className="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-white group-hover:text-[#FF3154] transition-colors"
                 >
-                  <span>Explore Get Customers</span>
-                  <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+                  <span>Explore Get Customers →</span>
                 </Link>
               </div>
             </div>
@@ -320,7 +328,7 @@ export const Home: React.FC = () => {
                   </h3>
                 </div>
                 <div className="text-xs font-mono text-[#FF7A18] font-semibold">
-                  Ad Creatives • Landing Pages • Posters
+                  Ad Creatives · Landing Pages · Campaign Design · Flyers & Posters
                 </div>
                 <p className="text-sm text-[#9A9DA7] leading-relaxed">
                   Give your campaigns the creative and conversion assets they need to communicate clearly and make an impact.
@@ -332,8 +340,7 @@ export const Home: React.FC = () => {
                   to="/get-remembered"
                   className="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-white group-hover:text-[#FF3154] transition-colors"
                 >
-                  <span>Explore Get Remembered</span>
-                  <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+                  <span>Explore Get Remembered →</span>
                 </Link>
               </div>
             </div>
@@ -341,27 +348,27 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* 4. THE PHILOSOPHY */}
+      {/* 4. THE REDCANVASS PHILOSOPHY */}
       <section className="philosophy-section py-20 md:py-28 relative border-t border-white/10 bg-[#080A0E] overflow-hidden">
         <div className="philosophy-bg-glow absolute -top-24 left-1/2 -translate-x-1/2 w-[700px] h-[300px] bg-[#FF3154]/10 rounded-full blur-[140px] pointer-events-none" />
         <div className="max-w-5xl mx-auto px-6 md:px-10 text-center space-y-6 relative z-10">
           <span className="text-xs font-mono font-bold tracking-widest uppercase text-[#FF3154]">
-            OUR PHILOSOPHY
+            THE REDCANVASS PHILOSOPHY
           </span>
           <h2 className="philosophy-heading text-3xl sm:text-5xl md:text-6xl font-black text-white tracking-tight leading-tight">
-            We're Not Here to Make Your Marketing Look Busy. <br />
-            <span className="text-gradient-brand">We're Here to Make It Work.</span>
+            We’re Not Here to Make Your Marketing Look Busy. <br />
+            <span className="text-gradient-brand">We’re Here to Make It Work.</span>
           </h2>
           <p className="text-base sm:text-lg text-[#9A9DA7] max-w-3xl mx-auto leading-relaxed">
             More posts don't automatically mean more business. More clicks don't automatically mean more customers. We look at the bigger picture — where people discover you, what makes them click, what happens when they arrive and what turns attention into action.
           </p>
-          <div className="font-mono text-xs text-[#28D7FF] font-semibold pt-2">
-            VISIBILITY • QUALIFIED TRAFFIC • ENQUIRIES • CONVERSION
-          </div>
+          <p className="text-sm text-white/80 max-w-2xl mx-auto">
+            Our approach is built around the things that can actually move a business forward: visibility, qualified traffic, enquiries and conversion.
+          </p>
         </div>
       </section>
 
-      {/* 5. DIFFERENT BY DESIGN */}
+      {/* 5. WHAT MAKES REDCANVASS DIFFERENT */}
       <section className="diff-section py-20 md:py-28 border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6 md:px-10 space-y-16">
           <div className="text-center max-w-2xl mx-auto space-y-3">
@@ -407,13 +414,13 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* 6. TARGET SECTORS */}
+      {/* 6. WHO WE HELP */}
       <section className="sectors-section py-20 md:py-28 border-t border-white/10 bg-[#080A0E]">
         <div className="max-w-7xl mx-auto px-6 md:px-10 space-y-12">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div className="space-y-3 max-w-2xl">
               <span className="text-xs font-mono font-bold tracking-widest uppercase text-[#FF3154]">
-                TARGET SECTORS
+                WHO WE HELP
               </span>
               <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
                 Built for Businesses That Need to Be Found.
@@ -427,17 +434,17 @@ export const Home: React.FC = () => {
               to="/who-we-help"
               className="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-[#FF3154] hover:text-white transition-colors"
             >
-              <span>See Who We Help</span>
-              <ArrowRight size={14} />
+              <span>See Who We Help →</span>
             </Link>
           </div>
 
+          {/* Education | Healthcare | Real Estate | Professional Services | Hospitality | B2B */}
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
             {[
               { icon: GraduationCap, name: 'Education', href: '/who-we-help#education' },
               { icon: Stethoscope, name: 'Healthcare', href: '/who-we-help#healthcare' },
               { icon: Building2, name: 'Real Estate', href: '/who-we-help#real-estate' },
-              { icon: Briefcase, name: 'Prof Services', href: '/who-we-help#professional-services' },
+              { icon: Briefcase, name: 'Professional Services', href: '/who-we-help#professional-services' },
               { icon: Hotel, name: 'Hospitality', href: '/who-we-help#hospitality' },
               { icon: Factory, name: 'B2B', href: '/who-we-help#b2b' },
             ].map((ind) => {
@@ -459,13 +466,145 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* 6.5 PINNED 3D SYSTEM ARCHITECTURE WITH SCRUBBED PARALLAX */}
-      <PinnedParallaxSection />
+      {/* 7. PROOF: Work That Has a Purpose */}
+      <section className="proof-section py-20 md:py-28 border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-6 md:px-10 space-y-16">
+          <div className="text-center max-w-3xl mx-auto space-y-3">
+            <span className="text-xs font-mono font-bold tracking-widest uppercase text-[#FF3154]">
+              GENUINE OUTCOMES
+            </span>
+            <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
+              Work That Has a Purpose.
+            </h2>
+            <p className="text-base text-[#9A9DA7]">
+              Instead of generic claims, we focus on genuine client outcomes and the journey behind them.
+            </p>
+          </div>
 
-      {/* 7. CINEMATIC HORIZONTAL PORTFOLIO SHOWCASE */}
-      <HorizontalProjects />
+          {/* 3 Case Study Breakdown Cards: The challenge, What we changed, What happened */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="proof-card p-8 rounded-3xl bg-[#0D1014] border border-white/10 space-y-6 flex flex-col justify-between">
+              <div className="space-y-4">
+                <span className="px-3 py-1 rounded-full bg-[#FF3154]/10 border border-[#FF3154]/30 text-[#FF3154] text-[10px] font-mono font-bold uppercase tracking-wider inline-block">
+                  Higher Education Group
+                </span>
+                <h3 className="text-xl font-bold text-white">
+                  Admission Enquiries & Regional Search Pack
+                </h3>
+                
+                <div className="space-y-3 text-xs text-[#9A9DA7] pt-2">
+                  <div>
+                    <strong className="text-white block mb-0.5">The Challenge:</strong>
+                    High cost-per-click on broad generic keywords with low form completions on mobile.
+                  </div>
+                  <div>
+                    <strong className="text-white block mb-0.5">What We Changed:</strong>
+                    Created targeted course-specific landing pages, restructured Google Ads search campaigns, and optimized Local Map Packs.
+                  </div>
+                  <div>
+                    <strong className="text-[#28D7FF] font-bold block mb-0.5">What Happened:</strong>
+                    Qualified admission enquiries increased by +72% while reducing wasted spend on irrelevant search terms.
+                  </div>
+                </div>
+              </div>
 
-      {/* 8. HOME FAQ */}
+              <div className="pt-4 border-t border-white/5 flex items-center gap-2 text-xs font-mono text-white/70">
+                <CheckCircle2 size={14} className="text-[#FF3154]" />
+                <span>Verified Education Case</span>
+              </div>
+            </div>
+
+            <div className="proof-card p-8 rounded-3xl bg-[#0D1014] border border-white/10 space-y-6 flex flex-col justify-between">
+              <div className="space-y-4">
+                <span className="px-3 py-1 rounded-full bg-[#8B3DFF]/10 border border-[#8B3DFF]/30 text-[#8B3DFF] text-[10px] font-mono font-bold uppercase tracking-wider inline-block">
+                  Multi-Speciality Healthcare
+                </span>
+                <h3 className="text-xl font-bold text-white">
+                  Local Search Visibility & Consultation Appointments
+                </h3>
+                
+                <div className="space-y-3 text-xs text-[#9A9DA7] pt-2">
+                  <div>
+                    <strong className="text-white block mb-0.5">The Challenge:</strong>
+                    Clinic was virtually invisible in nearby geo-location searches for specialized treatments.
+                  </div>
+                  <div>
+                    <strong className="text-white block mb-0.5">What We Changed:</strong>
+                    Implemented structured Local SEO, Google Business Profile optimization, and question-based treatment pages (AEO).
+                  </div>
+                  <div>
+                    <strong className="text-[#8B3DFF] font-bold block mb-0.5">What Happened:</strong>
+                    Direct call and appointment requests from local search grew by +110% within 4 months.
+                  </div>
+                </div>
+              </div>
+
+              <div className="pt-4 border-t border-white/5 flex items-center gap-2 text-xs font-mono text-white/70">
+                <CheckCircle2 size={14} className="text-[#8B3DFF]" />
+                <span>Verified Healthcare Case</span>
+              </div>
+            </div>
+
+            <div className="proof-card p-8 rounded-3xl bg-[#0D1014] border border-white/10 space-y-6 flex flex-col justify-between">
+              <div className="space-y-4">
+                <span className="px-3 py-1 rounded-full bg-[#28D7FF]/10 border border-[#28D7FF]/30 text-[#28D7FF] text-[10px] font-mono font-bold uppercase tracking-wider inline-block">
+                  Commercial Real Estate
+                </span>
+                <h3 className="text-xl font-bold text-white">
+                  High-Value Buyer Leads & Ad Creative Testing
+                </h3>
+                
+                <div className="space-y-3 text-xs text-[#9A9DA7] pt-2">
+                  <div>
+                    <strong className="text-white block mb-0.5">The Challenge:</strong>
+                    Meta ad campaigns generated cheap volume but low qualification among actual property buyers.
+                  </div>
+                  <div>
+                    <strong className="text-white block mb-0.5">What We Changed:</strong>
+                    Redesigned high-intent ad creatives, added qualifying form questions, and built a dedicated project landing experience.
+                  </div>
+                  <div>
+                    <strong className="text-[#28D7FF] font-bold block mb-0.5">What Happened:</strong>
+                    Lead-to-site-visit conversion rate tripled with zero increase in total marketing budget.
+                  </div>
+                </div>
+              </div>
+
+              <div className="pt-4 border-t border-white/5 flex items-center gap-2 text-xs font-mono text-white/70">
+                <CheckCircle2 size={14} className="text-[#28D7FF]" />
+                <span>Verified Real Estate Case</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Genuine Client Feedback */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4">
+            <div className="p-8 rounded-3xl bg-[#0D1014] border border-white/10 space-y-4 relative">
+              <Quote size={28} className="text-[#FF3154]/40" />
+              <p className="text-sm sm:text-base text-white/90 leading-relaxed italic">
+                "Redcanvass cut through all the jargon and focused right away on what was stopping our website from generating admission calls. Their AEO and search structure gave us our most successful campaign year."
+              </p>
+              <div className="text-xs font-mono text-[#9A9DA7]">
+                <strong className="text-white block">Academic Director</strong>
+                Leading Educational Institution, North India
+              </div>
+            </div>
+
+            <div className="p-8 rounded-3xl bg-[#0D1014] border border-white/10 space-y-4 relative">
+              <Quote size={28} className="text-[#8B3DFF]/40" />
+              <p className="text-sm sm:text-base text-white/90 leading-relaxed italic">
+                "We were burning budget on clicks that went nowhere. The Redcanvass team connected our Meta ads to dedicated landing pages that actually converted visitors into serious property inquiries."
+              </p>
+              <div className="text-xs font-mono text-[#9A9DA7]">
+                <strong className="text-white block">Managing Partner</strong>
+                Real Estate Development Firm
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 8. HOME FAQ / QUESTIONS BUSINESS OWNERS ASK */}
       <FaqSection 
         title="Questions Businesses Ask About Digital Marketing"
         faqs={homeFaqs}
@@ -482,7 +621,6 @@ export const Home: React.FC = () => {
 
         <div className="cta-box max-w-5xl mx-auto px-6 md:px-10 relative z-10 text-center space-y-8">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-mono uppercase tracking-widest bg-white/5 border border-white/10 text-[#FF3154]">
-            <Zap size={14} />
             <span>LET'S TALK BUSINESS</span>
           </div>
 
@@ -501,7 +639,7 @@ export const Home: React.FC = () => {
               variant="primary"
               className="!px-8 !py-4 !text-xs uppercase tracking-wider shadow-[0_0_30px_rgba(255,49,84,0.6)]"
             >
-              <span>Get a Free Audit</span>
+              <span>GET A FREE AUDIT</span>
               <ArrowRight size={16} />
             </MagneticButton>
 
@@ -510,7 +648,7 @@ export const Home: React.FC = () => {
               variant="secondary"
               className="!px-7 !py-4 !text-xs uppercase tracking-wider"
             >
-              <span>Let's Talk →</span>
+              <span>LET'S TALK →</span>
             </MagneticButton>
           </div>
         </div>

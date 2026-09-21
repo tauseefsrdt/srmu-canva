@@ -68,6 +68,7 @@ export const WhatWeDo: React.FC = () => {
     return () => ctx.revert();
   }, []);
 
+  // Section 9 DOCX FAQs
   const whatWeDoFaqs: FaqItem[] = [
     {
       question: "Which digital marketing services does my business actually need?",
@@ -121,18 +122,17 @@ export const WhatWeDo: React.FC = () => {
               Digital Marketing <br />
               <span className="text-gradient-brand">Built Around Growth.</span>
             </h1>
-            <p className="text-lg md:text-2xl text-[#9A9DA7] leading-relaxed">
-              SRMUCANVAS brings together search visibility, performance marketing and conversion-focused creative to help businesses get discovered, generate enquiries and turn attention into action.
+            <p className="text-lg md:text-2xl text-white font-medium leading-relaxed">
+              Redcanvass brings together search visibility, performance marketing and conversion-focused creative to help businesses get discovered, generate enquiries and turn attention into action.
             </p>
-            <p className="text-sm text-[#9A9DA7]">
+            <p className="text-sm md:text-base text-[#9A9DA7] leading-relaxed">
               From SEO and AI Search to Google Ads, Meta Ads, lead generation and landing pages, we build the digital mix around what your business actually needs.
             </p>
           </div>
 
           <div className="pt-2 flex flex-wrap gap-4">
             <MagneticButton to="/lets-talk" variant="primary" className="!px-7 !py-3.5 !text-xs uppercase tracking-wider shadow-[0_0_30px_rgba(255,49,84,0.4)]">
-              <span>Find Your Growth Opportunity</span>
-              <ArrowRight size={16} />
+              <span>Find Your Growth Opportunity →</span>
             </MagneticButton>
             <MagneticButton to="/lets-talk" variant="secondary" className="!px-6 !py-3.5 !text-xs uppercase tracking-wider">
               <span>Get a Free Audit</span>
@@ -148,142 +148,152 @@ export const WhatWeDo: React.FC = () => {
             <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#FF3154]">
               THE THREE OUTCOMES
             </span>
-            <h2 className="text-3xl sm:text-5xl font-black text-white">
+            <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
               Three Ways We Help Your Business Move Forward
             </h2>
             <p className="text-base text-[#9A9DA7] leading-relaxed">
-              Digital marketing isn't one channel. Someone might discover you through Google. Someone else might see an ad on Instagram. Another potential customer might ask an AI search tool about businesses like yours. The challenge is making sure your business is visible, relevant and ready to convert wherever that discovery happens.
+              Digital marketing isn't one channel. Someone might discover you through Google. Someone else might see an ad on Instagram. Another potential customer might ask an AI search tool about businesses like yours.
+            </p>
+            <p className="text-base text-white/90 leading-relaxed font-medium">
+              The challenge is making sure your business is visible, relevant and ready to convert wherever that discovery happens. That's why our work is organised around three simple outcomes:
             </p>
           </div>
 
-          {/* 3 Pillars Grid */}
+          {/* 3. GET FOUND, 4. GET CUSTOMERS, 5. GET REMEMBERED */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Pillar 1: GET FOUND */}
-            <div className="wwd-pillar-card p-8 rounded-3xl bg-[#0D1014] border border-white/10 space-y-6 flex flex-col justify-between">
+            {/* 3. Get Found */}
+            <div className="wwd-pillar-card p-8 sm:p-10 rounded-3xl bg-[#0D1014] border border-white/10 hover:border-[#FF3154]/40 transition-all flex flex-col justify-between space-y-6">
               <div className="space-y-4">
-                <div className="w-12 h-12 rounded-2xl bg-[#FF3154]/10 text-[#FF3154] flex items-center justify-center">
+                <div className="w-12 h-12 rounded-2xl bg-[#FF3154]/10 border border-[#FF3154]/30 flex items-center justify-center text-[#FF3154]">
                   <Search size={24} />
                 </div>
-                <h3 className="text-2xl font-black text-white">Get Found</h3>
-                <div className="text-xs font-mono text-[#28D7FF]">Search & AI Visibility</div>
-                <p className="text-sm text-[#9A9DA7] leading-relaxed">
+                <div>
+                  <span className="text-[10px] font-mono text-[#FF3154] uppercase tracking-widest">OUTCOME 01</span>
+                  <h2 className="text-2xl font-black text-white">Get Found</h2>
+                  <h3 className="text-xs font-mono text-[#28D7FF] font-semibold mt-0.5">Search & AI Visibility</h3>
+                </div>
+                <p className="text-sm text-[#9A9DA7]">
                   Before someone becomes a customer, they need to discover you. We help businesses build visibility across organic search, local search and AI-powered search experiences.
                 </p>
-                <div className="space-y-2 pt-2 text-xs text-white/90 font-medium">
-                  <div className="flex items-center gap-2"><CheckCircle2 size={14} className="text-[#FF3154]" /> SEO</div>
-                  <div className="flex items-center gap-2"><CheckCircle2 size={14} className="text-[#FF3154]" /> Local SEO</div>
-                  <div className="flex items-center gap-2"><CheckCircle2 size={14} className="text-[#FF3154]" /> AEO (Answer Engine)</div>
-                  <div className="flex items-center gap-2"><CheckCircle2 size={14} className="text-[#FF3154]" /> AI Search Optimization</div>
+
+                <div className="space-y-2.5 pt-2 border-t border-white/5 text-xs text-[#9A9DA7]">
+                  <div><strong className="text-white font-mono">SEO:</strong> Improve your website's organic visibility and make it easier for search engines to understand your business.</div>
+                  <div><strong className="text-white font-mono">Local SEO:</strong> Help customers find your business when they search for products or services in a specific location.</div>
+                  <div><strong className="text-white font-mono">AEO:</strong> Answer Engine Optimization focuses on making your information clear, structured and useful for answer-driven search experiences.</div>
+                  <div><strong className="text-white font-mono">AI Search:</strong> Optimise your digital presence so your business and its expertise are easier for AI-powered search systems to understand.</div>
                 </div>
               </div>
 
-              <div className="pt-4 border-t border-white/10">
-                <Link to="/get-found" className="text-xs font-mono font-bold uppercase text-[#FF3154] hover:text-white flex items-center gap-2">
-                  <span>Explore Get Found</span>
-                  <ArrowRight size={14} />
-                </Link>
-              </div>
+              <Link to="/get-found" className="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-white hover:text-[#FF3154] transition-colors pt-4 border-t border-white/5">
+                <span>Explore Get Found →</span>
+              </Link>
             </div>
 
-            {/* Pillar 2: GET CUSTOMERS */}
-            <div className="wwd-pillar-card p-8 rounded-3xl bg-[#0D1014] border border-white/10 space-y-6 flex flex-col justify-between">
+            {/* 4. Get Customers */}
+            <div className="wwd-pillar-card p-8 sm:p-10 rounded-3xl bg-[#0D1014] border border-white/10 hover:border-[#8B3DFF]/40 transition-all flex flex-col justify-between space-y-6">
               <div className="space-y-4">
-                <div className="w-12 h-12 rounded-2xl bg-[#8B3DFF]/10 text-[#8B3DFF] flex items-center justify-center">
+                <div className="w-12 h-12 rounded-2xl bg-[#8B3DFF]/10 border border-[#8B3DFF]/30 flex items-center justify-center text-[#8B3DFF]">
                   <TrendingUp size={24} />
                 </div>
-                <h3 className="text-2xl font-black text-white">Get Customers</h3>
-                <div className="text-xs font-mono text-[#8B3DFF]">Performance & Leads</div>
-                <p className="text-sm text-[#9A9DA7] leading-relaxed">
-                  Being seen is only the beginning. We use paid advertising and lead-generation strategies to put your business in front of relevant audiences and move them towards an enquiry or booking.
+                <div>
+                  <span className="text-[10px] font-mono text-[#8B3DFF] uppercase tracking-widest">OUTCOME 02</span>
+                  <h2 className="text-2xl font-black text-white">Get Customers</h2>
+                  <h3 className="text-xs font-mono text-[#8B3DFF] font-semibold mt-0.5">Performance Marketing & Lead Gen</h3>
+                </div>
+                <p className="text-sm text-[#9A9DA7]">
+                  Being seen is only the beginning. We use paid advertising and lead-generation strategies to put your business in front of relevant audiences and move them towards an enquiry.
                 </p>
-                <div className="space-y-2 pt-2 text-xs text-white/90 font-medium">
-                  <div className="flex items-center gap-2"><CheckCircle2 size={14} className="text-[#8B3DFF]" /> Google Ads</div>
-                  <div className="flex items-center gap-2"><CheckCircle2 size={14} className="text-[#8B3DFF]" /> Meta Ads (FB & IG)</div>
-                  <div className="flex items-center gap-2"><CheckCircle2 size={14} className="text-[#8B3DFF]" /> YouTube Video Ads</div>
-                  <div className="flex items-center gap-2"><CheckCircle2 size={14} className="text-[#8B3DFF]" /> Lead Generation & Remarketing</div>
+
+                <div className="space-y-2.5 pt-2 border-t border-white/5 text-xs text-[#9A9DA7]">
+                  <div><strong className="text-white font-mono">Google Ads:</strong> Reach people actively searching for what your business offers.</div>
+                  <div><strong className="text-white font-mono">Meta Ads:</strong> Reach relevant audiences across Facebook and Instagram with targeted campaigns.</div>
+                  <div><strong className="text-white font-mono">YouTube Ads:</strong> Use video to build awareness, consideration and action.</div>
+                  <div><strong className="text-white font-mono">Lead Generation:</strong> Build campaigns designed around generating relevant enquiries rather than simply generating traffic.</div>
+                  <div><strong className="text-white font-mono">Remarketing:</strong> Reconnect with people who have already interacted with your business.</div>
                 </div>
               </div>
 
-              <div className="pt-4 border-t border-white/10">
-                <Link to="/get-customers" className="text-xs font-mono font-bold uppercase text-[#8B3DFF] hover:text-white flex items-center gap-2">
-                  <span>Explore Get Customers</span>
-                  <ArrowRight size={14} />
-                </Link>
-              </div>
+              <Link to="/get-customers" className="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-white hover:text-[#8B3DFF] transition-colors pt-4 border-t border-white/5">
+                <span>Explore Get Customers →</span>
+              </Link>
             </div>
 
-            {/* Pillar 3: GET REMEMBERED */}
-            <div className="wwd-pillar-card p-8 rounded-3xl bg-[#0D1014] border border-white/10 space-y-6 flex flex-col justify-between">
+            {/* 5. Get Remembered */}
+            <div className="wwd-pillar-card p-8 sm:p-10 rounded-3xl bg-[#0D1014] border border-white/10 hover:border-[#28D7FF]/40 transition-all flex flex-col justify-between space-y-6">
               <div className="space-y-4">
-                <div className="w-12 h-12 rounded-2xl bg-[#28D7FF]/10 text-[#28D7FF] flex items-center justify-center">
+                <div className="w-12 h-12 rounded-2xl bg-[#28D7FF]/10 border border-[#28D7FF]/30 flex items-center justify-center text-[#28D7FF]">
                   <Sparkles size={24} />
                 </div>
-                <h3 className="text-2xl font-black text-white">Get Remembered</h3>
-                <div className="text-xs font-mono text-[#FF7A18]">Creative & Conversion</div>
-                <p className="text-sm text-[#9A9DA7] leading-relaxed">
+                <div>
+                  <span className="text-[10px] font-mono text-[#28D7FF] uppercase tracking-widest">OUTCOME 03</span>
+                  <h2 className="text-2xl font-black text-white">Get Remembered</h2>
+                  <h3 className="text-xs font-mono text-[#FF7A18] font-semibold mt-0.5">Creative & Conversion</h3>
+                </div>
+                <p className="text-sm text-[#9A9DA7]">
                   Good marketing needs more than targeting. Your message needs to stop someone, make sense quickly and give them a reason to take the next step.
                 </p>
-                <div className="space-y-2 pt-2 text-xs text-white/90 font-medium">
-                  <div className="flex items-center gap-2"><CheckCircle2 size={14} className="text-[#28D7FF]" /> High-Converting Ad Creatives</div>
-                  <div className="flex items-center gap-2"><CheckCircle2 size={14} className="text-[#28D7FF]" /> Dedicated Landing Pages</div>
-                  <div className="flex items-center gap-2"><CheckCircle2 size={14} className="text-[#28D7FF]" /> Full Campaign Concepts</div>
-                  <div className="flex items-center gap-2"><CheckCircle2 size={14} className="text-[#28D7FF]" /> Offline Flyers & Collateral</div>
+
+                <div className="space-y-2.5 pt-2 border-t border-white/5 text-xs text-[#9A9DA7]">
+                  <div><strong className="text-white font-mono">Ad Creatives:</strong> Visuals designed specifically for digital advertising.</div>
+                  <div><strong className="text-white font-mono">Landing Pages:</strong> Focused pages built around a particular campaign, audience or conversion goal.</div>
+                  <div><strong className="text-white font-mono">Campaign Design:</strong> Creative direction and campaign concepts that bring the message together.</div>
+                  <div><strong className="text-white font-mono">Flyers & Posters:</strong> Offline marketing collateral when your campaign needs to move beyond the screen.</div>
                 </div>
               </div>
 
-              <div className="pt-4 border-t border-white/10">
-                <Link to="/get-remembered" className="text-xs font-mono font-bold uppercase text-[#28D7FF] hover:text-white flex items-center gap-2">
-                  <span>Explore Get Remembered</span>
-                  <ArrowRight size={14} />
-                </Link>
-              </div>
+              <Link to="/get-remembered" className="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-white hover:text-[#28D7FF] transition-colors pt-4 border-t border-white/5">
+                <span>Explore Get Remembered →</span>
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 3. HOW THE THREE WORK TOGETHER */}
-      <section className="py-20 border-t border-white/10 bg-[#080A0E]">
-        <div className="max-w-6xl mx-auto px-6 md:px-10 text-center space-y-8">
-          <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#FF3154]">
-            INTEGRATED JOURNEY
-          </span>
-          <h2 className="text-3xl sm:text-5xl font-black text-white">
-            Because Visibility Alone Isn't Enough.
-          </h2>
-          <p className="text-base text-[#9A9DA7] max-w-2xl mx-auto">
+      {/* 6. HOW THE THREE WORK TOGETHER */}
+      <section className="py-20 bg-[#080A0E] border-t border-white/10">
+        <div className="max-w-5xl mx-auto px-6 md:px-10 text-center space-y-8">
+          <div className="space-y-3">
+            <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#FF3154]">
+              GROWTH SYSTEM
+            </span>
+            <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
+              Because Visibility Alone Isn't Enough.
+            </h2>
+          </div>
+
+          <p className="text-base text-[#9A9DA7] max-w-3xl mx-auto leading-relaxed">
             A business can rank well and still struggle to generate enquiries. It can run ads and still lose potential customers on a weak landing page. It can have great creative and still be invisible to the right audience.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-6">
-            <div className="p-6 rounded-2xl bg-[#0D1014] border border-white/10 text-left space-y-2">
-              <span className="font-mono text-xs text-[#FF3154] font-bold">01. GET FOUND</span>
-              <p className="text-base font-bold text-white">Make your business discoverable.</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4 text-left">
+            <div className="p-6 rounded-2xl bg-[#0D1014] border border-white/10 space-y-2">
+              <span className="text-xs font-mono text-[#FF3154] font-bold">01 — GET FOUND</span>
+              <h3 className="text-lg font-bold text-white">Make your business discoverable.</h3>
             </div>
-            <div className="p-6 rounded-2xl bg-[#0D1014] border border-white/10 text-left space-y-2">
-              <span className="font-mono text-xs text-[#8B3DFF] font-bold">02. GET CUSTOMERS</span>
-              <p className="text-base font-bold text-white">Bring the right people to you.</p>
+            <div className="p-6 rounded-2xl bg-[#0D1014] border border-white/10 space-y-2">
+              <span className="text-xs font-mono text-[#8B3DFF] font-bold">02 — GET CUSTOMERS</span>
+              <h3 className="text-lg font-bold text-white">Bring the right people to you.</h3>
             </div>
-            <div className="p-6 rounded-2xl bg-[#0D1014] border border-white/10 text-left space-y-2">
-              <span className="font-mono text-xs text-[#28D7FF] font-bold">03. GET REMEMBERED</span>
-              <p className="text-base font-bold text-white">Give them a reason to engage, trust & act.</p>
+            <div className="p-6 rounded-2xl bg-[#0D1014] border border-white/10 space-y-2">
+              <span className="text-xs font-mono text-[#28D7FF] font-bold">03 — GET REMEMBERED</span>
+              <h3 className="text-lg font-bold text-white">Give them a reason to engage, trust and act.</h3>
             </div>
           </div>
 
-          <div className="font-mono text-xs text-[#9A9DA7] uppercase tracking-widest pt-4">
+          <div className="font-mono text-sm text-white font-bold tracking-wider pt-2">
             Different jobs. One growth journey.
           </div>
         </div>
       </section>
 
-      {/* 4. PROBLEM-TO-SOLUTION MATRIX */}
+      {/* 7. YOUR DIGITAL MIX DEPENDS ON YOUR BUSINESS */}
       <section className="py-20 border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6 md:px-10 space-y-12">
           <div className="max-w-3xl space-y-3">
             <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#FF3154]">
               TAILORED STRATEGY
             </span>
-            <h2 className="text-3xl sm:text-5xl font-black text-white">
+            <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
               You Don't Need Every Digital Marketing Service.
             </h2>
             <p className="text-base text-[#9A9DA7]">
@@ -292,64 +302,100 @@ export const WhatWeDo: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              { problem: 'Need more organic visibility?', solution: 'SEO + Local SEO + AEO' },
-              { problem: 'Need enquiries now?', solution: 'Google Ads + Meta Ads + Landing Pages' },
-              { problem: 'Have traffic but poor conversion?', solution: 'Landing Pages + Creative + CRO' },
-              { problem: 'Want stronger visibility in AI search?', solution: 'SEO + AEO + AI Search' },
-              { problem: 'Want to scale lead generation?', solution: 'Paid Ads + Remarketing + Conversion Creative' },
-              { problem: 'Launching a new brand or service?', solution: 'Campaign Design + Ads + SEO' },
-            ].map((item, idx) => (
-              <div key={idx} className="p-6 rounded-2xl bg-[#0D1014] border border-white/10 space-y-3">
-                <h3 className="text-base font-bold text-white">{item.problem}</h3>
-                <div className="text-xs font-mono text-[#FF3154] font-semibold">{item.solution}</div>
+            <div className="p-6 rounded-2xl bg-[#0D1014] border border-white/10 space-y-3">
+              <h3 className="text-base font-bold text-white">Need more organic visibility?</h3>
+              <div className="text-xs font-mono text-[#28D7FF] bg-white/5 p-2.5 rounded-xl border border-white/10">
+                SEO + Local SEO + AEO
               </div>
-            ))}
+            </div>
+
+            <div className="p-6 rounded-2xl bg-[#0D1014] border border-white/10 space-y-3">
+              <h3 className="text-base font-bold text-white">Need enquiries now?</h3>
+              <div className="text-xs font-mono text-[#FF3154] bg-white/5 p-2.5 rounded-xl border border-white/10">
+                Google Ads + Meta Ads + Landing Pages
+              </div>
+            </div>
+
+            <div className="p-6 rounded-2xl bg-[#0D1014] border border-white/10 space-y-3">
+              <h3 className="text-base font-bold text-white">Have traffic but poor conversion?</h3>
+              <div className="text-xs font-mono text-[#8B3DFF] bg-white/5 p-2.5 rounded-xl border border-white/10">
+                Landing Pages + Creative + Conversion CRO
+              </div>
+            </div>
+
+            <div className="p-6 rounded-2xl bg-[#0D1014] border border-white/10 space-y-3">
+              <h3 className="text-base font-bold text-white">Want stronger visibility in AI-powered search?</h3>
+              <div className="text-xs font-mono text-[#28D7FF] bg-white/5 p-2.5 rounded-xl border border-white/10">
+                SEO + AEO + AI Search
+              </div>
+            </div>
+
+            <div className="p-6 rounded-2xl bg-[#0D1014] border border-white/10 space-y-3 sm:col-span-2 lg:col-span-2">
+              <h3 className="text-base font-bold text-white">Want to scale lead generation?</h3>
+              <div className="text-xs font-mono text-[#FF3154] bg-white/5 p-2.5 rounded-xl border border-white/10">
+                Paid Advertising + Remarketing + Conversion-focused Creative
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* 5. METHODOLOGY */}
-      <section className="py-20 border-t border-white/10 bg-[#080A0E]">
+      {/* 8. HOW WE APPROACH DIGITAL MARKETING: Strategy Before Spend */}
+      <section className="method-section py-20 bg-[#080A0E] border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6 md:px-10 space-y-12">
-          <div className="text-center max-w-2xl mx-auto space-y-3">
+          <div className="max-w-3xl space-y-3">
             <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#FF3154]">
-              METHODOLOGY
+              OUR METHODOLOGY
             </span>
-            <h2 className="text-3xl sm:text-5xl font-black text-white">
+            <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
               Strategy Before Spend.
             </h2>
-            <p className="text-sm text-[#9A9DA7]">
+            <p className="text-base text-[#9A9DA7]">
               Before recommending a channel, we look at the business behind it.
             </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="p-8 rounded-2xl bg-[#0D1014] border border-white/10 space-y-2">
-              <span className="font-mono text-xs font-bold text-[#FF3154]">01. UNDERSTAND</span>
-              <h3 className="text-xl font-bold text-white">Business & Audience</h3>
-              <p className="text-xs text-[#9A9DA7]">Your business, offer, market dynamics and goals.</p>
+            <div className="method-step p-6 rounded-2xl bg-[#0D1014] border border-white/10 space-y-2">
+              <span className="text-xs font-mono text-[#FF3154] font-bold">STEP 01</span>
+              <h3 className="text-lg font-black text-white">Understand</h3>
+              <p className="text-xs text-[#9A9DA7] leading-relaxed">
+                Your business, audience, offer, market and goals.
+              </p>
             </div>
-            <div className="p-8 rounded-2xl bg-[#0D1014] border border-white/10 space-y-2">
-              <span className="font-mono text-xs font-bold text-[#FF3154]">02. IDENTIFY</span>
-              <h3 className="text-xl font-bold text-white">Search & Drop-offs</h3>
-              <p className="text-xs text-[#9A9DA7]">Where people search, discover, and drop off.</p>
+
+            <div className="method-step p-6 rounded-2xl bg-[#0D1014] border border-white/10 space-y-2">
+              <span className="text-xs font-mono text-[#8B3DFF] font-bold">STEP 02</span>
+              <h3 className="text-lg font-black text-white">Identify</h3>
+              <p className="text-xs text-[#9A9DA7] leading-relaxed">
+                Where people are searching, discovering and dropping off.
+              </p>
             </div>
-            <div className="p-8 rounded-2xl bg-[#0D1014] border border-white/10 space-y-2">
-              <span className="font-mono text-xs font-bold text-[#FF3154]">03. BUILD</span>
-              <h3 className="text-xl font-bold text-white">Search, Ads & Creative</h3>
-              <p className="text-xs text-[#9A9DA7]">The right mix tailored to your economics.</p>
+
+            <div className="method-step p-6 rounded-2xl bg-[#0D1014] border border-white/10 space-y-2">
+              <span className="text-xs font-mono text-[#28D7FF] font-bold">STEP 03</span>
+              <h3 className="text-lg font-black text-white">Build</h3>
+              <p className="text-xs text-[#9A9DA7] leading-relaxed">
+                The right combination of search, advertising and creative.
+              </p>
             </div>
-            <div className="p-8 rounded-2xl bg-[#0D1014] border border-white/10 space-y-2">
-              <span className="font-mono text-xs font-bold text-[#FF3154]">04. OPTIMISE</span>
-              <h3 className="text-xl font-bold text-white">Test & Improve</h3>
-              <p className="text-xs text-[#9A9DA7]">No channel gets a free pass just because it's trending.</p>
+
+            <div className="method-step p-6 rounded-2xl bg-[#0D1014] border border-white/10 space-y-2">
+              <span className="text-xs font-mono text-[#FF7A18] font-bold">STEP 04</span>
+              <h3 className="text-lg font-black text-white">Optimise</h3>
+              <p className="text-xs text-[#9A9DA7] leading-relaxed">
+                Test, measure, learn and improve continuously.
+              </p>
             </div>
           </div>
+
+          <p className="text-xs font-mono text-[#9A9DA7] italic text-center pt-2">
+            No channel gets a free pass just because it's trending.
+          </p>
         </div>
       </section>
 
-      {/* 6. FAQ */}
+      {/* 9. QUESTIONS BUSINESS OWNERS ASK */}
       <FaqSection 
         title="Questions Businesses Ask Before Investing in Digital Marketing"
         faqs={whatWeDoFaqs}
@@ -357,18 +403,18 @@ export const WhatWeDo: React.FC = () => {
         ctaLink="/lets-talk"
       />
 
-      {/* 7. FINAL CTA */}
-      <section className="py-20 border-t border-white/10 text-center">
+      {/* 10. FINAL CTA */}
+      <section className="py-20 md:py-28 text-center border-t border-white/10 bg-gradient-to-b from-[#050608] to-[#0A0D12]">
         <div className="max-w-4xl mx-auto px-6 space-y-6">
-          <h2 className="text-3xl sm:text-5xl font-black text-white">
+          <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
             Not Sure Where Your Biggest Opportunity Is?
           </h2>
-          <p className="text-base text-[#9A9DA7]">
+          <p className="text-base sm:text-lg text-[#9A9DA7] max-w-2xl mx-auto leading-relaxed">
             We'll help you identify where your digital presence can work harder — and which activities are actually worth investing in.
           </p>
-          <div className="pt-2">
-            <MagneticButton to="/lets-talk" variant="primary" className="!px-8 !py-4 !text-xs uppercase tracking-wider">
-              <span>Get a Free Audit</span>
+          <div className="pt-4 flex flex-wrap justify-center gap-4">
+            <MagneticButton to="/lets-talk" variant="primary" className="!px-8 !py-4 !text-xs uppercase tracking-wider shadow-[0_0_30px_rgba(255,49,84,0.5)]">
+              <span>GET A FREE AUDIT</span>
               <ArrowRight size={16} />
             </MagneticButton>
           </div>

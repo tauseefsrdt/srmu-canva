@@ -8,17 +8,13 @@ import { Footer } from './components/Footer';
 import { PageTransition } from './components/PageTransition';
 import { ScrollProgressBar } from './components/ScrollProgressBar';
 
-// Pages
+// Core Pages mapped strictly to DOCX
 import { Home } from './pages/Home';
 import { WhatWeDo } from './pages/WhatWeDo';
 import { GetFound } from './pages/GetFound';
 import { GetCustomers } from './pages/GetCustomers';
 import { GetRemembered } from './pages/GetRemembered';
 import { WhoWeHelp } from './pages/WhoWeHelp';
-import { Projects } from './pages/Projects';
-import { ProjectDetail } from './pages/ProjectDetail';
-import { About } from './pages/About';
-import { ServiceDetail } from './pages/ServiceDetail';
 import { LetsTalk } from './pages/LetsTalk';
 
 export const App: React.FC = () => {
@@ -52,13 +48,10 @@ export const App: React.FC = () => {
               <Route path="/get-customers" element={<GetCustomers />} />
               <Route path="/get-remembered" element={<GetRemembered />} />
               <Route path="/who-we-help" element={<WhoWeHelp />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/projects/:slug" element={<ProjectDetail />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/services" element={<WhatWeDo />} />
-              <Route path="/services/:slug" element={<ServiceDetail />} />
               <Route path="/lets-talk" element={<LetsTalk />} />
+              {/* Common alias fallbacks */}
               <Route path="/contact" element={<LetsTalk />} />
+              <Route path="/services" element={<WhatWeDo />} />
               <Route path="*" element={<Home />} />
             </Routes>
           </PageTransition>

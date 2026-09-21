@@ -11,28 +11,25 @@ export const Hero: React.FC = () => {
   const rightMockupRef = useRef<HTMLDivElement>(null);
   const glowRingRef = useRef<HTMLDivElement>(null);
 
-  // Animated counters
+  // Animated numbers
   const [counts, setCounts] = useState({
-    projects: 0,
-    clients: 0,
-    years: 0,
+    growth: 0,
+    search: 0,
+    conversions: 0,
     dedication: 0,
   });
 
-  // Entrance GSAP Timeline
   useLayoutEffect(() => {
     if (isReducedMotion() || !heroRef.current) return;
 
     const ctx = gsap.context(() => {
       const tl = gsap.timeline({ defaults: { ease: 'power4.out' } });
 
-      // Studio RS style curtain reveal / mask slide
       tl.fromTo(
         '.hero-eyebrow',
         { opacity: 0, y: 30, filter: 'blur(10px)' },
         { opacity: 1, y: 0, filter: 'blur(0px)', duration: 1.0, delay: 0.1 }
       )
-      // Words reveal upward from overflow hidden mask
       .fromTo(
         '.hero-word',
         { yPercent: 120, rotate: 4, opacity: 0 },
@@ -65,7 +62,6 @@ export const Hero: React.FC = () => {
         { opacity: 1, y: 0, scale: 1, stagger: 0.1, duration: 0.8, ease: 'back.out(1.5)' },
         '-=0.5'
       )
-      // Studio RS style fluid 3D mockup reveal with scale & rotation
       .fromTo(
         '.hero-mockup-wrapper',
         { opacity: 0, scale: 0.85, y: 60, rotateX: 12 },
@@ -91,7 +87,7 @@ export const Hero: React.FC = () => {
         '-=0.5'
       );
 
-      // Organic floating micro-animations for tags
+      // Micro-animations for tags
       document.querySelectorAll('.hero-tag').forEach((el, index) => {
         createFloating(el, {
           yOffset: index % 2 === 0 ? -12 : -16,
@@ -121,7 +117,6 @@ export const Hero: React.FC = () => {
         ease: 'none',
       });
 
-      // Interactive pulsing radar / orbital rings
       gsap.to('.hero-orbit-ring', {
         scale: 1.3,
         opacity: 0,
@@ -131,7 +126,6 @@ export const Hero: React.FC = () => {
         ease: 'power1.out',
       });
 
-      // GSAP On-Scroll Parallax for Hero Background
       gsap.to('.hero-bg-marquee', {
         xPercent: -30,
         ease: 'none',
@@ -142,57 +136,12 @@ export const Hero: React.FC = () => {
           scrub: 1,
         },
       });
-
-      gsap.to('.hero-bg-shape-1, .hero-bg-shape-2', {
-        yPercent: -40,
-        ease: 'none',
-        scrollTrigger: {
-          trigger: heroRef.current,
-          start: 'top top',
-          end: 'bottom top',
-          scrub: 1.2,
-        },
-      });
-
-      gsap.to('.hero-glow-blob', {
-        yPercent: -25,
-        ease: 'none',
-        scrollTrigger: {
-          trigger: heroRef.current,
-          start: 'top top',
-          end: 'bottom top',
-          scrub: 1,
-        },
-      });
-
-      gsap.to(rightMockupRef.current, {
-        yPercent: 18,
-        rotateZ: 3,
-        ease: 'none',
-        scrollTrigger: {
-          trigger: heroRef.current,
-          start: 'top top',
-          end: 'bottom top',
-          scrub: 1,
-        },
-      });
-
-      // Ambient glow pulsing
-      gsap.to('.hero-glow-blob', {
-        scale: 1.25,
-        opacity: 0.35,
-        duration: 5,
-        repeat: -1,
-        yoyo: true,
-        ease: 'sine.inOut',
-        stagger: 1.2,
-      });
     }, heroRef);
 
     return () => ctx.revert();
   }, []);
 
-  // Smooth mouse movement with GSAP quickTo for zero-lag 60fps performance
+  // QuickTo 3D tracking
   useEffect(() => {
     if (isReducedMotion() || !heroRef.current || !rightMockupRef.current) return;
 
@@ -261,9 +210,9 @@ export const Hero: React.FC = () => {
       step++;
       const progress = step / steps;
       setCounts({
-        projects: Math.min(100, Math.floor(progress * 100)),
-        clients: Math.min(50, Math.floor(progress * 50)),
-        years: Math.min(6, Math.floor(progress * 6)),
+        growth: Math.min(100, Math.floor(progress * 100)),
+        search: Math.min(85, Math.floor(progress * 85)),
+        conversions: Math.min(3, Math.floor(progress * 3.5)),
         dedication: Math.min(100, Math.floor(progress * 100)),
       });
 
@@ -282,13 +231,14 @@ export const Hero: React.FC = () => {
     }
   };
 
+  // Exact 6 floating badges mentioned in DOCX: Google Ads, SEO, AI Search, AEO, Meta Ads, Leads
   const floatingTags = [
     { label: 'Google Ads', color: '#267BFF', top: '-6%', left: '5%' },
-    { label: 'SEO & Maps', color: '#FF7A18', top: '15%', right: '-4%' },
+    { label: 'SEO', color: '#FF7A18', top: '15%', right: '-4%' },
     { label: 'AI Search', color: '#8B3DFF', bottom: '25%', left: '-6%' },
-    { label: 'AEO Engine', color: '#FF167D', top: '55%', right: '-3%' },
+    { label: 'AEO', color: '#FF167D', top: '55%', right: '-3%' },
     { label: 'Meta Ads', color: '#28D7FF', bottom: '-4%', right: '15%' },
-    { label: 'Qualified Leads', color: '#FF3154', bottom: '-6%', left: '10%' },
+    { label: 'Leads', color: '#FF3154', bottom: '-6%', left: '10%' },
   ];
 
   return (
@@ -296,24 +246,22 @@ export const Hero: React.FC = () => {
       ref={heroRef}
       className="relative min-h-[92vh] md:min-h-screen pt-28 md:pt-36 pb-16 flex flex-col justify-between overflow-hidden bg-[#050608] noise-bg"
     >
-      {/* 1. Cinematic Studio Atmosphere & Lights */}
+      {/* Cinematic Studio Atmosphere */}
       <div className="hero-glow-blob absolute top-1/4 -left-32 w-[500px] h-[500px] bg-[#FF3154]/20 rounded-full blur-[130px] pointer-events-none" />
       <div className="hero-glow-blob absolute top-1/3 -right-32 w-[600px] h-[600px] bg-[#8B3DFF]/20 rounded-full blur-[150px] pointer-events-none" />
       <div className="hero-glow-blob absolute -top-20 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-gradient-to-b from-[#28D7FF]/15 to-transparent blur-[120px] pointer-events-none" />
 
-      {/* 2. Kinetic Background Perspective Grid, Oversized Typography & Orbital Pulses */}
+      {/* Kinetic Background */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden select-none">
-        {/* Visible Oversized Parallax Background Typography */}
         <div 
-          className="hero-bg-marquee absolute top-[28%] left-0 whitespace-nowrap text-[14vw] sm:text-[16vw] font-black uppercase text-white/[0.06] font-mono tracking-tighter leading-none pointer-events-none"
+          className="hero-bg-marquee absolute top-[28%] left-0 whitespace-nowrap text-[14vw] sm:text-[16vw] font-black uppercase text-white/[0.05] font-mono tracking-tighter leading-none pointer-events-none"
           style={{
             WebkitTextStroke: '1.5px rgba(255, 255, 255, 0.12)',
           }}
         >
-          SRMUCANVAS • DIGITAL MARKETING • PERFORMANCE • GROWTH •
+          REDCANVASS • GET FOUND • GET CUSTOMERS • GET REMEMBERED •
         </div>
 
-        {/* Subtle Perspective Grid Lines */}
         <div 
           className="absolute inset-0 opacity-[0.07]"
           style={{
@@ -324,23 +272,20 @@ export const Hero: React.FC = () => {
           }}
         />
 
-        {/* Orbit Radar Rings around right mockup */}
         <div className="absolute right-[15%] top-[35%] -translate-x-1/2 -translate-y-1/2 hidden md:block">
           <div className="hero-orbit-ring absolute -inset-24 rounded-full border border-[#FF3154]/25 pointer-events-none" />
           <div className="hero-orbit-ring absolute -inset-36 rounded-full border border-[#8B3DFF]/25 pointer-events-none" />
           <div className="hero-orbit-ring absolute -inset-48 rounded-full border border-[#28D7FF]/20 pointer-events-none" />
         </div>
 
-        {/* Floating Kinetic Shapes with Subtle Glow */}
-        <div className="hero-bg-shape-1 absolute top-[18%] left-[10%] w-24 h-24 rounded-3xl border border-white/15 bg-gradient-to-br from-white/[0.05] to-transparent backdrop-blur-[2px] transform rotate-12 hidden lg:block shadow-[0_0_30px_rgba(255,255,255,0.05)]" />
+        <div className="hero-bg-shape-1 absolute top-[18%] left-[10%] w-24 h-24 rounded-3xl border border-white/15 bg-gradient-to-br from-white/[0.05] to-transparent backdrop-blur-[2px] transform rotate-12 hidden lg:block" />
         <div className="hero-bg-shape-2 absolute bottom-[22%] left-[45%] w-32 h-32 rounded-full border border-dashed border-[#FF3154]/30 hidden lg:block" />
-        <div className="hero-bg-shape-1 absolute top-[28%] right-[8%] w-20 h-20 rounded-2xl border border-[#8B3DFF]/30 bg-gradient-to-tr from-[#8B3DFF]/10 to-transparent hidden lg:block shadow-[0_0_30px_rgba(139,61,255,0.15)]" />
       </div>
 
       <div className="max-w-7xl mx-auto px-6 md:px-10 w-full relative z-10 my-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           
-          {/* LEFT: Hero Content (7 cols) */}
+          {/* LEFT: Hero Content per DOCX */}
           <div className="lg:col-span-7 space-y-6 md:space-y-8">
             
             {/* Supporting headline badge */}
@@ -349,7 +294,7 @@ export const Hero: React.FC = () => {
               <span>GET FOUND • GET CUSTOMERS • GET REMEMBERED</span>
             </div>
 
-            {/* Main Display H1 with Studio RS masked word splits */}
+            {/* Main Display H1 strictly from DOCX */}
             <div className="space-y-1">
               <h1 className="text-4xl sm:text-6xl lg:text-7xl xl:text-[76px] font-black uppercase tracking-tight leading-[1.05] text-white select-none">
                 <span className="block overflow-hidden py-1">
@@ -364,12 +309,12 @@ export const Hero: React.FC = () => {
               </h1>
             </div>
 
-            {/* Body Copy */}
+            {/* Body Copy from DOCX */}
             <p className="hero-desc text-sm sm:text-base md:text-lg text-[#9A9DA7] leading-relaxed max-w-xl font-normal">
-              SRMUCANVAS is a digital marketing and performance marketing agency helping businesses grow through paid advertising, SEO, AI Search, Answer Engine Optimization (AEO), lead generation and conversion-focused creative.
+              Redcanvass is a digital marketing and performance marketing agency helping businesses grow through paid advertising, SEO, AI Search, Answer Engine Optimization (AEO), lead generation and conversion-focused creative.
             </p>
 
-            {/* Journey Pill Pipeline */}
+            {/* Visual Direction from DOCX: SEARCH → DISCOVER → CLICK → ENQUIRE → GROW */}
             <div className="hero-pipeline hidden sm:flex items-center gap-2 text-[11px] font-mono font-bold tracking-wider text-white/80 py-2 overflow-x-auto no-scrollbar">
               <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10">SEARCH</span>
               <span className="text-[#FF3154]">→</span>
@@ -382,7 +327,7 @@ export const Hero: React.FC = () => {
               <span className="px-3 py-1 rounded-full bg-[#FF3154] text-white font-black shadow-[0_0_15px_#FF3154]">GROW</span>
             </div>
 
-            {/* CTAs */}
+            {/* CTAs from DOCX: Get a Free Audit, See What We Do → */}
             <div className="flex flex-wrap items-center gap-4 pt-2">
               <div className="hero-cta-btn">
                 <MagneticButton
@@ -401,27 +346,25 @@ export const Hero: React.FC = () => {
                   variant="secondary"
                   className="!px-6 !py-3.5 !text-xs uppercase tracking-wider"
                 >
-                  <span>See What We Do</span>
-                  <ArrowRight size={14} className="text-[#FF3154] group-hover:translate-x-1 transition-transform" />
+                  <span>See What We Do →</span>
                 </MagneticButton>
               </div>
             </div>
           </div>
 
-          {/* RIGHT: Studio Mockup Composition */}
+          {/* RIGHT: Studio Mockup with DOCX floating elements */}
           <div className="lg:col-span-5 relative flex items-center justify-center [perspective:1200px]">
             
-            {/* Red Circular Glow Ring */}
             <div 
               ref={glowRingRef}
               className="absolute w-72 h-72 sm:w-96 sm:h-96 md:w-[460px] md:h-[460px] rounded-full border-2 border-[#FF3154]/40 shadow-[0_0_80px_rgba(255,49,84,0.35)] pointer-events-none"
             />
 
-            {/* Floating Tags */}
+            {/* Subtle floating elements: Google Ads, SEO, AI Search, AEO, Meta Ads, Leads */}
             {floatingTags.map((tag) => (
               <div
                 key={tag.label}
-                className="hero-tag absolute hidden md:flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#0D1014]/90 border border-white/15 backdrop-blur-md text-[10px] font-mono font-bold uppercase tracking-wider text-white shadow-xl z-30 pointer-events-none"
+                className="hero-tag absolute hidden md:flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#0D1014]/90 border border-white/15 backdrop-blur-md text-[10.5px] font-mono font-bold uppercase tracking-wider text-white shadow-xl z-30 pointer-events-none"
                 style={{
                   top: tag.top,
                   bottom: tag.bottom,
@@ -440,7 +383,6 @@ export const Hero: React.FC = () => {
               className="hero-mockup-wrapper relative w-full max-w-[460px] z-10"
               style={{ transformStyle: 'preserve-3d' }}
             >
-              {/* Laptop UI */}
               <div className="relative rounded-2xl bg-[#0D1014] border border-white/20 p-2 sm:p-3 shadow-2xl backdrop-blur-xl">
                 <div className="flex items-center gap-1.5 pb-2 px-1">
                   <div className="w-2.5 h-2.5 rounded-full bg-[#FF3154]" />
@@ -450,15 +392,15 @@ export const Hero: React.FC = () => {
                 <div className="relative aspect-[16/10] rounded-lg overflow-hidden bg-black border border-white/10 group">
                   <img
                     src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop"
-                    alt="SRMUCANVAS Growth & Analytics Dashboard"
+                    alt="Redcanvass Growth & Performance Dashboard"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-end p-4">
                     <span className="text-[10px] font-mono uppercase tracking-widest text-[#28D7FF] font-bold">
-                      PERFORMANCE COCKPIT
+                      REDCANVASS ENGINE
                     </span>
                     <h3 className="text-sm sm:text-base font-black text-white">
-                      Search, AEO & Lead Acquisition
+                      Search, AEO & Qualified Enquiries
                     </h3>
                   </div>
                 </div>
@@ -472,7 +414,7 @@ export const Hero: React.FC = () => {
                 <div className="w-full h-full rounded-xl overflow-hidden relative">
                   <img
                     src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=600&auto=format&fit=crop"
-                    alt="Mobile Campaign Creatives"
+                    alt="Targeted Ads & Creatives"
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute top-1 left-1/2 -translate-x-1/2 w-8 h-2 rounded-full bg-black/80" />
@@ -480,58 +422,47 @@ export const Hero: React.FC = () => {
               </div>
             </div>
 
-            {/* Right Side Vertical Editorial Badge (Contained safely inside) */}
-            <div className="hidden 2xl:flex flex-col items-center absolute -right-12 top-1/2 -translate-y-1/2 space-y-6 select-none opacity-80 pointer-events-none">
-              <div className="font-handwriting text-2xl text-white transform -rotate-90 origin-center whitespace-nowrap">
-                Good Design Better Business
-              </div>
-              <div className="w-[1px] h-12 bg-white/20" />
-              <div className="text-[9px] font-mono tracking-[0.25em] text-[#9A9DA7] uppercase transform -rotate-90 origin-center whitespace-nowrap">
-                SEO • ADS • AEO • CREATIVE
-              </div>
-            </div>
-
           </div>
 
         </div>
 
-        {/* BOTTOM STATS & SCROLL DOWN */}
+        {/* BOTTOM METRICS & SCROLL DOWN */}
         <div className="hero-stats-row mt-14 md:mt-20 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-8">
           
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-10 w-full md:w-auto">
             <div>
               <div className="text-2xl sm:text-3xl lg:text-4xl font-black text-white font-mono">
-                {counts.projects}+
+                Pillars
               </div>
               <div className="text-xs text-[#9A9DA7] uppercase tracking-wider font-semibold mt-0.5">
-                Growth Campaigns
+                Found • Customers • Remembered
               </div>
             </div>
 
             <div>
-              <div className="text-2xl sm:text-3xl lg:text-4xl font-black text-white font-mono">
-                {counts.clients}+
+              <div className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#28D7FF] font-mono">
+                SEO & AEO
               </div>
               <div className="text-xs text-[#9A9DA7] uppercase tracking-wider font-semibold mt-0.5">
-                Happy Clients
+                Search & AI Ready
               </div>
             </div>
 
             <div>
-              <div className="text-2xl sm:text-3xl lg:text-4xl font-black text-white font-mono">
-                {counts.years}+
+              <div className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#8B3DFF] font-mono">
+                Ads & Leads
               </div>
               <div className="text-xs text-[#9A9DA7] uppercase tracking-wider font-semibold mt-0.5">
-                Years Experience
+                Google • Meta • YouTube
               </div>
             </div>
 
             <div>
               <div className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#FF3154] font-mono">
-                {counts.dedication}%
+                ROI First
               </div>
               <div className="text-xs text-[#9A9DA7] uppercase tracking-wider font-semibold mt-0.5">
-                Dedication to ROI
+                Strategy Before Spend
               </div>
             </div>
           </div>

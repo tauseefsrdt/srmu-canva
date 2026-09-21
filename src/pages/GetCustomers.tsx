@@ -3,16 +3,13 @@ import { Link } from 'react-router-dom';
 import { 
   TrendingUp, 
   Target, 
-  Users, 
   ArrowRight, 
   ChevronRight, 
   CheckCircle2, 
   Sparkles, 
   BarChart3, 
-  Layers, 
   Zap, 
-  ArrowUpRight,
-  Filter
+  Layers
 } from 'lucide-react';
 import gsap from 'gsap';
 import { YoutubeIcon } from '../components/SocialIcons';
@@ -56,6 +53,8 @@ export const GetCustomers: React.FC = () => {
 
     return () => ctx.revert();
   }, []);
+
+  // Section 10 DOCX FAQs
   const getCustomersFaqs: FaqItem[] = [
     {
       question: "How much should a small business spend on Google Ads?",
@@ -79,7 +78,7 @@ export const GetCustomers: React.FC = () => {
     },
     {
       question: "What is a good cost per lead?",
-      answer: "There is no single 'good' cost per lead. A useful CPL depends on the value of a customer, lead-to-sale rate, sales capacity, margins and other acquisition costs."
+      answer: "There is no single \"good\" cost per lead. A useful CPL depends on the value of a customer, lead-to-sale rate, sales capacity, margins and other acquisition costs. For example, a ₹1,000 lead may be expensive for one business and inexpensive for another."
     },
     {
       question: "Should I run Google Ads and Meta Ads together?",
@@ -111,37 +110,24 @@ export const GetCustomers: React.FC = () => {
             <ChevronRight size={14} className="text-white/30" />
             <Link to="/what-we-do" className="hover:text-white transition-colors">What We Do</Link>
             <ChevronRight size={14} className="text-white/30" />
-            <span className="text-[#FF3154]">Get Customers</span>
+            <span className="text-[#8B3DFF]">Get Customers</span>
           </nav>
 
           <div className="gc-header-content space-y-4 max-w-3xl">
             <span className="inline-flex items-center gap-2 text-xs font-mono font-bold tracking-[0.3em] uppercase text-[#8B3DFF]">
-              <TrendingUp size={14} />
-              PILLAR 02 • PERFORMANCE & ACQUISITION
+              <Sparkles size={14} />
+              PERFORMANCE MARKETING & ACQUISITION
             </span>
             <h1 className="text-4xl sm:text-6xl md:text-7xl font-black uppercase tracking-tight text-white leading-none">
               Get Customers, <br />
               <span className="text-gradient-brand">Not Just Clicks.</span>
             </h1>
-            <p className="text-lg md:text-2xl text-[#9A9DA7] leading-relaxed">
+            <p className="text-lg md:text-2xl text-white font-medium leading-relaxed">
               Paid advertising can put your business in front of thousands of people. The real question is: how many of the right people take the next step?
             </p>
-            <p className="text-sm text-[#9A9DA7]">
-              SRMUCANVAS builds and manages performance marketing campaigns across Google Ads, Meta Ads and YouTube, supported by lead generation, remarketing, creative and conversion-focused landing pages.
+            <p className="text-sm md:text-base text-[#9A9DA7] leading-relaxed">
+              Redcanvass builds and manages performance marketing campaigns across Google Ads, Meta Ads and YouTube, supported by lead generation, remarketing, creative and conversion-focused landing pages.
             </p>
-          </div>
-
-          {/* Campaign Pipeline */}
-          <div className="hidden sm:flex items-center gap-2 text-xs font-mono font-bold text-white/80 py-2 overflow-x-auto no-scrollbar">
-            <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10">AUDIENCE</span>
-            <span className="text-[#8B3DFF]">→</span>
-            <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10">AD</span>
-            <span className="text-[#8B3DFF]">→</span>
-            <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10">LANDING PAGE</span>
-            <span className="text-[#8B3DFF]">→</span>
-            <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10">QUALIFIED LEAD</span>
-            <span className="text-[#8B3DFF]">→</span>
-            <span className="px-3 py-1 rounded-full bg-[#8B3DFF] text-white font-bold">CUSTOMER</span>
           </div>
 
           <div className="pt-2 flex flex-wrap gap-4">
@@ -150,215 +136,358 @@ export const GetCustomers: React.FC = () => {
               <ArrowRight size={16} />
             </MagneticButton>
             <MagneticButton to="/lets-talk" variant="secondary" className="!px-6 !py-3.5 !text-xs uppercase tracking-wider">
-              <span>Let's Talk →</span>
+              <span>See How We Work →</span>
             </MagneticButton>
           </div>
         </div>
       </section>
 
-      {/* 2. INTRODUCTION: Clicks Are Easy. The Right Customers Are Harder */}
-      <section className="py-20 border-t border-white/10">
-        <div className="max-w-6xl mx-auto px-6 md:px-10 space-y-6">
-          <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#FF3154]">
-            ACQUISITION QUALITY
+      {/* 2. INTRODUCTION */}
+      <section className="py-20 border-t border-white/10 bg-[#050608]">
+        <div className="max-w-5xl mx-auto px-6 md:px-10 text-center space-y-6">
+          <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#8B3DFF]">
+            THE REALITY
           </span>
-          <h2 className="text-3xl sm:text-5xl font-black text-white">
+          <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
             Clicks Are Easy. The Right Customers Are Harder.
           </h2>
-          <p className="text-base md:text-lg text-[#9A9DA7] leading-relaxed">
-            Anyone can put an ad in front of an audience. Effective performance marketing requires more: the right audience, message, offer, campaign objective, landing experience, and continuous measurement.
+          <p className="text-base sm:text-lg text-[#9A9DA7] max-w-3xl mx-auto leading-relaxed">
+            Anyone can put an ad in front of an audience. Effective performance marketing requires more:
           </p>
-          <p className="text-sm md:text-base text-[#9A9DA7]">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs font-mono text-white pt-2 text-left">
+            <div className="p-4 rounded-xl bg-[#0D1014] border border-white/10 flex items-center gap-2">
+              <CheckCircle2 size={14} className="text-[#8B3DFF]" /> The right audience
+            </div>
+            <div className="p-4 rounded-xl bg-[#0D1014] border border-white/10 flex items-center gap-2">
+              <CheckCircle2 size={14} className="text-[#8B3DFF]" /> The right message
+            </div>
+            <div className="p-4 rounded-xl bg-[#0D1014] border border-white/10 flex items-center gap-2">
+              <CheckCircle2 size={14} className="text-[#8B3DFF]" /> The right offer
+            </div>
+            <div className="p-4 rounded-xl bg-[#0D1014] border border-white/10 flex items-center gap-2">
+              <CheckCircle2 size={14} className="text-[#8B3DFF]" /> The right landing page
+            </div>
+          </div>
+          <p className="text-sm text-white/90 font-medium">
             We look at the entire journey rather than treating the ad platform as the strategy.
           </p>
         </div>
       </section>
 
-      {/* 3. WAYS WE TURN ATTENTION INTO OPPORTUNITY */}
-      <section className="py-20 border-t border-white/10 bg-[#080A0E]">
-        <div className="max-w-7xl mx-auto px-6 md:px-10 space-y-16">
-          <div className="text-center max-w-2xl mx-auto space-y-3">
+      {/* 3. THE SERVICES */}
+      <section className="gc-services-section py-20 border-t border-white/10 bg-[#080A0E]">
+        <div className="max-w-7xl mx-auto px-6 md:px-10 space-y-12">
+          <div className="text-center max-w-3xl mx-auto space-y-3">
             <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#8B3DFF]">
               OUR CHANNELS
             </span>
-            <h2 className="text-3xl sm:text-5xl font-black text-white">
+            <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
               Ways We Turn Attention Into Opportunity
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Google Ads */}
-            <div className="p-8 rounded-3xl bg-[#0D1014] border border-white/10 space-y-4">
-              <div className="w-12 h-12 rounded-2xl bg-[#267BFF]/10 text-[#267BFF] flex items-center justify-center">
-                <Target size={24} />
+            <div className="gc-service-card p-8 rounded-3xl bg-[#0D1014] border border-white/10 hover:border-[#267BFF]/40 transition-all space-y-5 flex flex-col justify-between">
+              <div className="space-y-4">
+                <div className="w-12 h-12 rounded-2xl bg-[#267BFF]/10 border border-[#267BFF]/30 flex items-center justify-center text-[#267BFF]">
+                  <Target size={24} />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-black text-white">Google Ads</h3>
+                  <p className="text-xs font-mono text-[#267BFF] font-semibold mt-0.5">Capture existing demand.</p>
+                </div>
+                <p className="text-xs sm:text-sm text-[#9A9DA7] leading-relaxed">
+                  Reach people who are actively searching for what your business offers.
+                </p>
+                <div className="space-y-1.5 pt-2 border-t border-white/5 text-xs text-white/80">
+                  <div>• Search campaigns</div>
+                  <div>• Display campaigns</div>
+                  <div>• YouTube campaigns</div>
+                  <div>• Conversion-focused campaigns</div>
+                </div>
               </div>
-              <h3 className="text-2xl font-black text-white">Google Ads</h3>
-              <p className="text-xs font-mono text-[#267BFF]">Capture existing demand.</p>
-              <p className="text-sm text-[#9A9DA7] leading-relaxed">
-                Reach people who are actively searching for the products, services or solutions your business offers.
-              </p>
-              <ul className="space-y-1.5 text-xs text-[#9A9DA7] pt-2">
-                <li>• Search & Intent Campaigns</li>
-                <li>• Display & Retargeting</li>
-                <li>• YouTube Pre-roll & In-feed</li>
-                <li>• Conversion Tracking & Smart Bidding</li>
-              </ul>
+              <div className="pt-4 border-t border-white/5">
+                <Link to="/lets-talk" className="text-xs font-mono font-bold uppercase tracking-wider text-[#267BFF] hover:text-white flex items-center gap-1.5 transition-colors">
+                  <span>Explore Google Ads →</span>
+                </Link>
+              </div>
             </div>
 
             {/* Meta Ads */}
-            <div className="p-8 rounded-3xl bg-[#0D1014] border border-white/10 space-y-4">
-              <div className="w-12 h-12 rounded-2xl bg-[#FF167D]/10 text-[#FF167D] flex items-center justify-center">
-                <Users size={24} />
+            <div className="gc-service-card p-8 rounded-3xl bg-[#0D1014] border border-white/10 hover:border-[#8B3DFF]/40 transition-all space-y-5 flex flex-col justify-between">
+              <div className="space-y-4">
+                <div className="w-12 h-12 rounded-2xl bg-[#8B3DFF]/10 border border-[#8B3DFF]/30 flex items-center justify-center text-[#8B3DFF]">
+                  <TrendingUp size={24} />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-black text-white">Meta Ads</h3>
+                  <p className="text-xs font-mono text-[#8B3DFF] font-semibold mt-0.5">Reach relevant audiences across Facebook and Instagram.</p>
+                </div>
+                <p className="text-xs sm:text-sm text-[#9A9DA7] leading-relaxed">
+                  Facebook and Instagram advertising can help businesses build awareness, generate enquiries and reach specific audiences based on campaign objectives and targeting.
+                </p>
+                <div className="space-y-1.5 pt-2 border-t border-white/5 text-xs text-white/80">
+                  <div>• Audience strategy</div>
+                  <div>• Creative and ad variations</div>
+                  <div>• Lead generation campaigns</div>
+                  <div>• Conversion campaigns</div>
+                </div>
               </div>
-              <h3 className="text-2xl font-black text-white">Meta Ads</h3>
-              <p className="text-xs font-mono text-[#FF167D]">Reach audiences before they search.</p>
-              <p className="text-sm text-[#9A9DA7] leading-relaxed">
-                Facebook & Instagram advertising to build awareness, generate enquiries and reach specific customer segments.
-              </p>
-              <ul className="space-y-1.5 text-xs text-[#9A9DA7] pt-2">
-                <li>• Audience Segmentation & Lookalikes</li>
-                <li>• High-Impact Carousel & Video Ads</li>
-                <li>• On-Platform Instant Forms</li>
-                <li>• Custom Conversion Funnels</li>
-              </ul>
+              <div className="pt-4 border-t border-white/5">
+                <Link to="/lets-talk" className="text-xs font-mono font-bold uppercase tracking-wider text-[#8B3DFF] hover:text-white flex items-center gap-1.5 transition-colors">
+                  <span>Explore Meta Ads →</span>
+                </Link>
+              </div>
             </div>
 
             {/* YouTube Ads */}
-            <div className="p-8 rounded-3xl bg-[#0D1014] border border-white/10 space-y-4">
-              <div className="w-12 h-12 rounded-2xl bg-[#FF3154]/10 text-[#FF3154] flex items-center justify-center">
-                <YoutubeIcon size={24} />
+            <div className="gc-service-card p-8 rounded-3xl bg-[#0D1014] border border-white/10 hover:border-[#FF3154]/40 transition-all space-y-5 flex flex-col justify-between">
+              <div className="space-y-4">
+                <div className="w-12 h-12 rounded-2xl bg-[#FF3154]/10 border border-[#FF3154]/30 flex items-center justify-center text-[#FF3154]">
+                  <YoutubeIcon size={24} />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-black text-white">YouTube Ads</h3>
+                  <p className="text-xs font-mono text-[#FF3154] font-semibold mt-0.5">Use video to build awareness, consideration and action.</p>
+                </div>
+                <p className="text-xs sm:text-sm text-[#9A9DA7] leading-relaxed">
+                  YouTube can help businesses introduce their offering, explain complex products or services and reach audiences at different stages of consideration.
+                </p>
+                <div className="space-y-1.5 pt-2 border-t border-white/5 text-xs text-white/80">
+                  <div>• Video view campaigns</div>
+                  <div>• Brand awareness</div>
+                  <div>• Website traffic and conversion objectives</div>
+                </div>
               </div>
-              <h3 className="text-2xl font-black text-white">YouTube Ads</h3>
-              <p className="text-xs font-mono text-[#FF3154]">Use video where attention happens.</p>
-              <p className="text-sm text-[#9A9DA7] leading-relaxed">
-                Explain complex products or services, build familiarity, and drive high-intent consideration.
-              </p>
-              <ul className="space-y-1.5 text-xs text-[#9A9DA7] pt-2">
-                <li>• Video Action Campaigns</li>
-                <li>• In-Stream Skippable Ads</li>
-                <li>• Brand Consideration Sequences</li>
-                <li>• Retargeted Video Viewers</li>
-              </ul>
+              <div className="pt-4 border-t border-white/5">
+                <Link to="/lets-talk" className="text-xs font-mono font-bold uppercase tracking-wider text-[#FF3154] hover:text-white flex items-center gap-1.5 transition-colors">
+                  <span>Explore YouTube Ads →</span>
+                </Link>
+              </div>
             </div>
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Lead Generation */}
-            <div className="p-8 rounded-3xl bg-[#0D1014] border border-white/10 space-y-3">
-              <h3 className="text-xl font-bold text-white">Lead Generation Campaigns</h3>
-              <p className="text-sm text-[#9A9DA7]">
-                Don't stop at traffic. Campaigns designed around meaningful actions: enquiries, consultations, bookings, or callbacks.
-              </p>
+            <div className="gc-service-card p-8 rounded-3xl bg-[#0D1014] border border-white/10 hover:border-[#28D7FF]/40 transition-all space-y-5 flex flex-col justify-between md:col-span-2">
+              <div className="space-y-4">
+                <div className="w-12 h-12 rounded-2xl bg-[#28D7FF]/10 border border-[#28D7FF]/30 flex items-center justify-center text-[#28D7FF]">
+                  <Zap size={24} />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-black text-white">Lead Generation</h3>
+                  <p className="text-xs font-mono text-[#28D7FF] font-semibold mt-0.5">Don't stop at traffic.</p>
+                </div>
+                <p className="text-sm text-[#9A9DA7] leading-relaxed">
+                  Campaigns designed around a meaningful business action — such as an enquiry, consultation, admission request, appointment or callback.
+                </p>
+                <div className="p-3 bg-white/5 rounded-xl border border-white/10 text-xs font-mono text-white">
+                  Audience → Offer → Ad → Landing Page/Form → Lead → Follow-up
+                </div>
+                <p className="text-xs text-white/70 italic">Because a cheap lead isn't necessarily a valuable lead.</p>
+              </div>
             </div>
 
             {/* Remarketing */}
-            <div className="p-8 rounded-3xl bg-[#0D1014] border border-white/10 space-y-3">
-              <h3 className="text-xl font-bold text-white">Full-Funnel Remarketing</h3>
-              <p className="text-sm text-[#9A9DA7]">
-                Stay relevant after the first visit. Reconnect with visitors who already showed intent with customized offers.
-              </p>
+            <div className="gc-service-card p-8 rounded-3xl bg-[#0D1014] border border-white/10 hover:border-[#FF7A18]/40 transition-all space-y-5 flex flex-col justify-between">
+              <div className="space-y-4">
+                <div className="w-12 h-12 rounded-2xl bg-[#FF7A18]/10 border border-[#FF7A18]/30 flex items-center justify-center text-[#FF7A18]">
+                  <Layers size={24} />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-black text-white">Remarketing</h3>
+                  <p className="text-xs font-mono text-[#FF7A18] font-semibold mt-0.5">Stay relevant after the first visit.</p>
+                </div>
+                <p className="text-xs sm:text-sm text-[#9A9DA7] leading-relaxed">
+                  Most people don't convert the first time. Reconnect with visitors who have already interacted with your campaigns.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 4. PERFORMANCE LOOP */}
-      <section className="py-20 border-t border-white/10">
+      {/* 4. THE BIG DIFFERENTIATOR */}
+      <section className="py-20 border-t border-white/10 bg-[#050608]">
+        <div className="max-w-4xl mx-auto px-6 md:px-10 text-center space-y-6">
+          <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#8B3DFF]">
+            METRICS THAT MATTER
+          </span>
+          <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
+            We Don't Optimise for Vanity Metrics.
+          </h2>
+          <p className="text-base sm:text-lg text-[#9A9DA7] leading-relaxed">
+            Impressions can look impressive. Clicks can look impressive. Even a low cost per lead can look impressive. But none of those automatically tells you whether your marketing is helping the business.
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-xs font-mono text-[#28D7FF] pt-2 text-left">
+            <div className="p-3 bg-[#0D1014] rounded-xl border border-white/10">Who are we reaching?</div>
+            <div className="p-3 bg-[#0D1014] rounded-xl border border-white/10">What are they doing?</div>
+            <div className="p-3 bg-[#0D1014] rounded-xl border border-white/10">Which ads create enquiries?</div>
+            <div className="p-3 bg-[#0D1014] rounded-xl border border-white/10">What happens to enquiries?</div>
+            <div className="p-3 bg-[#0D1014] rounded-xl border border-white/10">Where do people drop off?</div>
+            <div className="p-3 bg-[#0D1014] rounded-xl border border-white/10">What can we improve next?</div>
+          </div>
+        </div>
+      </section>
+
+      {/* 5. THE PERFORMANCE MARKETING LOOP */}
+      <section className="py-20 bg-[#080A0E] border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6 md:px-10 space-y-12">
-          <div className="text-center max-w-2xl mx-auto space-y-3">
-            <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#FF3154]">
-              ITERATIVE PROCESS
+          <div className="text-center max-w-3xl mx-auto space-y-3">
+            <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#8B3DFF]">
+              CONTINUOUS OPTIMIZATION
             </span>
-            <h2 className="text-3xl sm:text-5xl font-black text-white">
+            <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
               Performance Marketing Is a Loop, Not a Launch.
             </h2>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 text-center">
-            <div className="p-6 rounded-2xl bg-[#0D1014] border border-white/10 space-y-2">
-              <span className="font-mono text-xs text-[#FF3154] font-bold">01. UNDERSTAND</span>
-              <p className="text-xs text-[#9A9DA7]">Goals & Journey</p>
+            <div className="p-5 rounded-2xl bg-[#0D1014] border border-white/10 space-y-1">
+              <span className="text-xs font-mono text-[#8B3DFF] font-bold">1. Understand</span>
+              <p className="text-[11px] text-[#9A9DA7]">Goals, audience, offer</p>
             </div>
-            <div className="p-6 rounded-2xl bg-[#0D1014] border border-white/10 space-y-2">
-              <span className="font-mono text-xs text-[#FF7A18] font-bold">02. TARGET</span>
-              <p className="text-xs text-[#9A9DA7]">Audiences & Intent</p>
+            <div className="p-5 rounded-2xl bg-[#0D1014] border border-white/10 space-y-1">
+              <span className="text-xs font-mono text-[#8B3DFF] font-bold">2. Target</span>
+              <p className="text-[11px] text-[#9A9DA7]">Search intent & segments</p>
             </div>
-            <div className="p-6 rounded-2xl bg-[#0D1014] border border-white/10 space-y-2">
-              <span className="font-mono text-xs text-[#8B3DFF] font-bold">03. CREATE</span>
-              <p className="text-xs text-[#9A9DA7]">Message & Landing</p>
+            <div className="p-5 rounded-2xl bg-[#0D1014] border border-white/10 space-y-1">
+              <span className="text-xs font-mono text-[#8B3DFF] font-bold">3. Create</span>
+              <p className="text-[11px] text-[#9A9DA7]">Message & landing page</p>
             </div>
-            <div className="p-6 rounded-2xl bg-[#0D1014] border border-white/10 space-y-2">
-              <span className="font-mono text-xs text-[#28D7FF] font-bold">04. LAUNCH</span>
-              <p className="text-xs text-[#9A9DA7]">Live Campaigns</p>
+            <div className="p-5 rounded-2xl bg-[#0D1014] border border-white/10 space-y-1">
+              <span className="text-xs font-mono text-[#8B3DFF] font-bold">4. Launch</span>
+              <p className="text-[11px] text-[#9A9DA7]">Deploy live campaigns</p>
             </div>
-            <div className="p-6 rounded-2xl bg-[#0D1014] border border-white/10 space-y-2">
-              <span className="font-mono text-xs text-[#FF167D] font-bold">05. MEASURE</span>
-              <p className="text-xs text-[#9A9DA7]">Conversion Data</p>
+            <div className="p-5 rounded-2xl bg-[#0D1014] border border-white/10 space-y-1">
+              <span className="text-xs font-mono text-[#8B3DFF] font-bold">5. Measure</span>
+              <p className="text-[11px] text-[#9A9DA7]">Meaningful business actions</p>
             </div>
-            <div className="p-6 rounded-2xl bg-[#0D1014] border border-white/10 space-y-2">
-              <span className="font-mono text-xs text-[#267BFF] font-bold">06. OPTIMISE</span>
-              <p className="text-xs text-[#9A9DA7]">Repeat & Scale</p>
+            <div className="p-5 rounded-2xl bg-[#0D1014] border border-white/10 space-y-1">
+              <span className="text-xs font-mono text-[#FF3154] font-bold">6. Optimise</span>
+              <p className="text-[11px] text-[#9A9DA7]">Iterate & repeat loop</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 5. GOOGLE VS META VS YOUTUBE */}
-      <section className="py-20 border-t border-white/10 bg-[#080A0E]">
-        <div className="max-w-6xl mx-auto px-6 md:px-10 space-y-10">
-          <div className="text-center space-y-3">
-            <h2 className="text-3xl sm:text-5xl font-black text-white">
+      {/* 6. GOOGLE VS META VS YOUTUBE */}
+      <section className="py-20 border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-6 md:px-10 space-y-12">
+          <div className="text-center max-w-3xl mx-auto space-y-3">
+            <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#8B3DFF]">
+              PLATFORM COMPARISON
+            </span>
+            <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
               Google, Meta or YouTube?
             </h2>
-            <p className="text-sm text-[#9A9DA7]">
-              There isn't one platform that is automatically right for every business. The channel follows the strategy.
+            <p className="text-base text-[#9A9DA7]">
+              There isn't one platform that is automatically right for every business.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="p-6 rounded-2xl bg-[#0D1014] border border-white/10 space-y-3">
-              <h3 className="text-xl font-bold text-white">Google Ads</h3>
-              <p className="text-xs text-[#9A9DA7] leading-relaxed">
-                Best suited to capturing existing search demand. Someone is already looking.
-              </p>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div className="p-6 rounded-2xl bg-[#0D1014] border border-white/10 space-y-2">
+              <h3 className="text-lg font-bold text-white">Google Ads</h3>
+              <p className="text-xs text-[#9A9DA7] leading-relaxed">Best suited to capturing existing search demand. Someone is already looking.</p>
             </div>
-            <div className="p-6 rounded-2xl bg-[#0D1014] border border-white/10 space-y-3">
-              <h3 className="text-xl font-bold text-white">Meta Ads</h3>
-              <p className="text-xs text-[#9A9DA7] leading-relaxed">
-                Useful for reaching and influencing defined audiences. You create demand as well as capture it.
-              </p>
+            <div className="p-6 rounded-2xl bg-[#0D1014] border border-white/10 space-y-2">
+              <h3 className="text-lg font-bold text-white">Meta Ads</h3>
+              <p className="text-xs text-[#9A9DA7] leading-relaxed">Useful for reaching and influencing defined audiences. You can create demand as well as capture it.</p>
             </div>
-            <div className="p-6 rounded-2xl bg-[#0D1014] border border-white/10 space-y-3">
-              <h3 className="text-xl font-bold text-white">YouTube Ads</h3>
-              <p className="text-xs text-[#9A9DA7] leading-relaxed">
-                Useful when video can explain, demonstrate or build familiarity with a product or service.
-              </p>
+            <div className="p-6 rounded-2xl bg-[#0D1014] border border-white/10 space-y-2">
+              <h3 className="text-lg font-bold text-white">YouTube</h3>
+              <p className="text-xs text-[#9A9DA7] leading-relaxed">Useful when video can explain, demonstrate or build familiarity with a product or service.</p>
             </div>
+            <div className="p-6 rounded-2xl bg-[#0D1014] border border-white/10 space-y-2">
+              <h3 className="text-lg font-bold text-white">A Combination</h3>
+              <p className="text-xs text-[#9A9DA7] leading-relaxed">Many businesses use multiple channels when each has a clearly defined role.</p>
+            </div>
+          </div>
+          <p className="text-center font-mono text-xs text-white/80">The channel follows the strategy — not the other way around.</p>
+        </div>
+      </section>
+
+      {/* 7. THE CLICK-TO-CUSTOMER JOURNEY & 8. WHAT WE MEASURE */}
+      <section className="py-20 bg-[#080A0E] border-t border-white/10">
+        <div className="max-w-5xl mx-auto px-6 md:px-10 text-center space-y-8">
+          <div className="space-y-3">
+            <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#8B3DFF]">
+              CONVERSION BRIDGE
+            </span>
+            <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
+              The Ad Is Only the Beginning.
+            </h2>
+          </div>
+
+          <div className="flex flex-wrap justify-center items-center gap-3 font-mono text-xs text-white py-2">
+            <span className="px-3 py-1.5 rounded-xl bg-white/5 border border-white/10">AD</span>
+            <span>→</span>
+            <span className="px-3 py-1.5 rounded-xl bg-white/5 border border-white/10">CLICK</span>
+            <span>→</span>
+            <span className="px-3 py-1.5 rounded-xl bg-white/5 border border-white/10">LANDING PAGE</span>
+            <span>→</span>
+            <span className="px-3 py-1.5 rounded-xl bg-white/5 border border-white/10">ENQUIRY</span>
+            <span>→</span>
+            <span className="px-3 py-1.5 rounded-xl bg-white/5 border border-white/10">FOLLOW-UP</span>
+            <span>→</span>
+            <span className="px-3 py-1.5 rounded-xl bg-[#8B3DFF] font-bold">CUSTOMER</span>
+          </div>
+
+          <p className="text-base text-[#9A9DA7] max-w-3xl mx-auto leading-relaxed">
+            A great campaign can still underperform if the landing page is confusing, the offer isn't clear or the enquiry process creates friction. That's why our performance work connects with creative and conversion.
+          </p>
+
+          <div className="pt-4 border-t border-white/10">
+            <h3 className="text-xl font-bold text-white mb-2">What Does Performance Actually Mean?</h3>
+            <p className="text-xs font-mono text-[#28D7FF]">The metric that matters most is the one connected to the business goal.</p>
           </div>
         </div>
       </section>
 
-      {/* 6. FAQ */}
+      {/* 9. WHO IS THIS FOR? */}
+      <section className="py-20 border-t border-white/10">
+        <div className="max-w-5xl mx-auto px-6 md:px-10 text-center space-y-6">
+          <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#8B3DFF]">
+            AUDIENCE VALUE
+          </span>
+          <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
+            Built for Businesses Where an Enquiry Matters.
+          </h2>
+          <p className="text-base text-[#9A9DA7] max-w-3xl mx-auto leading-relaxed">
+            Performance marketing is particularly useful when a customer action has clear business value: An admission enquiry · A consultation request · A property enquiry · An appointment · A booking · A sales conversation.
+          </p>
+          <div className="pt-2">
+            <Link to="/who-we-help" className="text-xs font-mono font-bold uppercase tracking-wider text-[#8B3DFF] hover:text-white transition-colors">
+              <span>See Who We Help →</span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* 10. QUESTIONS BUSINESS OWNERS ASK */}
       <FaqSection 
         title="Questions Businesses Ask About Paid Advertising"
         faqs={getCustomersFaqs}
-        ctaText="Are your ads bringing you business or just numbers? Get a Free Audit →"
+        ctaText="Want an assessment of your advertising campaigns? Get a Free Audit →"
         ctaLink="/lets-talk"
       />
 
-      {/* 7. FINAL CTA */}
-      <section className="py-20 border-t border-white/10 text-center">
+      {/* 11. FINAL CTA */}
+      <section className="py-20 md:py-28 text-center border-t border-white/10 bg-gradient-to-b from-[#050608] to-[#0A0D12]">
         <div className="max-w-4xl mx-auto px-6 space-y-6">
-          <h2 className="text-3xl sm:text-5xl font-black text-white">
+          <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
             Are Your Ads Bringing You Business — or Just Numbers?
           </h2>
-          <p className="text-base text-[#9A9DA7]">
+          <p className="text-base sm:text-lg text-[#9A9DA7] max-w-2xl mx-auto leading-relaxed">
             Let's look at your campaigns, targeting, creative and conversion journey and identify where you're losing potential customers.
           </p>
-          <div className="pt-2">
-            <MagneticButton to="/lets-talk" variant="primary" className="!px-8 !py-4 !text-xs uppercase tracking-wider">
-              <span>Get a Free Advertising Audit</span>
+          <div className="pt-4 flex flex-wrap justify-center gap-4">
+            <MagneticButton to="/lets-talk" variant="primary" className="!px-8 !py-4 !text-xs uppercase tracking-wider shadow-[0_0_30px_rgba(255,49,84,0.5)]">
+              <span>GET A FREE ADVERTISING AUDIT</span>
               <ArrowRight size={16} />
+            </MagneticButton>
+            <MagneticButton to="/lets-talk" variant="secondary" className="!px-7 !py-4 !text-xs uppercase tracking-wider">
+              <span>LET'S TALK →</span>
             </MagneticButton>
           </div>
         </div>

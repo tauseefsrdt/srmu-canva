@@ -1,0 +1,1570 @@
+Redcanvass Website
+Navigation Menu
+HOME
+│
+├── WHAT WE DO
+│
+├── GET FOUND
+│   ├── SEO
+│   ├── Local SEO
+│   ├── AI Search
+│   └── AEO
+│
+├── GET CUSTOMERS
+│   ├── Google Ads
+│   ├── Meta Ads
+│   ├── YouTube Ads
+│   ├── Lead Generation
+│   └── Remarketing
+│
+├── GET REMEMBERED
+│   ├── Ad Creatives
+│   ├── Landing Pages
+│   ├── Campaign Design
+│   └── Flyers & Posters
+│
+├── WHO WE HELP
+│
+│
+└── LET'S TALK
+PAGE 1 — HOME
+URL: /
+SEO Title
+Redcanvass | Digital Marketing, Performance Marketing & AI Search
+Meta Description
+Redcanvass helps businesses grow through Google Ads, Meta Ads, SEO, AI Search, AEO, lead generation and conversion-focused creative.
+1. HERO
+H1
+Digital Marketing That Means Business.
+Supporting headline
+Get Found. Get Customers. Get Remembered.
+Body copy
+Redcanvass is a digital marketing and performance marketing agency helping businesses grow through paid advertising, SEO, AI Search, Answer Engine Optimization (AEO), lead generation and conversion-focused creative.
+CTA
+Get a Free Audit
+Secondary CTA:
+See What We Do →
+Visual direction
+I would make this visually strong rather than a generic agency hero.
+Something like:
+SEARCH → DISCOVER → CLICK → ENQUIRE → GROW
+with subtle floating elements:
+Google AdsSEOAI SearchAEOMeta AdsLeads
+The hero should immediately communicate:
+We help businesses get discovered and generate business.
+2. ENTITY / INTRODUCTION
+H2
+Meet Redcanvass
+Copy
+Redcanvass is a digital marketing agency focused on helping businesses become more visible, attract the right audiences and turn digital attention into meaningful enquiries.
+Our work brings together performance marketing, search visibility, AI search optimisation and creative — because getting noticed is only useful when it helps move the business forward.
+This section is important for AEO because it gives search systems a very clear understanding of what Redcanvass is, what it does and who it serves.
+3. THE THREE CORE AREAS
+H2
+How We Help Businesses Grow
+Short intro:
+Digital marketing works best when visibility, acquisition and conversion work together. We organise what we do around three simple outcomes.
+H3
+Get Found
+SEO · Local SEO · AI Search · AEO
+Help potential customers discover your business across traditional search and emerging AI-powered search experiences.
+Explore Get Found →
+H3
+Get Customers
+Google Ads · Meta Ads · YouTube · Lead Generation · Remarketing
+Put your business in front of relevant audiences and turn digital attention into enquiries and opportunities.
+Explore Get Customers →
+H3
+Get Remembered
+Ad Creatives · Landing Pages · Campaign Design · Flyers & Posters
+Give your campaigns the creative and conversion assets they need to communicate clearly and make an impact.
+Explore Get Remembered →
+4. THE REDCANVASS PHILOSOPHY
+This is where Why Redcanvass lives on the homepage.
+H2
+We’re Not Here to Make Your Marketing Look Busy.
+H3
+We’re Here to Make It Work.
+Copy
+More posts don't automatically mean more business. More clicks don't automatically mean more customers.
+We look at the bigger picture — where people discover you, what makes them click, what happens when they arrive and what turns attention into action.
+Our approach is built around the things that can actually move a business forward: visibility, qualified traffic, enquiries and conversion.
+5. WHAT MAKES REDCANVASS DIFFERENT
+Keep this short. Do not create a giant “Why Us” section.
+H2
+Different by Design.
+Three points:
+H3 — Performance First
+We focus on marketing activity that can be measured, tested and improved.
+H3 — Search Ready
+We build visibility across traditional search, local search and the evolving world of AI-powered search.
+H3 — Human Led
+Strategy, creative and optimisation are handled by people who understand the business behind the campaign.
+6. WHO WE HELP
+This is not where I would list six industries with long descriptions.
+H2
+Built for Businesses That Need to Be Found.
+Copy
+We work particularly well with businesses where digital visibility can lead to a real conversation, enquiry, appointment, admission or opportunity.
+Then visually show:
+Education | Healthcare | Real EstateProfessional Services | Hospitality | B2B
+CTA
+See Who We Help →
+This gives us the industry relevance without making the homepage feel like an industry directory.
+7. PROOF
+This section depends entirely on what Redcanvass can genuinely substantiate.
+H2
+Work That Has a Purpose.
+Instead of inventing impressive statistics, use:
+Client logos
+2–3 genuine testimonials
+Selected case studies
+Specific measurable outcomes where you actually have the data
+For example:
+The challengeWhat we changedWhat happened
+This will eventually become one of the strongest conversion sections on the site.
+8. HOME FAQ / QUESTIONS BUSINESS OWNERS ASK
+Here's where I would make an important distinction from our earlier discussion.
+The homepage should not have 15 FAQs.
+It should have around 5–6 broad commercial questions that introduce the subjects Redcanvass specialises in.
+H2
+Questions Businesses Ask About Digital Marketing
+H3
+What does a digital marketing agency actually do?
+A digital marketing agency helps businesses attract and convert customers through channels such as search engines, paid advertising, websites, social platforms and other digital channels. The right mix depends on the business, audience, goals and customer journey.
+H3
+Should my business invest in SEO or Google Ads?
+SEO and Google Ads solve different problems. SEO builds organic visibility over time, while Google Ads can put your business in front of relevant searchers immediately. Many businesses can benefit from using both, depending on their goals and budget.
+H3
+Is SEO still important with AI search?
+Yes. AI-powered search experiences still rely on information available across the web, and Google's current guidance continues to emphasise strong SEO fundamentals alongside useful, original content for its generative AI search experiences. (Google Developers)
+H3
+What is AEO and how is it different from SEO?
+SEO focuses primarily on helping content perform in search engines. AEO, or Answer Engine Optimization, focuses on making information clear, structured and useful for systems that provide direct answers to user questions. The two overlap significantly, and strong SEO fundamentals remain important.
+H3
+Why are my digital ads getting clicks but not enough enquiries?
+Clicks are only one part of the customer journey. Poor conversion can come from targeting, the offer, ad messaging, landing page experience, lead form friction, follow-up or the quality of traffic. Effective lead generation looks at the entire journey rather than clicks alone.
+H3
+How do I know which digital marketing services my business actually needs?
+There is no universal mix. The right approach depends on how customers find you, your sales cycle, geographic reach, customer value, competition and business goals. A business may need SEO, paid advertising, creative, landing pages or a combination.
+CTA below FAQs
+Not sure what your business needs?
+Get a Free Audit →
+9. FINAL CTA
+H2
+Ready to Make Your Digital Marketing Work Harder?
+Copy
+Let's look at what's working, what's missing and where your biggest digital growth opportunities may be.
+GET A FREE AUDIT
+Secondary:
+LET'S TALK →
+FINAL HOMEPAGE HEADER STRUCTURE
+This is the hierarchy I would give directly to your web developer/SEO person:
+H1 — Digital Marketing That Means Business.
+H2 — Meet Redcanvass
+H2 — How We Help Businesses Grow
+H3 — Get Found
+H3 — Get Customers
+H3 — Get Remembered
+H2 — We’re Not Here to Make Your Marketing Look Busy.
+H3 — We’re Here to Make It Work.
+H2 — Different by Design.
+H3 — Performance First
+H3 — Search Ready
+H3 — Human Led
+H2 — Built for Businesses That Need to Be Found.
+H2 — Work That Has a Purpose.
+H2 — Questions Businesses Ask About Digital Marketing
+H3 — What does a digital marketing agency actually do?
+H3 — Should my business invest in SEO or Google Ads?
+H3 — Is SEO still important with AI search?
+H3 — What is AEO and how is it different from SEO?
+H3 — Why are my digital ads getting clicks but not enough enquiries?
+H3 — How do I know which digital marketing services my business actually needs?
+H2 — Ready to Make Your Digital Marketing Work Hard
+PAGE 2 — WHAT WE DO
+URL: /what-we-do/
+SEO Title
+Digital Marketing Services | SEO, AEO & Performance Marketing | Redcanvass
+Meta Description
+Explore Redcanvass digital marketing services across SEO, AEO, AI Search, Google Ads, Meta Ads, lead generation, creative and conversion.
+1. HERO
+H1
+Digital Marketing Built Around Growth.
+Supporting copy
+Redcanvass brings together search visibility, performance marketing and conversion-focused creative to help businesses get discovered, generate enquiries and turn attention into action.
+From SEO and AI Search to Google Ads, Meta Ads, lead generation and landing pages, we build the digital mix around what your business actually needs.
+CTA
+Find Your Growth Opportunity →
+Secondary:
+Get a Free Audit
+2. INTRODUCTION
+H2
+Three Ways We Help Your Business Move Forward
+Copy
+Digital marketing isn't one channel.
+Someone might discover you through Google. Someone else might see an ad on Instagram. Another potential customer might ask an AI search tool about businesses like yours.
+The challenge is making sure your business is visible, relevant and ready to convert wherever that discovery happens.
+That's why our work is organised around three simple outcomes:
+3. GET FOUND
+H2
+Get Found
+H3
+Search & AI Visibility
+Copy
+Before someone becomes a customer, they need to discover you.
+We help businesses build visibility across organic search, local search and AI-powered search experiences.
+Services
+SEOImprove your website's organic visibility and make it easier for search engines to understand your business.
+Local SEOHelp customers find your business when they search for products or services in a specific location.
+AEOAnswer Engine Optimization focuses on making your information clear, structured and useful for answer-driven search experiences.
+AI SearchOptimise your digital presence so your business and its expertise are easier for AI-powered search systems to understand.
+CTA
+Explore Get Found →
+4. GET CUSTOMERS
+H2
+Get Customers
+H3
+Performance Marketing & Lead Generation
+Copy
+Being seen is only the beginning.
+We use paid advertising and lead-generation strategies to put your business in front of relevant audiences and move them towards an enquiry, booking, admission, consultation or other meaningful action.
+Services
+Google AdsReach people actively searching for what your business offers.
+Meta AdsReach relevant audiences across Facebook and Instagram with targeted campaigns.
+YouTube AdsUse video to build awareness, consideration and action.
+Lead GenerationBuild campaigns designed around generating relevant enquiries rather than simply generating traffic.
+RemarketingReconnect with people who have already interacted with your business.
+CTA
+Explore Get Customers →
+5. GET REMEMBERED
+H2
+Get Remembered
+H3
+Creative & Conversion
+Copy
+Good marketing needs more than targeting.
+Your message needs to stop someone, make sense quickly and give them a reason to take the next step.
+We create the campaign assets and conversion experiences that support that journey.
+Services
+Ad CreativesVisuals designed specifically for digital advertising.
+Landing PagesFocused pages built around a particular campaign, audience or conversion goal.
+Campaign DesignCreative direction and campaign concepts that bring the message together.
+Flyers & PostersOffline marketing collateral when your campaign needs to move beyond the screen.
+CTA
+Explore Get Remembered →
+6. HOW THE THREE WORK TOGETHER
+This is an important section for both humans and semantic understanding.
+H2
+Because Visibility Alone Isn't Enough.
+Copy
+A business can rank well and still struggle to generate enquiries.
+It can run ads and still lose potential customers on a weak landing page.
+It can have great creative and still be invisible to the right audience.
+The three areas work together:
+H3
+Get FoundMake your business discoverable.
+↓
+H3
+Get CustomersBring the right people to you.
+↓
+H3
+Get RememberedGive them a reason to engage, trust and act.
+Closing line
+Different jobs. One growth journey.
+7. YOUR DIGITAL MIX DEPENDS ON YOUR BUSINESS
+I would include this, but not list industries here. That's what Who We Help is for.
+H2
+You Don't Need Every Digital Marketing Service.
+Copy
+The right strategy isn't about doing everything.
+It's about identifying where your biggest opportunities are and putting your budget, time and creative effort behind them.
+For example:
+H3
+Need more organic visibility?SEO + Local SEO + AEO
+H3
+Need enquiries now?Google Ads + Meta Ads + Landing Pages
+H3
+Have traffic but poor conversion?Landing Pages + Creative + Conversion optimisation
+H3
+Want stronger visibility in AI-powered search?SEO + AEO + AI Search
+H3
+Want to scale lead generation?Paid Advertising + Remarketing + Conversion-focused Creative
+This section is particularly useful because it shifts the conversation from:
+"Which services do you sell?"
+to:
+"What problem are you trying to solve?"
+8. HOW WE APPROACH DIGITAL MARKETING
+Don't make this a generic four-step agency process with meaningless words.
+H2
+Strategy Before Spend.
+Copy
+Before recommending a channel, we look at the business behind it.
+H3 — Understand
+Your business, audience, offer, market and goals.
+H3 — Identify
+Where people are searching, discovering and dropping off.
+H3 — Build
+The right combination of search, advertising and creative.
+H3 — Optimise
+Test, measure, learn and improve.
+Small closing line
+No channel gets a free pass just because it's trending.
+That line gives the page a little personality.
+9. QUESTIONS BUSINESS OWNERS ASK
+This is where we begin building your question-led AEO content architecture.
+Don't make these questions about Redcanvass.
+H2
+Questions Businesses Ask Before Investing in Digital Marketing
+H3
+Which digital marketing services does my business actually need?
+There is no universal combination. The right mix depends on your audience, sales cycle, competition, geographic reach, customer value and growth objectives.
+H3
+Should I invest in SEO or paid advertising first?
+SEO and paid advertising serve different purposes. Paid search can provide immediate visibility for relevant searches, while SEO focuses on building organic visibility over time. Businesses often use both, depending on their goals and resources.
+H3
+Is Google Ads better than Meta Ads for lead generation?
+They reach people at different stages of the decision process. Google Ads can capture existing search demand, while Meta advertising can help businesses reach and influence audiences based on targeting and campaign objectives. The appropriate channel depends on the business and customer journey.
+H3
+Why am I getting website traffic but not enough enquiries?
+Traffic does not automatically create conversions. The issue may involve targeting, messaging, offer clarity, landing-page experience, trust signals, forms or follow-up.
+H3
+Does SEO help with AI search visibility?
+SEO fundamentals remain important because AI-powered search experiences use information from websites and the wider web. AI search optimisation should therefore complement—not replace—good technical SEO, useful content and a well-understood digital presence.
+H3
+What is the difference between SEO, AEO and AI Search?
+SEO focuses on visibility in search engines. AEO focuses on structuring and presenting information so it can effectively answer user questions. AI Search refers to search experiences that use AI to interpret queries and generate or organise answers. There is significant overlap between the three.
+H3
+How much should a business spend on digital marketing?
+There is no meaningful universal percentage or number. Budget should be considered alongside customer value, sales capacity, competition, target market, acquisition economics and the expected role of each channel.
+CTA
+Have a question about your digital strategy?
+Let's Talk →
+10. FINAL CTA
+H2
+Not Sure Where Your Biggest Opportunity Is?
+Copy
+We'll help you identify where your digital presence can work harder — and which activities are actually worth investing in.
+GET A FREE AUDIT
+FINAL HEADER STRUCTURE FOR THE DEVELOPER
+H1 — Digital Marketing Built Around Growth.
+H2 — Three Ways We Help Your Business Move Forward
+H2 — Get Found
+H3 — Search & AI Visibility
+H3 — SEO
+H3 — Local SEO
+H3 — AEO
+H3 — AI Search
+H2 — Get Customers
+H3 — Performance Marketing & Lead Generation
+H3 — Google Ads
+H3 — Meta Ads
+H3 — YouTube Ads
+H3 — Lead Generation
+H3 — Remarketing
+H2 — Get Remembered
+H3 — Creative & Conversion
+H3 — Ad Creatives
+H3 — Landing Pages
+H3 — Campaign Design
+H3 — Flyers & Posters
+H2 — Because Visibility Alone Isn't Enough.
+H3 — Get Found
+H3 — Get Customers
+H3 — Get Remembered
+H2 — You Don't Need Every Digital Marketing Service.
+H3 — Need more organic visibility?
+H3 — Need enquiries now?
+H3 — Have traffic but poor conversion?
+H3 — Want stronger visibility in AI-powered search?
+H3 — Want to scale lead generation?
+H2 — Strategy Before Spend.
+H3 — Understand
+H3 — Identify
+H3 — Build
+H3 — Optimise
+H2 — Questions Businesses Ask Before Investing in Digital Marketing
+H3 — Which digital marketing services does my business actually need?
+H3 — Should I invest in SEO or paid advertising first?
+H3 — Is Google Ads better than Meta Ads for lead generation?
+H3 — Why am I getting website traffic but not enough enquiries?
+H3 — Does SEO help with AI search visibility?
+H3 — What is the difference between SEO, AEO and AI Search?
+H3 — How much should a business spend on digital marketing?
+H2 — Not Sure Where Your Biggest Opportunity Is?
+One architectural point before we move on
+I would not make /what-we-do/ the parent URL of the three pillars.
+Use:
+/what-we-do/
+/get-found/
+/get-customers/
+/get-remembered/
+/who-we-help/
+/resources/
+This makes the three core propositions first-class pages, which is better for navigation, linking and building substantial content around each topic.
+Then later, if Redcanvass has enough depth, we can create:
+/get-found/seo//get-found/aeo//get-found/local-seo//get-customers/google-ads/etc.
+PAGE 3 — GET FOUND
+URL: /get-found/
+SEO Title
+SEO, AEO & AI Search Services | Get Found | Redcanvass
+Meta Description
+Get found where your customers search. Redcanvass combines SEO, Local SEO, AEO and AI Search optimisation to improve your business visibility online.
+1. HERO
+H1
+Get Found Where Your Customers Are Searching.
+Supporting copy
+Search is changing.
+People still use Google to find businesses, but they're increasingly asking questions and discovering information through AI-powered search experiences too.
+Redcanvass helps businesses build visibility across traditional search, local search and AI-powered search through SEO, Local SEO, AEO and AI Search optimisation.
+CTA
+Get a Free Search Audit
+Secondary:
+Let's Talk →
+Visual idea
+This page should have a more "search/AI" visual language than the other pages.
+Something like:
+Google Search → Maps → AI Search → Website → Enquiry
+With floating search queries around the visual.
+2. THE CORE IDEA
+H2
+Being Online Isn't the Same as Being Found.
+Copy
+Having a website doesn't guarantee visibility.
+Your potential customer might search for a service, compare businesses, look for a local provider or ask an AI-powered search tool for recommendations.
+The opportunity is to make sure your business has useful, credible and clearly structured information wherever those discoveries happen.
+That's what our Get Found services are designed to do.
+3. THE FOUR AREAS
+This should be the main body of the page.
+H2
+Four Ways We Build Search Visibility
+H3
+SEO
+Build visibility in organic search.
+SEO helps search engines understand your website and helps your content become discoverable for relevant searches.
+Our approach can include:
+Technical SEO
+On-page SEO
+Keyword and search-intent research
+Content optimisation
+Internal linking
+Website structure
+Search performance analysis
+Explore SEO →
+H3
+Local SEO
+Be easier to find in your area.
+For businesses serving specific locations, local search visibility can influence whether potential customers discover you when looking for nearby services.
+We focus on areas such as:
+Local search visibility
+Google Business Profile optimisation
+Location-focused website content
+Local landing pages
+Reviews and reputation signals
+Local search opportunities
+Explore Local SEO →
+H3
+AEO
+Make your expertise easier to understand and answer.
+Answer Engine Optimization focuses on creating and structuring useful information around the questions people ask.
+Instead of only thinking:
+"What keyword should we rank for?"
+we also ask:
+"What question is the customer trying to answer?"
+AEO can involve:
+Question-led content
+Clear answers
+Structured information
+Topic depth
+Entity clarity
+Internal linking
+Supporting evidence and sources
+Explore AEO →
+H3
+AI Search
+Prepare your digital presence for AI-powered discovery.
+Search experiences are increasingly using AI to interpret questions and organise information from multiple sources.
+We help businesses strengthen the digital signals that make their business, expertise, services and information easier for search systems to understand.
+That means combining:
+SEO + useful content + clear information + strong digital presence
+rather than chasing shortcuts.
+Explore AI Search →
+4. IMPORTANT DIFFERENTIATOR
+This section is very important for Redcanvass because AEO is currently full of exaggerated promises.
+H2
+We Don't Promise to "Make AI Recommend You."
+Copy
+No agency can control what an AI system chooses to show for every query.
+What we can do is improve the quality, clarity, structure and discoverability of the information about your business across the web.
+That means building the fundamentals that matter:
+Useful content.Clear answers.Strong website structure.Relevant search visibility.Consistent business information.
+The goal isn't to game an answer engine.
+It's to become a useful, credible source of information.
+This is a very strong positioning statement for you because it makes Redcanvass sound credible rather than like another agency selling "ChatGPT ranking."
+5. SEO + AEO + AI SEARCH
+H2
+SEO Isn't Dead. Search Is Evolving.
+Copy
+AI search doesn't mean traditional SEO suddenly becomes irrelevant.
+Google's current documentation continues to emphasise established SEO fundamentals alongside guidance for its generative AI search experiences. (Google Developers)
+So instead of treating SEO, AEO and AI Search as three completely separate worlds, we look at how they work together.
+Visual:
+SEO
+Helps search engines discover and understand your content.
+↓
+AEO
+Makes information easier to understand in answer-driven searches.
+↓
+AI Search
+Creates new ways for people to discover information and businesses.
+↓
+One stronger digital presence
+6. WHAT WE ACTUALLY OPTIMISE
+This is useful for both humans and semantic clarity.
+H2
+It's More Than Keywords.
+Copy
+Modern search visibility depends on more than placing keywords on a webpage.
+We look at:
+H3
+ContentIs your website answering the questions your audience actually has?
+H3
+StructureCan search systems clearly understand your pages, services and relationships?
+H3
+ContextDoes your website establish what your business does, who it serves and where it operates?
+H3
+AuthorityAre there credible signals supporting your expertise and reputation?
+H3
+ExperienceDoes the website provide a useful experience once someone finds it?
+H3
+ConnectionsAre your important pages, topics and services logically connected through internal linking and other relevant signals?
+7. SEARCH JOURNEY
+This is a nice visual section.
+H2
+From Question to Customer
+Show this as a horizontal journey:
+ASK
+"Best coaching centre near me?"
+↓
+DISCOVER
+Google / Maps / Search / AI
+↓
+EXPLORE
+Website / Reviews / Content
+↓
+COMPARE
+Services / Expertise / Trust
+↓
+ACT
+Enquiry / Call / Booking
+Closing copy
+Getting found is only the first step. The rest of the journey has to work too.
+Then link:
+Get Customers →
+This creates an intentional connection between your pillar pages.
+8. WHO NEEDS GET FOUND?
+I would not repeat the six industries here.
+Instead:
+H2
+Get Found Is Especially Valuable When Search Influences the Sale.
+Copy
+If potential customers research a business before making contact, search visibility can play an important role in growth.
+This can include businesses where customers:
+Search for a service
+Compare providers
+Look for local businesses
+Research expertise
+Ask questions before buying
+Need information before making an enquiry
+CTA
+See Who We Help →
+9. QUESTIONS BUSINESS OWNERS ACTUALLY ASK
+This is the most important FAQ/AEO section on this page.
+And notice: these are not questions about Redcanvass.
+They are questions a business owner might genuinely type into Google or ask an AI assistant.
+H2
+Questions Businesses Ask About Search Visibility
+H3
+Is SEO still worth investing in?
+SEO can be valuable when customers use search to discover information, compare businesses or find services. Its value depends on the business, competition, search demand, customer economics and how effectively the website converts visitors.
+H3
+How long does SEO take to work?
+There is no universal timeline. Results can depend on the site's existing authority and technical health, competition, content quality, search demand and the amount of work being implemented. SEO should generally be viewed as an ongoing growth activity rather than an instant advertising channel.
+H3
+How is AEO different from SEO?
+SEO focuses broadly on improving visibility in search engines. AEO focuses more specifically on making information useful and understandable for answer-oriented search experiences. There is significant overlap, so AEO should generally complement strong SEO rather than replace it.
+H3
+How can I get my business mentioned in AI search results?
+There is no guaranteed method for controlling whether an AI search system mentions a business. Businesses can, however, improve their digital presence by providing clear, useful and trustworthy information, maintaining strong SEO foundations and making their business, services and expertise easy to understand.
+H3
+Does SEO help with AI search?
+Yes, SEO fundamentals remain relevant to Google's AI-powered search experiences. Google specifically advises site owners to continue following its established SEO best practices while creating useful, original content. (Google Developers)
+H3
+What is Local SEO and does my business need it?
+Local SEO focuses on improving visibility for searches connected to a location. It can be particularly relevant when customers choose businesses based on where they operate or where the service is provided.
+H3
+Why isn't my website ranking on Google?
+There can be many reasons, including technical accessibility, competition, search intent mismatch, content quality, site structure, authority and overall relevance. A proper SEO assessment should identify the specific issues rather than assuming there is one universal cause.
+H3
+How much does SEO cost?
+There is no standard SEO price that applies to every business. Cost depends on factors such as website size, competition, geographic scope, technical requirements, content needs and the amount of ongoing optimisation required.
+H3
+Can a small business compete with larger companies in search?
+It can, depending on the market and search opportunity. Smaller businesses can sometimes compete by focusing on specific services, locations, customer questions and areas where larger competitors have less relevant or useful content.
+10. FINAL CTA
+H2
+How Easily Can Customers Find You?
+Copy
+We'll look at your current search visibility, website structure and opportunities across organic, local and AI-powered search.
+CTA
+GET A FREE SEARCH AUDIT
+Secondary:
+LET'S TALK →
+FINAL HEADER STRUCTURE
+This is what I'd give your developer/SEO team:
+H1 — Get Found Where Your Customers Are Searching.
+H2 — Being Online Isn't the Same as Being Found.
+H2 — Four Ways We Build Search Visibility.
+H3 — SEO
+H3 — Local SEO
+H3 — AEO
+H3 — AI Search
+H2 — We Don't Promise to "Make AI Recommend You."
+H2 — SEO Isn't Dead. Search Is Evolving.
+H2 — It's More Than Keywords.
+H3 — Content
+H3 — Structure
+H3 — Context
+H3 — Authority
+H3 — Experience
+H3 — Connections
+H2 — From Question to Customer.
+H2 — Get Found Is Especially Valuable When Search Influences the Sale.
+H2 — Questions Businesses Ask About Search Visibility.
+H3 — Is SEO still worth investing in?
+H3 — How long does SEO take to work?
+H3 — How is AEO different from SEO?
+H3 — How can I get my business mentioned in AI search results?
+H3 — Does SEO help with AI search?
+H3 — What is Local SEO and does my business need it?
+H3 — Why isn't my website ranking on Google?
+H3 — How much does SEO cost?
+H3 — Can a small business compete with larger companies in search?
+H2 — How Easily Can Customers Find You?
+PAGE 4 — GET CUSTOMERS
+URL: /get-customers/
+SEO Title
+Performance Marketing & Lead Generation | Google & Meta Ads | Redcanvass
+Meta Description
+Generate more relevant enquiries with Google Ads, Meta Ads, YouTube Ads, lead generation and remarketing campaigns built around your business goals.
+1. HERO
+H1
+Get Customers, Not Just Clicks.
+Supporting copy
+Paid advertising can put your business in front of thousands of people.
+The real question is: how many of the right people take the next step?
+Redcanvass builds and manages performance marketing campaigns across Google Ads, Meta Ads and YouTube, supported by lead generation, remarketing, creative and conversion-focused landing pages.
+CTA
+Get a Free Advertising Audit
+Secondary:
+See How We Work →
+Visual
+Make this feel like a live campaign dashboard, rather than the usual Facebook/Google logos.
+Something like:
+AUDIENCE → AD → LANDING PAGE → LEAD → FOLLOW-UP
+Floating metrics:
+CTRCPCCPLConversions
+But don't manufacture numbers. These should be interface elements, not fake results.
+2. INTRODUCTION
+H2
+Clicks Are Easy. The Right Customers Are Harder.
+Copy
+Anyone can put an ad in front of an audience.
+Effective performance marketing requires more:
+The right audience
+The right message
+The right offer
+The right campaign objective
+The right landing experience
+The right measurement
+And continuous optimisation
+We look at the entire journey rather than treating the ad platform as the strategy.
+3. THE SERVICES
+H2
+Ways We Turn Attention Into Opportunity
+H3
+Google Ads
+Capture existing demand.
+Reach people who are actively searching for the products, services or solutions your business offers.
+Depending on the business and objective, campaigns can include:
+Search campaigns
+Display campaigns
+YouTube campaigns
+Remarketing
+Location-based targeting
+Conversion-focused campaigns
+Explore Google Ads →
+H3
+Meta Ads
+Reach the right audiences before they search.
+Facebook and Instagram advertising can help businesses build awareness, generate enquiries and reach specific audiences based on campaign objectives and targeting.
+We focus on:
+Audience strategy
+Campaign structure
+Ad creative
+Lead generation
+Conversion campaigns
+Remarketing
+Ongoing optimisation
+Explore Meta Ads →
+H3
+YouTube Ads
+Use video where attention happens.
+YouTube can help businesses introduce their offering, explain complex products or services and reach audiences at different stages of consideration.
+Campaigns can be built around:
+Awareness
+Consideration
+Website traffic
+Lead generation
+Remarketing
+Explore YouTube Ads →
+H3
+Lead Generation
+Don't stop at traffic.
+Lead generation campaigns are designed around a meaningful business action — such as an enquiry, consultation, admission enquiry, appointment or callback.
+We look at:
+Audience → Offer → Ad → Landing Page/Form → Lead → Follow-up
+Because a cheap lead isn't necessarily a valuable lead.
+H3
+Remarketing
+Stay relevant after the first visit.
+Most people don't convert the first time they encounter a business.
+Remarketing allows businesses to reconnect with people who have already interacted with their website, campaigns or other digital touchpoints, where appropriate.
+4. THE BIG DIFFERENTIATOR
+H2
+We Don't Optimise for Vanity Metrics.
+Copy
+Impressions can look impressive.
+Clicks can look impressive.
+Even a low cost per lead can look impressive.
+But none of those automatically tells you whether your marketing is helping the business.
+We look beyond surface-level numbers to understand:
+Who are we reaching?
+What are they doing?
+Which campaigns are creating enquiries?
+What happens to those enquiries?
+Where are people dropping off?
+What can we improve next?
+5. THE PERFORMANCE MARKETING LOOP
+This should be a visual centrepiece.
+H2
+Performance Marketing Is a Loop, Not a Launch.
+H3
+1. Understand
+Business goals, audience, offer and customer journey.
+↓
+H3
+2. Target
+Identify the audiences and search intent worth reaching.
+↓
+H3
+3. Create
+Build the message, creative and landing experience.
+↓
+H3
+4. Launch
+Put the campaign in front of the right audience.
+↓
+H3
+5. Measure
+Track meaningful actions, not just surface-level engagement.
+↓
+H3
+6. Optimise
+Use what the data tells us to improve the next iteration.
+↓
+Repeat.
+6. GOOGLE VS META VS YOUTUBE
+This is an excellent search-intent section because business owners genuinely ask this.
+H2
+Google, Meta or YouTube?
+Copy
+There isn't one platform that is automatically right for every business.
+H3
+Google AdsBest suited to capturing existing search demand.
+Someone is already looking.
+H3
+Meta AdsUseful for reaching and influencing defined audiences through Facebook and Instagram.
+You can create demand as well as capture it.
+H3
+YouTubeUseful when video can explain, demonstrate or build familiarity with a product or service.
+Show people why they should care.
+H3
+A CombinationMany businesses can use multiple channels when each has a clearly defined role.
+The channel follows the strategy — not the other way around.
+7. THE CLICK-TO-CUSTOMER JOURNEY
+This is important because it connects Get Customers with Get Remembered.
+H2
+The Ad Is Only the Beginning.
+Visual journey:
+AD
+↓
+CLICK
+↓
+LANDING PAGE
+↓
+ENQUIRY
+↓
+FOLLOW-UP
+↓
+CUSTOMER
+Copy
+A great campaign can still underperform if the landing page is confusing, the offer isn't clear or the enquiry process creates friction.
+That's why our performance work connects with creative and conversion.
+Get Customers → Get Remembered
+8. WHAT WE MEASURE
+H2
+What Does Performance Actually Mean?
+Copy
+The right metrics depend on the campaign objective.
+Depending on the business, we may look at:
+Reach
+Impressions
+Click-through rate
+Cost per click
+Conversion rate
+Cost per lead
+Qualified leads
+Enquiry volume
+Landing-page performance
+Customer acquisition cost
+Important line:
+The metric that matters most is the one connected to the business goal.
+This is much more credible than simply saying "we increase ROI."
+9. WHO IS THIS FOR?
+Again, don't repeat your industry list.
+H2
+Built for Businesses Where an Enquiry Matters.
+Copy
+Performance marketing can be particularly useful when a customer action has clear business value.
+For example:
+An admission enquiry.
+A consultation request.
+A property enquiry.
+An appointment.
+A booking.
+A sales enquiry.
+The objective isn't simply to generate more activity.
+It's to create more meaningful opportunities.
+CTA:
+See Who We Help →
+10. QUESTIONS BUSINESS OWNERS ASK
+This is where the page becomes an AEO/search asset, rather than just a sales page.
+H2
+Questions Businesses Ask About Paid Advertising
+H3
+How much should a small business spend on Google Ads?
+There is no universal budget. A sensible starting point depends on search demand, competition, customer value, geographic targeting, conversion rates and how many enquiries the business can realistically handle.
+H3
+Is Google Ads or Meta Ads better for lead generation?
+They work differently. Google Ads can capture people actively searching for a solution, while Meta Ads can reach defined audiences based on campaign objectives and targeting. The appropriate platform depends on the business and how customers make decisions.
+H3
+Why am I getting clicks but no leads?
+Possible causes include poor targeting, weak messaging, an unclear offer, an ineffective landing page, slow website experience, form friction or a mismatch between the advertisement and what visitors find after clicking.
+H3
+Why are my Meta Ads generating cheap but poor-quality leads?
+Low cost per lead does not necessarily mean high-quality acquisition. Lead quality can be affected by targeting, campaign objectives, creative, qualification questions, offer positioning and follow-up.
+H3
+How long does Google Ads take to start generating leads?
+Campaigns can begin receiving traffic shortly after becoming active, but meaningful performance evaluation requires sufficient data. Results depend on factors such as search volume, competition, targeting, budget, offer and conversion experience.
+H3
+What is a good cost per lead?
+There is no single "good" cost per lead. A useful CPL depends on the value of a customer, lead-to-sale rate, sales capacity, margins and other acquisition costs.
+For example, a ₹1,000 lead may be expensive for one business and inexpensive for another.
+H3
+Should I run Google Ads and Meta Ads together?
+They can complement each other when each platform has a defined role. Google can capture existing demand, while Meta can help reach and influence relevant audiences. The decision should be based on the customer journey and economics rather than simply using more channels.
+H3
+Do I need a landing page for Google Ads?
+Not always, but a dedicated landing page can be useful when the campaign has a specific audience, offer or conversion objective. The page can be designed around the exact intent behind the advertisement rather than sending every visitor to a generic homepage.
+H3
+How do I know whether my advertising is actually profitable?
+You need to connect advertising data with business outcomes. Depending on the business, this may involve tracking qualified leads, sales, customer acquisition cost, revenue and customer value—not just clicks or impressions.
+H3
+How can I reduce my cost per lead?
+Lowering CPL isn't necessarily the goal. First identify whether the existing leads are valuable. Improvements can come from better targeting, messaging, creative, offers, landing pages, conversion tracking and campaign optimisation.
+11. FINAL CTA
+H2
+Are Your Ads Bringing You Business — or Just Numbers?
+Copy
+Let's look at your campaigns, targeting, creative and conversion journey and identify where you're losing potential customers.
+CTA
+GET A FREE ADVERTISING AUDIT
+Secondary:
+LET'S TALK →
+FINAL H1–H3 STRUCTURE
+Give this exact hierarchy to your developer:
+H1 — Get Customers, Not Just Clicks.
+H2 — Clicks Are Easy. The Right Customers Are Harder.
+H2 — Ways We Turn Attention Into Opportunity.
+H3 — Google Ads
+H3 — Meta Ads
+H3 — YouTube Ads
+H3 — Lead Generation
+H3 — Remarketing
+H2 — We Don't Optimise for Vanity Metrics.
+H2 — Performance Marketing Is a Loop, Not a Launch.
+H3 — Understand
+H3 — Target
+H3 — Create
+H3 — Launch
+H3 — Measure
+H3 — Optimise
+H2 — Google, Meta or YouTube?
+H3 — Google Ads
+H3 — Meta Ads
+H3 — YouTube
+H3 — A Combination
+H2 — The Ad Is Only the Beginning.
+H2 — What Does Performance Actually Mean?
+H2 — Built for Businesses Where an Enquiry Matters.
+H2 — Questions Businesses Ask About Paid Advertising.
+H3 — How much should a small business spend on Google Ads?
+H3 — Is Google Ads or Meta Ads better for lead generation?
+H3 — Why am I getting clicks but no leads?
+H3 — Why are my Meta Ads generating cheap but poor-quality leads?
+H3 — How long does Google Ads take to start generating leads?
+H3 — What is a good cost per lead?
+H3 — Should I run Google Ads and Meta Ads together?
+H3 — Do I need a landing page for Google Ads?
+H3 — How do I know whether my advertising is actually profitable?
+H3 — How can I reduce my cost per lead?
+H2 — Are Your Ads Bringing You Business — or Just Numbers?
+PAGE 5 — GET REMEMBERED
+URL: /get-remembered/
+SEO Title
+Ad Creative, Landing Page & Campaign Design Services | Redcanvass
+Meta Description
+Create marketing that gets noticed and drives action with ad creatives, landing pages, campaign design and marketing collateral from Redcanvass.
+1. HERO
+H1
+Get Remembered. Get Chosen.
+Supporting copy
+People scroll past thousands of marketing messages.
+Your job isn't simply to be seen.
+It's to make the right person stop, understand your message and want to know more.
+Redcanvass creates ad creatives, landing pages, campaign designs and marketing collateral built to support your advertising and conversion goals.
+CTA
+Let's Create Something That Works
+Secondary:
+Get a Free Audit →
+Visual direction
+This page can be more visually expressive than Get Found and Get Customers.
+Show a progression:
+IDEA → CREATIVE → CLICK → LANDING PAGE → ACTION
+Use examples of actual Redcanvass work wherever possible rather than stock creative.
+2. INTRODUCTION
+H2
+Good Creative Has a Job to Do.
+Copy
+We don't create design simply to fill a content calendar.
+A campaign creative needs to earn attention.
+A landing page needs to make the next step obvious.
+A campaign concept needs to make the message memorable.
+Every asset should have a purpose within the larger marketing journey.
+3. FOUR CORE SERVICES
+H2
+Creative That Supports the Campaign
+H3
+Ad Creatives
+Stop the scroll. Start the conversation.
+We design advertising creatives for platforms such as Google, Meta and YouTube, built around the audience, message and campaign objective.
+Our creative work can include:
+Static ad creatives
+Carousel concepts
+Display creatives
+Promotional creatives
+Lead-generation creatives
+Campaign variations
+Creative testing concepts
+Explore Ad Creative →
+H3
+Landing Pages
+Don't lose the click.
+Getting someone to click is only half the job.
+A landing page needs to quickly communicate:
+What is this?Why should I care?Why should I trust you?What should I do next?
+We create landing pages around specific campaigns, audiences and conversion goals.
+Explore Landing Pages →
+H3
+Campaign Design
+One idea. One recognisable campaign.
+Instead of creating disconnected advertisements, campaign design brings the message, visual language and communication together.
+We can develop:
+Campaign concepts
+Key visual directions
+Messaging themes
+Digital campaign assets
+Promotional campaigns
+Cross-channel creative systems
+Explore Campaign Design →
+H3
+Flyers & Posters
+Because not every customer lives online.
+When your marketing needs to move offline, we create clear, campaign-led collateral that maintains consistency with your broader communication.
+Including:
+Flyers
+Posters
+Promotional material
+Event collateral
+Educational/marketing material
+Discuss a Project →
+4. THE BIG IDEA
+H2
+Creative Doesn't Work in Isolation.
+Copy
+The same creative can perform very differently depending on:
+Who sees it.What it says.Where it sends them.What they find there.And what happens next.
+That's why our creative work connects directly with performance marketing.
+Visual:
+AUDIENCE
+↓
+MESSAGE
+↓
+CREATIVE
+↓
+LANDING PAGE
+↓
+ENQUIRY
+This connects naturally to your GET CUSTOMERS page.
+5. CREATIVE FOR PERFORMANCE
+This should be one of the strongest sections on the page.
+H2
+Designed to Be Tested. Not Just Admired.
+Copy
+In performance marketing, creative isn't a one-time deliverable.
+Different audiences respond to different messages, visuals, offers and formats.
+So instead of asking:
+"Does this look good?"
+we also ask:
+"Does this communicate quickly?"
+"Does it match the audience?"
+"Does it support the campaign objective?"
+"Is there another version worth testing?"
+That makes creative part of the performance process, not an afterthought.
+6. WHAT MAKES A CREATIVE WORK?
+This can be a visually interesting section.
+H2
+What Makes Someone Stop?
+H3
+The MessageIs the value proposition clear within seconds?
+H3
+The VisualDoes it earn attention without making the message harder to understand?
+H3
+The AudienceDoes it speak to the person you're actually trying to reach?
+H3
+The OfferIs there a clear reason to take the next step?
+H3
+The ActionDoes the person know what to do next?
+Closing line
+Pretty is nice. Clear is essential.
+7. LANDING PAGES
+I would give landing pages their own slightly deeper section because they connect directly to your performance offering.
+H2
+A Click Isn't a Conversion.
+Copy
+You can have the right audience and the right advertisement and still lose the opportunity after the click.
+A campaign landing page should be built around the specific intent that brought someone there.
+H3
+RelevantMatches the promise made in the advertisement.
+H3
+ClearExplains the offer without making visitors work for it.
+H3
+CredibleProvides the information and reassurance needed to take action.
+H3
+FocusedKeeps unnecessary distractions away from the conversion goal.
+H3
+MeasurableAllows campaign performance and conversions to be evaluated.
+CTA
+Build a Better Landing Experience →
+8. HOW CREATIVE FITS INTO REDCANVASS
+H2
+Get Found. Get Customers. Get Remembered.
+Copy
+Creative isn't a separate universe at Redcanvass.
+It connects the other two.
+GET FOUND
+People discover you.
+↓
+GET CUSTOMERS
+You bring the right audience to your offer.
+↓
+GET REMEMBERED
+Your message gives them a reason to engage.
+↓
+GROW
+This reinforces the entire Redcanvass positioning without repeating the homepage.
+9. WHO NEEDS CREATIVE?
+Don't list industries.
+H2
+If You're Spending on Marketing, Your Creative Matters.
+Copy
+Creative can influence performance at almost every stage of a digital campaign.
+It matters when you need to:
+Launch a new offer
+Generate leads
+Promote an event
+Improve ad performance
+Build a campaign
+Create a dedicated landing page
+Communicate a complex service simply
+Bring an offline campaign online
+CTA
+See How We Can Help →
+10. QUESTIONS BUSINESS OWNERS ASK
+Again, these are search questions, not "Why choose Redcanvass?" questions.
+H2
+Questions Businesses Ask About Marketing Creative
+H3
+What makes a good advertising creative?
+A good advertising creative communicates the value proposition quickly, captures attention, matches the target audience and gives people a clear reason to take the next step. Its effectiveness also depends on the campaign, placement and audience.
+H3
+How often should I change my ad creatives?
+There is no fixed schedule. Creative can be refreshed when performance begins to decline, audience response changes, a campaign message changes or testing identifies a stronger variation.
+H3
+Why are my ads getting impressions but not clicks?
+Possible reasons include weak messaging, poor audience alignment, creative fatigue, an unclear offer or a creative that doesn't communicate enough value to encourage the next step.
+H3
+Why are my ads getting clicks but no conversions?
+The problem may be beyond the advertisement. The landing page, offer, pricing, trust signals, form experience, page speed or mismatch between the ad and landing page can all affect conversion.
+H3
+Do I need a separate landing page for every advertising campaign?
+Not necessarily. But when an advertisement targets a specific audience, offer or intent, a dedicated landing page can make the experience more relevant and focused than sending everyone to a generic homepage.
+H3
+What should a landing page include?
+A landing page generally needs a clear value proposition, relevant information, supporting proof or trust signals, a compelling offer where appropriate and an obvious next step. The exact structure depends on the audience and conversion objective.
+H3
+What is the difference between a landing page and a website homepage?
+A homepage usually introduces the broader business and gives visitors multiple paths. A landing page is typically designed around a specific campaign, audience, offer or conversion objective.
+H3
+Should I focus on design or conversion when creating an ad?
+Both matter, but design should support communication and the campaign objective. A visually attractive advertisement that doesn't communicate the offer or motivate the intended audience may not perform effectively.
+H3
+How can I improve my ad creative performance?
+Test different elements such as the message, visual, offer, format and call to action while keeping the audience and campaign objective in mind. Performance data can help identify which variations deserve further testing.
+11. FINAL CTA
+H2
+Make Your Marketing Harder to Ignore.
+Copy
+Whether you need a new campaign, better-performing ad creatives or a landing page built around conversion, let's create something with a job to do.
+CTA
+LET'S CREATE
+Secondary:
+GET A FREE AUDIT →
+FINAL HEADER STRUCTURE
+Give this to your developer:
+H1 — Get Remembered. Get Chosen.
+H2 — Good Creative Has a Job to Do.
+H2 — Creative That Supports the Campaign.
+H3 — Ad Creatives
+H3 — Landing Pages
+H3 — Campaign Design
+H3 — Flyers & Posters
+H2 — Creative Doesn't Work in Isolation.
+H2 — Designed to Be Tested. Not Just Admired.
+H2 — What Makes Someone Stop?
+H3 — The Message
+H3 — The Visual
+H3 — The Audience
+H3 — The Offer
+H3 — The Action
+H2 — A Click Isn't a Conversion.
+H3 — Relevant
+H3 — Clear
+H3 — Credible
+H3 — Focused
+H3 — Measurable
+H2 — Get Found. Get Customers. Get Remembered.
+H2 — If You're Spending on Marketing, Your Creative Matters.
+H2 — Questions Businesses Ask About Marketing Creative.
+H3 — What makes a good advertising creative?
+H3 — How often should I change my ad creatives?
+H3 — Why are my ads getting impressions but not clicks?
+H3 — Why are my ads getting clicks but no conversions?
+H3 — Do I need a separate landing page for every advertising campaign?
+H3 — What should a landing page include?
+H3 — What is the difference between a landing page and a website homepage?
+H3 — Should I focus on design or conversion when creating an ad?
+H3 — How can I improve my ad creative performance?
+H2 — Make Your Marketing Harder to Ignore.
+PAGE 6 — WHO WE HELP
+URL: /who-we-help/
+SEO Title
+Digital Marketing for Businesses | Lead Generation, SEO & Ads | Redcanvass
+Meta Description
+Redcanvass helps education, healthcare, real estate, professional services, hospitality and B2B businesses grow through SEO, AI Search, paid advertising and lead generation.
+1. HERO
+H1
+Digital Marketing for Businesses That Want to Grow.
+Supporting copy
+Different businesses have different customers, sales cycles and reasons people choose them.
+A school doesn't market like a real estate company. A clinic doesn't acquire customers like a B2B company.
+We build the digital strategy around how your customers search, compare, enquire and decide.
+CTA
+Find Your Digital Growth Opportunity
+Secondary:
+Get a Free Audit →
+2. INTRODUCTION
+H2
+We Don't Believe in One-Size-Fits-All Marketing.
+Copy
+The right digital marketing mix depends on the business.
+Some businesses need to capture people who are already searching.
+Some need to create demand.
+Some need stronger local visibility.
+Some need better lead generation.
+And some have plenty of traffic but struggle to convert it.
+Our job is to understand the business first — then determine where search, advertising and creative can make the biggest difference.
+3. INDUSTRIES / BUSINESS TYPES
+Here I would have six substantial cards, not tiny icon boxes.
+H2
+Businesses We Work With
+H3
+Education
+Reach the right students and parents.
+Digital marketing for schools, preschools, coaching centres and educational organisations can involve:
+Google Ads
+Meta Ads
+SEO
+Local SEO
+Lead generation
+Landing pages
+Campaign creative
+Explore Education Marketing →
+H3
+Healthcare
+Help patients find the right care.
+Healthcare businesses often depend heavily on local discovery, trust and clear information.
+Digital strategies can include:
+Local SEO
+Google Ads
+Search visibility
+Landing pages
+Lead generation
+Conversion-focused creative
+Explore Healthcare Marketing →
+H3
+Real Estate
+Turn property interest into enquiries.
+Real estate marketing often involves high-value decisions, competitive search and multiple touchpoints before a customer makes contact.
+Strategies can include:
+Google Ads
+Meta Ads
+YouTube
+Lead generation
+Remarketing
+Landing pages
+Campaign creative
+Explore Real Estate Marketing →
+H3
+Professional Services
+Make expertise easier to find and trust.
+For professional service businesses, digital visibility often starts with a customer researching a problem before deciding whom to contact.
+We can help through:
+SEO
+AEO
+AI Search
+Google Ads
+Landing pages
+Lead generation
+Explore Professional Services Marketing →
+H3
+Hospitality
+Get discovered. Get considered. Get booked.
+Hospitality businesses compete for attention across search, maps, social platforms and travel-related discovery.
+Depending on the business, opportunities can include:
+Local SEO
+Search advertising
+Meta Ads
+YouTube
+Campaign creative
+Landing pages
+Remarketing
+Explore Hospitality Marketing →
+H3
+B2B
+Turn expertise into opportunities.
+B2B buyers often research extensively before making contact.
+Digital marketing can support that journey through:
+SEO
+AEO
+AI Search
+Google Ads
+Lead generation
+Landing pages
+Remarketing
+Explore B2B Marketing →
+4. THE IMPORTANT SECTION
+This is where I would differentiate Redcanvass from agencies that sell the same package to everyone.
+H2
+We Start With the Customer Journey.
+Copy
+Before deciding which platform to use, we look at how someone becomes a customer.
+H3
+Discover
+Where do potential customers first find businesses like yours?
+Search · Maps · Ads · AI Search · Referrals
+↓
+H3
+Research
+What do they need to know before contacting you?
+Website · Reviews · Content · Expertise · Comparisons
+↓
+H3
+Decide
+What makes them choose one business over another?
+Offer · Trust · Experience · Proof · Convenience
+↓
+H3
+Enquire
+What happens when they're ready?
+Form · Call · Booking · Admission · Consultation
+Closing line
+Your marketing should support the journey, not just one stage of it.
+5. MATCH THE PROBLEM TO THE SOLUTION
+This is particularly useful for conversion.
+H2
+Start With the Problem. Not the Platform.
+H3
+“People aren't finding us.”
+Look at:
+SEO + Local SEO + AEO + AI Search
+H3
+“We need more enquiries.”
+Look at:
+Google Ads + Meta Ads + Lead Generation
+H3
+“We're getting traffic but not enough leads.”
+Look at:
+Landing Pages + Creative + Conversion
+H3
+“Our ads aren't performing consistently.”
+Look at:
+Creative + Audience + Campaign Structure + Testing
+H3
+“People know us, but we're not being considered.”
+Look at:
+Search + Content + Remarketing + Creative
+This is a strong section because it lets a business owner self-identify their problem.
+6. NOT SURE WHICH CATEGORY YOU FIT?
+Businesses don't always fit neatly into six boxes.
+H2
+Don't See Your Business?
+Copy
+These are some of the businesses we work particularly well with, but they're not the only ones.
+If your business relies on visibility, enquiries, appointments, admissions, bookings or sales conversations, there may be a digital growth opportunity worth exploring.
+CTA
+Tell Us About Your Business →
+7. QUESTIONS BUSINESS OWNERS ASK
+This is where we can combine industry questions + commercial search intent.
+H2
+Questions Businesses Ask About Digital Marketing
+H3
+Which digital marketing strategy is right for my business?
+The right strategy depends on how customers discover and evaluate your business, your sales cycle, competition, geographic reach, customer value and business goals. There isn't a universal channel mix.
+H3
+Is digital marketing effective for small businesses?
+Digital marketing can help small businesses reach relevant audiences without relying exclusively on broad traditional advertising. Its effectiveness depends on the market, offer, targeting, competition, budget and ability to convert and follow up on enquiries.
+H3
+What digital marketing works best for local businesses?
+Local businesses may benefit from a combination of Local SEO, Google Business Profile optimisation, location-focused content, search advertising and conversion-focused website experiences. The appropriate mix depends on the type of business and how customers search.
+H3
+What is the best way to generate leads for a service business?
+Lead generation can come from organic search, paid search, social advertising, referrals and other channels. For many service businesses, the important part is connecting the right traffic with a clear offer, effective landing experience and reliable follow-up.
+H3
+How can a school generate more admission enquiries online?
+Schools and educational organisations can use a combination of search visibility, Google Ads, Meta advertising, lead-generation campaigns, location targeting and dedicated admission landing pages. The appropriate strategy depends on the school's location, audience, admissions cycle and capacity.
+H3
+How can a clinic get more patients through Google?
+Healthcare businesses can improve discoverability through Local SEO, Google Business Profile optimisation, relevant search visibility and appropriately targeted advertising, combined with clear service information and an easy enquiry or appointment process.
+H3
+How can a real estate company generate better quality leads?
+Lead quality can be influenced by targeting, property positioning, campaign messaging, qualification questions, landing-page experience and follow-up. Optimising purely for the lowest cost per lead can sometimes produce volume without sufficient quality.
+H3
+Does SEO work for professional services?
+SEO can be valuable for professional services where potential clients research expertise, services and providers online. Content that clearly addresses customer questions and demonstrates relevant expertise can support organic visibility and consideration.
+8. FINAL CTA
+H2
+Your Business Is Different. Your Marketing Should Be Too.
+Copy
+Tell us what you're trying to achieve, where you're getting stuck and what you've already tried.
+We'll help identify where search, advertising and creative could fit into the picture.
+CTA
+LET'S TALK
+Secondary:
+GET A FREE AUDIT →
+FINAL H1–H3 STRUCTURE
+H1 — Digital Marketing for Businesses That Want to Grow.
+H2 — We Don't Believe in One-Size-Fits-All Marketing.
+H2 — Businesses We Work With.
+H3 — Education
+H3 — Healthcare
+H3 — Real Estate
+H3 — Professional Services
+H3 — Hospitality
+H3 — B2B
+H2 — We Start With the Customer Journey.
+H3 — Discover
+H3 — Research
+H3 — Decide
+H3 — Enquire
+H2 — Start With the Problem. Not the Platform.
+H3 — “People aren't finding us.”
+H3 — “We need more enquiries.”
+H3 — “We're getting traffic but not enough leads.”
+H3 — “Our ads aren't performing consistently.”
+H3 — “People know us, but we're not being considered.”
+H2 — Don't See Your Business?
+H2 — Questions Businesses Ask About Digital Marketing.
+H3 — Which digital marketing strategy is right for my business?
+H3 — Is digital marketing effective for small businesses?
+H3 — What digital marketing works best for local businesses?
+H3 — What is the best way to generate leads for a service business?
+H3 — How can a school generate more admission enquiries online?
+H3 — How can a clinic get more patients through Google?
+H3 — How can a real estate company generate better quality leads?
+H3 — Does SEO work for professional services?
+H2 — Your Business Is Different. Your Marketing Should Be Too.
+PAGE 8 — LET'S TALK
+URL: /lets-talk/
+SEO Title
+Let's Talk About Your Digital Marketing | Redcanvass
+Meta Description
+Talk to Redcanvass about SEO, AEO, AI Search, Google Ads, Meta Ads, lead generation and digital marketing opportunities for your business.
+1. HERO
+H1
+Let's Talk About Your Business.
+Supporting copy
+Not sure whether you need SEO, Google Ads, AEO, better creatives — or something completely different?
+Tell us what you're trying to achieve.
+We'll look at where your digital presence is today and where there may be an opportunity to improve.
+CTA / Form begins immediately
+Tell Us About Your Business →
+I would not put a giant paragraph before the form.
+2. FORM
+H2
+What Are You Looking to Improve?
+Instead of a boring contact form with:
+NameEmailPhoneMessage
+make it conversational.
+Step 1
+What do you need help with?
+☐ SEO / Search Visibility☐ AEO / AI Search☐ Google Ads☐ Meta Ads☐ YouTube Ads☐ Lead Generation☐ Landing Pages☐ Ad Creatives / Campaign Design☐ Not Sure Yet
+Multiple selections should be allowed.
+Step 2
+What's the biggest challenge right now?
+☐ We're not getting enough enquiries☐ We're getting traffic but not enough leads☐ Our ads aren't performing☐ People aren't finding us online☐ We want to improve our AI/Search visibility☐ We need better campaign creative☐ We're launching something new☐ We're not sure where the problem is
+This is much more useful to your sales team than a blank "Message" field.
+Step 3
+Tell us a little about your business.
+Large text box:
+What do you sell, who do you serve and what are you hoping to achieve?
+Step 4
+Your details
+Name
+Business Name
+Work Email
+Phone / WhatsApp
+Website
+City / Location
+Step 5
+What would you like to do next?
+○ Get a Free Audit○ Discuss a Project○ Explore Digital Marketing Options○ Just Have a Question
+CTA
+START THE CONVERSATION →
+3. WHAT HAPPENS NEXT
+This is important because people hesitate to submit forms when they don't know what happens afterward.
+H2
+What Happens Next?
+H3
+01 — We Read
+We look at what you've told us and understand the problem you're trying to solve.
+H3
+02 — We Review
+If you've requested an audit, we'll look at the relevant parts of your digital presence.
+H3
+03 — We Talk
+We'll discuss what we're seeing, what may be worth improving and what the next step could look like.
+H3
+04 — You Decide
+No pressure to buy a package before you understand what you actually need.
+That last line is good for your brand because it feels confident rather than desperate for the lead.
+4. WHAT CAN WE TALK ABOUT?
+H2
+Bring Us a Problem.
+Copy
+You don't need to arrive with a marketing plan.
+You can come to us with:
+"We're spending on ads but the leads aren't good."
+or
+"We're not showing up when people search for us."
+or
+"We want to understand this whole AEO thing."
+or simply:
+"We need more enquiries."
+We'll work backwards from there.
+5. QUICK ANSWERS
+I would keep this extremely short.
+H2
+Before You Reach Out
+H3
+Do I need to know exactly which service I need?
+No. Tell us what you're trying to achieve or where you're facing a problem. We can help identify which areas may be relevant.
+H3
+Do you only work with businesses that already advertise online?
+No. Depending on the business, opportunities may exist across organic search, AI Search, paid advertising, creative, landing pages or a combination.
+H3
+Can you audit my current digital marketing?
+Yes. A free audit can be used to identify potential opportunities across relevant areas of your digital presence.
+H3
+Do you manage social media accounts?
+No. Redcanvass focuses on performance marketing, search visibility, AI Search/AEO, lead generation and campaign-focused creative rather than ongoing social media management.
+That last FAQ is actually important because it pre-qualifies the wrong leads and reinforces your positioning.
+6. CONTACT DETAILS
+Keep this minimal.
+H2
+Prefer to Reach Us Directly?
+Email[Your official business email]
+Phone / WhatsApp[Your official number]
+LocationLucknow, India (if you want the location displayed)
+I would not put a giant Google Map here unless having a physical-office location is commercially important.
+7. FINAL CTA
+H2
+Your Next Customer Is Already Looking.
+Copy
+Let's make it easier for them to find you, understand you and choose to talk to you.
+CTA
+GET A FREE AUDIT
+FINAL H1–H3 STRUCTURE
+H1 — Let's Talk About Your Business.
+H2 — What Are You Looking to Improve?
+H2 — What Happens Next?
+H3 — 01 — We Read
+H3 — 02 — We Review
+H3 — 03 — We Talk
+H3 — 04 — You Decide
+H2 — Bring Us a Problem.
+H2 — Before You Reach Out
+H3 — Do I need to know exactly which service I need?
+H3 — Do you only work with businesses that already advertise online?
+H3 — Can you audit my current digital marketing?
+H3 — Do you manage social media accounts?
+H2 — Prefer to Reach Us Directly?
+H2 — Your Next Customer Is Already Looking.
+And I'd make one UX change
+Your Get a Free Audit button throughout the website should probably lead to this page, with the form automatically preselected to:
+Get a Free Audit
+rather than creating a completely separate audit page.
+So:
+GET A FREE AUDIT↓Let's Talk↓Form
+That keeps the website simple.

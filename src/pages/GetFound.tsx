@@ -8,9 +8,9 @@ import {
   ChevronRight, 
   CheckCircle2, 
   Sparkles, 
-  Compass, 
-  Database,
   HelpCircle,
+  Layers,
+  Globe
 } from 'lucide-react';
 import gsap from 'gsap';
 import { MagneticButton } from '../components/MagneticButton';
@@ -53,6 +53,8 @@ export const GetFound: React.FC = () => {
 
     return () => ctx.revert();
   }, []);
+
+  // Section 9 DOCX FAQs
   const getFoundFaqs: FaqItem[] = [
     {
       question: "Is SEO still worth investing in?",
@@ -110,32 +112,19 @@ export const GetFound: React.FC = () => {
 
           <div className="gf-header-content space-y-4 max-w-3xl">
             <span className="inline-flex items-center gap-2 text-xs font-mono font-bold tracking-[0.3em] uppercase text-[#FF3154]">
-              <Search size={14} />
-              PILLAR 01 • SEARCH & AI VISIBILITY
+              <Sparkles size={14} />
+              SEARCH, AEO & AI VISIBILITY
             </span>
             <h1 className="text-4xl sm:text-6xl md:text-7xl font-black uppercase tracking-tight text-white leading-none">
-              Get Found Where Your Customers <br />
-              <span className="text-gradient-brand">Are Searching.</span>
+              Get Found Where Your <br />
+              <span className="text-gradient-brand">Customers Are Searching.</span>
             </h1>
-            <p className="text-lg md:text-2xl text-[#9A9DA7] leading-relaxed">
+            <p className="text-lg md:text-2xl text-white font-medium leading-relaxed">
               Search is changing. People still use Google to find businesses, but they're increasingly asking questions and discovering information through AI-powered search experiences too.
             </p>
-            <p className="text-sm text-[#9A9DA7]">
-              SRMUCANVAS helps businesses build visibility across traditional search, local search and AI-powered search through SEO, Local SEO, AEO and AI Search optimisation.
+            <p className="text-sm md:text-base text-[#9A9DA7] leading-relaxed">
+              Redcanvass helps businesses build visibility across traditional search, local search and AI-powered search through SEO, Local SEO, AEO and AI Search optimisation.
             </p>
-          </div>
-
-          {/* Search Flow Journey */}
-          <div className="hidden sm:flex items-center gap-2 text-xs font-mono font-bold text-white/80 py-2 overflow-x-auto no-scrollbar">
-            <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10">Google Search</span>
-            <span className="text-[#FF3154]">→</span>
-            <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10">Google Maps</span>
-            <span className="text-[#FF3154]">→</span>
-            <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10">AI Search (AEO)</span>
-            <span className="text-[#FF3154]">→</span>
-            <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10">Website</span>
-            <span className="text-[#FF3154]">→</span>
-            <span className="px-3 py-1 rounded-full bg-[#FF3154] text-white font-bold">Enquiry</span>
           </div>
 
           <div className="pt-2 flex flex-wrap gap-4">
@@ -150,197 +139,226 @@ export const GetFound: React.FC = () => {
         </div>
       </section>
 
-      {/* 2. THE CORE IDEA: Being Online Isn't the Same as Being Found */}
-      <section className="py-20 border-t border-white/10">
-        <div className="max-w-6xl mx-auto px-6 md:px-10 space-y-6">
+      {/* 2. THE CORE IDEA */}
+      <section className="py-20 border-t border-white/10 bg-[#050608]">
+        <div className="max-w-5xl mx-auto px-6 md:px-10 text-center space-y-6">
           <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#FF3154]">
-            THE VISIBILITY GAP
+            CORE TRUTH
           </span>
-          <h2 className="text-3xl sm:text-5xl font-black text-white">
+          <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
             Being Online Isn't the Same as Being Found.
           </h2>
-          <p className="text-base md:text-lg text-[#9A9DA7] leading-relaxed">
+          <p className="text-base sm:text-lg text-[#9A9DA7] max-w-3xl mx-auto leading-relaxed">
             Having a website doesn't guarantee visibility. Your potential customer might search for a service, compare businesses, look for a local provider or ask an AI-powered search tool for recommendations.
           </p>
-          <p className="text-sm md:text-base text-[#9A9DA7] leading-relaxed">
+          <p className="text-sm sm:text-base text-white/90 max-w-2xl mx-auto leading-relaxed font-medium">
             The opportunity is to make sure your business has useful, credible and clearly structured information wherever those discoveries happen. That's what our Get Found services are designed to do.
           </p>
         </div>
       </section>
 
-      {/* 3. FOUR WAYS WE BUILD SEARCH VISIBILITY */}
-      <section className="py-20 border-t border-white/10 bg-[#080A0E]">
-        <div className="max-w-7xl mx-auto px-6 md:px-10 space-y-16">
-          <div className="text-center max-w-2xl mx-auto space-y-3">
+      {/* 3. THE FOUR AREAS */}
+      <section className="gf-areas-section py-20 border-t border-white/10 bg-[#080A0E]">
+        <div className="max-w-7xl mx-auto px-6 md:px-10 space-y-12">
+          <div className="text-center max-w-3xl mx-auto space-y-3">
             <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#FF3154]">
-              CORE SERVICES
+              SEARCH SERVICES
             </span>
-            <h2 className="text-3xl sm:text-5xl font-black text-white">
+            <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
               Four Ways We Build Search Visibility
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* 1. SEO */}
-            <div className="p-8 md:p-10 rounded-3xl bg-[#0D1014] border border-white/10 space-y-6">
-              <div className="flex items-center justify-between">
-                <div className="w-12 h-12 rounded-2xl bg-[#FF3154]/10 text-[#FF3154] flex items-center justify-center">
-                  <Search size={24} />
+            <div className="gf-area-card p-8 sm:p-10 rounded-3xl bg-[#0D1014] border border-white/10 hover:border-[#FF3154]/40 transition-all space-y-6 flex flex-col justify-between">
+              <div className="space-y-4">
+                <div className="flex items-center justify-between">
+                  <div className="w-12 h-12 rounded-2xl bg-[#FF3154]/10 border border-[#FF3154]/30 flex items-center justify-center text-[#FF3154]">
+                    <Search size={24} />
+                  </div>
+                  <span className="text-xs font-mono text-[#FF3154] font-bold">AREA 01</span>
                 </div>
-                <span className="font-mono text-xs text-[#FF3154] font-bold">01 / ORGANIC</span>
-              </div>
-              <div className="space-y-2">
-                <h3 className="text-2xl font-black text-white">SEO</h3>
-                <p className="text-xs font-mono text-[#28D7FF]">Build visibility in organic search.</p>
+                <div>
+                  <h3 className="text-2xl font-black text-white">SEO</h3>
+                  <p className="text-xs font-mono text-[#28D7FF] font-semibold mt-0.5">Build visibility in organic search.</p>
+                </div>
                 <p className="text-sm text-[#9A9DA7] leading-relaxed">
                   SEO helps search engines understand your website and helps your content become discoverable for relevant searches.
                 </p>
+                <div className="space-y-2 pt-2 border-t border-white/5 text-xs text-white/80">
+                  <div className="flex items-center gap-2"><CheckCircle2 size={13} className="text-[#FF3154]" /> Technical SEO and site architecture</div>
+                  <div className="flex items-center gap-2"><CheckCircle2 size={13} className="text-[#FF3154]" /> On-page SEO and content optimisation</div>
+                  <div className="flex items-center gap-2"><CheckCircle2 size={13} className="text-[#FF3154]" /> Keyword and search-intent research</div>
+                  <div className="flex items-center gap-2"><CheckCircle2 size={13} className="text-[#FF3154]" /> Internal linking and structure</div>
+                  <div className="flex items-center gap-2"><CheckCircle2 size={13} className="text-[#FF3154]" /> Search performance analysis</div>
+                </div>
               </div>
-              <ul className="space-y-2 text-xs text-[#9A9DA7] pt-2">
-                <li className="flex items-center gap-2"><CheckCircle2 size={14} className="text-[#FF3154]" /> Technical SEO & Crawlability</li>
-                <li className="flex items-center gap-2"><CheckCircle2 size={14} className="text-[#FF3154]" /> On-page SEO & Heading Hierarchy</li>
-                <li className="flex items-center gap-2"><CheckCircle2 size={14} className="text-[#FF3154]" /> Keyword & Search-intent Research</li>
-                <li className="flex items-center gap-2"><CheckCircle2 size={14} className="text-[#FF3154]" /> Internal Linking & Semantic Architecture</li>
-              </ul>
+              <div className="pt-4 border-t border-white/5">
+                <Link to="/lets-talk" className="text-xs font-mono font-bold uppercase tracking-wider text-[#FF3154] hover:text-white flex items-center gap-1.5 transition-colors">
+                  <span>Explore SEO →</span>
+                </Link>
+              </div>
             </div>
 
             {/* 2. Local SEO */}
-            <div className="p-8 md:p-10 rounded-3xl bg-[#0D1014] border border-white/10 space-y-6">
-              <div className="flex items-center justify-between">
-                <div className="w-12 h-12 rounded-2xl bg-[#FF7A18]/10 text-[#FF7A18] flex items-center justify-center">
-                  <MapPin size={24} />
+            <div className="gf-area-card p-8 sm:p-10 rounded-3xl bg-[#0D1014] border border-white/10 hover:border-[#8B3DFF]/40 transition-all space-y-6 flex flex-col justify-between">
+              <div className="space-y-4">
+                <div className="flex items-center justify-between">
+                  <div className="w-12 h-12 rounded-2xl bg-[#8B3DFF]/10 border border-[#8B3DFF]/30 flex items-center justify-center text-[#8B3DFF]">
+                    <MapPin size={24} />
+                  </div>
+                  <span className="text-xs font-mono text-[#8B3DFF] font-bold">AREA 02</span>
                 </div>
-                <span className="font-mono text-xs text-[#FF7A18] font-bold">02 / LOCAL</span>
-              </div>
-              <div className="space-y-2">
-                <h3 className="text-2xl font-black text-white">Local SEO</h3>
-                <p className="text-xs font-mono text-[#FF7A18]">Be easier to find in your area.</p>
+                <div>
+                  <h3 className="text-2xl font-black text-white">Local SEO</h3>
+                  <p className="text-xs font-mono text-[#8B3DFF] font-semibold mt-0.5">Be easier to find in your area.</p>
+                </div>
                 <p className="text-sm text-[#9A9DA7] leading-relaxed">
-                  For businesses serving specific locations, local search visibility influences whether potential customers discover you nearby.
+                  For businesses serving specific locations, local search visibility can influence whether potential customers discover you when looking for nearby services.
                 </p>
+                <div className="space-y-2 pt-2 border-t border-white/5 text-xs text-white/80">
+                  <div className="flex items-center gap-2"><CheckCircle2 size={13} className="text-[#8B3DFF]" /> Google Business Profile optimisation</div>
+                  <div className="flex items-center gap-2"><CheckCircle2 size={13} className="text-[#8B3DFF]" /> Location-focused website content</div>
+                  <div className="flex items-center gap-2"><CheckCircle2 size={13} className="text-[#8B3DFF]" /> Local landing pages where appropriate</div>
+                  <div className="flex items-center gap-2"><CheckCircle2 size={13} className="text-[#8B3DFF]" /> Reviews and reputation signals</div>
+                  <div className="flex items-center gap-2"><CheckCircle2 size={13} className="text-[#8B3DFF]" /> Local search opportunities</div>
+                </div>
               </div>
-              <ul className="space-y-2 text-xs text-[#9A9DA7] pt-2">
-                <li className="flex items-center gap-2"><CheckCircle2 size={14} className="text-[#FF7A18]" /> Google Business Profile (GBP) Optimisation</li>
-                <li className="flex items-center gap-2"><CheckCircle2 size={14} className="text-[#FF7A18]" /> Location-focused Website Landing Pages</li>
-                <li className="flex items-center gap-2"><CheckCircle2 size={14} className="text-[#FF7A18]" /> Reviews & Local Reputation Signals</li>
-                <li className="flex items-center gap-2"><CheckCircle2 size={14} className="text-[#FF7A18]" /> Map Pack Rankings & Local Citations</li>
-              </ul>
+              <div className="pt-4 border-t border-white/5">
+                <Link to="/lets-talk" className="text-xs font-mono font-bold uppercase tracking-wider text-[#8B3DFF] hover:text-white flex items-center gap-1.5 transition-colors">
+                  <span>Explore Local SEO →</span>
+                </Link>
+              </div>
             </div>
 
             {/* 3. AEO */}
-            <div className="p-8 md:p-10 rounded-3xl bg-[#0D1014] border border-white/10 space-y-6">
-              <div className="flex items-center justify-between">
-                <div className="w-12 h-12 rounded-2xl bg-[#8B3DFF]/10 text-[#8B3DFF] flex items-center justify-center">
-                  <HelpCircle size={24} />
+            <div className="gf-area-card p-8 sm:p-10 rounded-3xl bg-[#0D1014] border border-white/10 hover:border-[#28D7FF]/40 transition-all space-y-6 flex flex-col justify-between">
+              <div className="space-y-4">
+                <div className="flex items-center justify-between">
+                  <div className="w-12 h-12 rounded-2xl bg-[#28D7FF]/10 border border-[#28D7FF]/30 flex items-center justify-center text-[#28D7FF]">
+                    <HelpCircle size={24} />
+                  </div>
+                  <span className="text-xs font-mono text-[#28D7FF] font-bold">AREA 03</span>
                 </div>
-                <span className="font-mono text-xs text-[#8B3DFF] font-bold">03 / ANSWER ENGINE</span>
-              </div>
-              <div className="space-y-2">
-                <h3 className="text-2xl font-black text-white">AEO (Answer Engine Optimization)</h3>
-                <p className="text-xs font-mono text-[#8B3DFF]">Make your expertise easier to understand and answer.</p>
+                <div>
+                  <h3 className="text-2xl font-black text-white">AEO (Answer Engine Optimization)</h3>
+                  <p className="text-xs font-mono text-[#28D7FF] font-semibold mt-0.5">Make your expertise easier to understand and answer.</p>
+                </div>
                 <p className="text-sm text-[#9A9DA7] leading-relaxed">
-                  Focuses on creating and structuring useful information around the questions people ask instead of only chasing keywords.
+                  Answer Engine Optimization focuses on creating and structuring useful information around the questions people ask.
                 </p>
+                <div className="space-y-2 pt-2 border-t border-white/5 text-xs text-white/80">
+                  <div className="flex items-center gap-2"><CheckCircle2 size={13} className="text-[#28D7FF]" /> Question-led content architecture</div>
+                  <div className="flex items-center gap-2"><CheckCircle2 size={13} className="text-[#28D7FF]" /> Clear, structured answers to common customer questions</div>
+                  <div className="flex items-center gap-2"><CheckCircle2 size={13} className="text-[#28D7FF]" /> Topic depth and entity clarity</div>
+                  <div className="flex items-center gap-2"><CheckCircle2 size={13} className="text-[#28D7FF]" /> Supporting evidence and sources</div>
+                </div>
               </div>
-              <ul className="space-y-2 text-xs text-[#9A9DA7] pt-2">
-                <li className="flex items-center gap-2"><CheckCircle2 size={14} className="text-[#8B3DFF]" /> Question-led Content Architecture</li>
-                <li className="flex items-center gap-2"><CheckCircle2 size={14} className="text-[#8B3DFF]" /> Clear Answers & Structured Schema Markup</li>
-                <li className="flex items-center gap-2"><CheckCircle2 size={14} className="text-[#8B3DFF]" /> Topic Depth & Entity Recognition</li>
-                <li className="flex items-center gap-2"><CheckCircle2 size={14} className="text-[#8B3DFF]" /> Supporting Evidence & Trust Sources</li>
-              </ul>
+              <div className="pt-4 border-t border-white/5">
+                <Link to="/lets-talk" className="text-xs font-mono font-bold uppercase tracking-wider text-[#28D7FF] hover:text-white flex items-center gap-1.5 transition-colors">
+                  <span>Explore AEO →</span>
+                </Link>
+              </div>
             </div>
 
             {/* 4. AI Search */}
-            <div className="p-8 md:p-10 rounded-3xl bg-[#0D1014] border border-white/10 space-y-6">
-              <div className="flex items-center justify-between">
-                <div className="w-12 h-12 rounded-2xl bg-[#28D7FF]/10 text-[#28D7FF] flex items-center justify-center">
-                  <Cpu size={24} />
+            <div className="gf-area-card p-8 sm:p-10 rounded-3xl bg-[#0D1014] border border-white/10 hover:border-[#FF7A18]/40 transition-all space-y-6 flex flex-col justify-between">
+              <div className="space-y-4">
+                <div className="flex items-center justify-between">
+                  <div className="w-12 h-12 rounded-2xl bg-[#FF7A18]/10 border border-[#FF7A18]/30 flex items-center justify-center text-[#FF7A18]">
+                    <Cpu size={24} />
+                  </div>
+                  <span className="text-xs font-mono text-[#FF7A18] font-bold">AREA 04</span>
                 </div>
-                <span className="font-mono text-xs text-[#28D7FF] font-bold">04 / AI DISCOVERY</span>
-              </div>
-              <div className="space-y-2">
-                <h3 className="text-2xl font-black text-white">AI Search</h3>
-                <p className="text-xs font-mono text-[#28D7FF]">Prepare your digital presence for AI-powered discovery.</p>
+                <div>
+                  <h3 className="text-2xl font-black text-white">AI Search</h3>
+                  <p className="text-xs font-mono text-[#FF7A18] font-semibold mt-0.5">Prepare your digital presence for AI-powered discovery.</p>
+                </div>
                 <p className="text-sm text-[#9A9DA7] leading-relaxed">
-                  Strengthen the digital signals that make your business, expertise, and services easy for AI-powered search engines to interpret.
+                  Search experiences are increasingly using AI to interpret questions and organise information from multiple sources. We help businesses strengthen the digital signals that make their business, expertise, services and information easier for search systems to understand.
                 </p>
+                <div className="space-y-2 pt-2 border-t border-white/5 text-xs text-white/80">
+                  <div className="flex items-center gap-2"><CheckCircle2 size={13} className="text-[#FF7A18]" /> SEO + useful content + clear information + strong digital presence</div>
+                  <div className="flex items-center gap-2"><CheckCircle2 size={13} className="text-[#FF7A18]" /> Digital entity footprint and brand authority</div>
+                  <div className="flex items-center gap-2"><CheckCircle2 size={13} className="text-[#FF7A18]" /> Search systems interpretation alignment</div>
+                </div>
               </div>
-              <ul className="space-y-2 text-xs text-[#9A9DA7] pt-2">
-                <li className="flex items-center gap-2"><CheckCircle2 size={14} className="text-[#28D7FF]" /> Generative Search Integration</li>
-                <li className="flex items-center gap-2"><CheckCircle2 size={14} className="text-[#28D7FF]" /> Comprehensive Brand Entity Signals</li>
-                <li className="flex items-center gap-2"><CheckCircle2 size={14} className="text-[#28D7FF]" /> High-Quality Original Authority Content</li>
-                <li className="flex items-center gap-2"><CheckCircle2 size={14} className="text-[#28D7FF]" /> Semantic Web Architecture</li>
-              </ul>
+              <div className="pt-4 border-t border-white/5">
+                <Link to="/lets-talk" className="text-xs font-mono font-bold uppercase tracking-wider text-[#FF7A18] hover:text-white flex items-center gap-1.5 transition-colors">
+                  <span>Explore AI Search →</span>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 4. IMPORTANT DIFFERENTIATOR: We Don't Promise to "Make AI Recommend You." */}
-      <section className="py-20 border-t border-white/10">
-        <div className="max-w-5xl mx-auto px-6 md:px-10">
-          <div className="p-8 md:p-12 rounded-3xl bg-gradient-to-br from-[#151920] to-[#0D1014] border border-white/15 space-y-6">
-            <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#FF3154]">
-              HONEST POSITIONING
-            </span>
-            <h2 className="text-2xl sm:text-4xl font-black text-white">
-              We Don't Promise to "Make AI Recommend You."
-            </h2>
-            <p className="text-base text-[#9A9DA7] leading-relaxed">
-              No agency can control what an AI system chooses to show for every query. What we can do is improve the quality, clarity, structure and discoverability of the information about your business across the web.
-            </p>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-2">
-              <div className="p-4 rounded-xl bg-black/40 border border-white/10 text-xs font-semibold text-white">Useful content</div>
-              <div className="p-4 rounded-xl bg-black/40 border border-white/10 text-xs font-semibold text-white">Clear answers</div>
-              <div className="p-4 rounded-xl bg-black/40 border border-white/10 text-xs font-semibold text-white">Strong website structure</div>
-              <div className="p-4 rounded-xl bg-black/40 border border-white/10 text-xs font-semibold text-white">Relevant search visibility</div>
-              <div className="p-4 rounded-xl bg-black/40 border border-white/10 text-xs font-semibold text-white col-span-2 sm:col-span-1">Consistent business info</div>
-            </div>
-            <p className="text-xs font-mono text-[#28D7FF] pt-2">
-              The goal isn't to game an answer engine. It's to become a useful, credible source of information.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* 5. SEO + AEO + AI SEARCH: SEO Isn't Dead. Search Is Evolving. */}
-      <section className="py-20 border-t border-white/10 bg-[#080A0E]">
-        <div className="max-w-6xl mx-auto px-6 md:px-10 text-center space-y-8">
-          <h2 className="text-3xl sm:text-5xl font-black text-white">
-            SEO Isn't Dead. Search Is Evolving.
+      {/* 4. IMPORTANT DIFFERENTIATOR */}
+      <section className="py-20 border-t border-white/10 bg-[#050608]">
+        <div className="max-w-4xl mx-auto px-6 md:px-10 text-center space-y-6">
+          <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#FF3154]">
+            HONEST POSITIONING
+          </span>
+          <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
+            We Don't Promise to "Make AI Recommend You."
           </h2>
-          <p className="text-base text-[#9A9DA7] max-w-2xl mx-auto">
-            AI search doesn't mean traditional SEO becomes irrelevant. Google's current documentation continues to emphasise established SEO fundamentals alongside guidance for generative AI search.
+          <p className="text-base sm:text-lg text-[#9A9DA7] leading-relaxed">
+            No agency can control what an AI system chooses to show for every query. What we can do is improve the quality, clarity, structure and discoverability of the information about your business across the web.
+          </p>
+          <div className="p-6 rounded-2xl bg-[#0D1014] border border-white/10 font-mono text-xs sm:text-sm text-[#28D7FF] space-y-2 text-center">
+            <div>Useful Content · Clear Answers · Strong Website Structure</div>
+            <div>Relevant Search Visibility · Consistent Business Information</div>
+          </div>
+          <p className="text-sm text-white font-medium">
+            The goal isn't to game an answer engine. It's to become a useful, credible source of information.
+          </p>
+        </div>
+      </section>
+
+      {/* 5. SEO + AEO + AI SEARCH */}
+      <section className="py-20 bg-[#080A0E] border-t border-white/10">
+        <div className="max-w-5xl mx-auto px-6 md:px-10 text-center space-y-8">
+          <div className="space-y-3">
+            <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#FF3154]">
+              SEARCH EVOLUTION
+            </span>
+            <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
+              SEO Isn't Dead. Search Is Evolving.
+            </h2>
+          </div>
+          <p className="text-base text-[#9A9DA7] max-w-3xl mx-auto leading-relaxed">
+            AI search doesn't mean traditional SEO suddenly becomes irrelevant. Google's current documentation continues to emphasise established SEO fundamentals alongside guidance for its generative AI search experiences.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-6">
-            <div className="p-6 rounded-2xl bg-[#0D1014] border border-white/10 text-left space-y-2">
-              <span className="font-mono text-xs text-[#FF3154] font-bold">SEO</span>
-              <p className="text-xs text-[#9A9DA7]">Helps search engines discover and understand your content.</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4 text-left">
+            <div className="p-6 rounded-2xl bg-[#0D1014] border border-white/10 space-y-2">
+              <span className="text-xs font-mono text-[#FF3154] font-bold">SEO</span>
+              <p className="text-sm text-white">Helps search engines discover and understand your content.</p>
             </div>
-            <div className="p-6 rounded-2xl bg-[#0D1014] border border-white/10 text-left space-y-2">
-              <span className="font-mono text-xs text-[#8B3DFF] font-bold">AEO</span>
-              <p className="text-xs text-[#9A9DA7]">Makes information easier to understand in answer-driven searches.</p>
+            <div className="p-6 rounded-2xl bg-[#0D1014] border border-white/10 space-y-2">
+              <span className="text-xs font-mono text-[#28D7FF] font-bold">AEO</span>
+              <p className="text-sm text-white">Makes information easier to understand in answer-driven searches.</p>
             </div>
-            <div className="p-6 rounded-2xl bg-[#0D1014] border border-white/10 text-left space-y-2">
-              <span className="font-mono text-xs text-[#28D7FF] font-bold">AI SEARCH</span>
-              <p className="text-xs text-[#9A9DA7]">Creates new ways for people to discover information and businesses.</p>
+            <div className="p-6 rounded-2xl bg-[#0D1014] border border-white/10 space-y-2">
+              <span className="text-xs font-mono text-[#8B3DFF] font-bold">AI SEARCH</span>
+              <p className="text-sm text-white">Creates new ways for people to discover information and businesses.</p>
             </div>
           </div>
-          <div className="font-mono text-xs text-[#FF3154] font-bold uppercase tracking-widest pt-2">
-            = ONE STRONGER DIGITAL PRESENCE
+          <div className="text-xs font-mono text-white font-bold tracking-wider pt-2">
+            Result: One stronger digital presence.
           </div>
         </div>
       </section>
 
-      {/* 6. WHAT WE ACTUALLY OPTIMISE: It's More Than Keywords */}
+      {/* 6. WHAT WE ACTUALLY OPTIMISE */}
       <section className="py-20 border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6 md:px-10 space-y-12">
           <div className="max-w-3xl space-y-3">
             <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#FF3154]">
-              TECHNICAL DEPTH
+              DEPTH OF WORK
             </span>
-            <h2 className="text-3xl sm:text-5xl font-black text-white">
+            <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
               It's More Than Keywords.
             </h2>
             <p className="text-base text-[#9A9DA7]">
@@ -349,87 +367,129 @@ export const GetFound: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              { title: 'Content', desc: 'Is your website answering the questions your audience actually has?' },
-              { title: 'Structure', desc: 'Can search systems clearly understand your pages, services and relationships?' },
-              { title: 'Context', desc: 'Does your website establish what your business does, who it serves and where it operates?' },
-              { title: 'Authority', desc: 'Are there credible signals supporting your expertise and reputation?' },
-              { title: 'Experience', desc: 'Does the website provide a fast, useful experience once someone finds it?' },
-              { title: 'Connections', desc: 'Are your important pages connected through logical internal linking & signals?' },
-            ].map((item, idx) => (
-              <div key={idx} className="p-6 rounded-2xl bg-[#0D1014] border border-white/10 space-y-2">
-                <h3 className="text-lg font-bold text-white">{item.title}</h3>
-                <p className="text-xs text-[#9A9DA7] leading-relaxed">{item.desc}</p>
-              </div>
-            ))}
+            <div className="p-6 rounded-2xl bg-[#0D1014] border border-white/10 space-y-2">
+              <h3 className="text-lg font-bold text-white">Content</h3>
+              <p className="text-xs text-[#9A9DA7] leading-relaxed">Is your website answering the questions your audience actually has?</p>
+            </div>
+            <div className="p-6 rounded-2xl bg-[#0D1014] border border-white/10 space-y-2">
+              <h3 className="text-lg font-bold text-white">Structure</h3>
+              <p className="text-xs text-[#9A9DA7] leading-relaxed">Can search systems clearly understand your pages, services and relationships?</p>
+            </div>
+            <div className="p-6 rounded-2xl bg-[#0D1014] border border-white/10 space-y-2">
+              <h3 className="text-lg font-bold text-white">Context</h3>
+              <p className="text-xs text-[#9A9DA7] leading-relaxed">Does your website establish what your business does, who it serves and where it operates?</p>
+            </div>
+            <div className="p-6 rounded-2xl bg-[#0D1014] border border-white/10 space-y-2">
+              <h3 className="text-lg font-bold text-white">Authority</h3>
+              <p className="text-xs text-[#9A9DA7] leading-relaxed">Are there credible signals supporting your expertise and reputation?</p>
+            </div>
+            <div className="p-6 rounded-2xl bg-[#0D1014] border border-white/10 space-y-2">
+              <h3 className="text-lg font-bold text-white">Experience</h3>
+              <p className="text-xs text-[#9A9DA7] leading-relaxed">Does the website provide a useful experience once someone finds it?</p>
+            </div>
+            <div className="p-6 rounded-2xl bg-[#0D1014] border border-white/10 space-y-2">
+              <h3 className="text-lg font-bold text-white">Connections</h3>
+              <p className="text-xs text-[#9A9DA7] leading-relaxed">Are your important pages, topics and services logically connected through internal linking and other relevant signals?</p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* 7. SEARCH JOURNEY: From Question to Customer */}
-      <section className="py-20 border-t border-white/10 bg-[#080A0E]">
-        <div className="max-w-6xl mx-auto px-6 md:px-10 space-y-8">
-          <div className="text-center space-y-3">
+      {/* 7. SEARCH JOURNEY */}
+      <section className="py-20 bg-[#080A0E] border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-6 md:px-10 space-y-12">
+          <div className="text-center max-w-3xl mx-auto space-y-3">
             <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#FF3154]">
               SEARCH JOURNEY
             </span>
-            <h2 className="text-3xl sm:text-5xl font-black text-white">
+            <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
               From Question to Customer
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-5 gap-4 text-center">
-            <div className="p-5 rounded-2xl bg-[#0D1014] border border-white/10 space-y-2">
-              <span className="text-xs font-mono text-[#FF3154] font-bold">01. ASK</span>
+          <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+            <div className="p-5 rounded-2xl bg-[#0D1014] border border-white/10 space-y-1">
+              <span className="text-xs font-mono text-[#FF3154] font-bold">01 ASK</span>
               <p className="text-xs text-[#9A9DA7]">"Best service near me?"</p>
             </div>
-            <div className="p-5 rounded-2xl bg-[#0D1014] border border-white/10 space-y-2">
-              <span className="text-xs font-mono text-[#FF7A18] font-bold">02. DISCOVER</span>
+            <div className="p-5 rounded-2xl bg-[#0D1014] border border-white/10 space-y-1">
+              <span className="text-xs font-mono text-[#8B3DFF] font-bold">02 DISCOVER</span>
               <p className="text-xs text-[#9A9DA7]">Google / Maps / AI</p>
             </div>
-            <div className="p-5 rounded-2xl bg-[#0D1014] border border-white/10 space-y-2">
-              <span className="text-xs font-mono text-[#8B3DFF] font-bold">03. EXPLORE</span>
-              <p className="text-xs text-[#9A9DA7]">Website & Reviews</p>
+            <div className="p-5 rounded-2xl bg-[#0D1014] border border-white/10 space-y-1">
+              <span className="text-xs font-mono text-[#28D7FF] font-bold">03 EXPLORE</span>
+              <p className="text-xs text-[#9A9DA7]">Website / Reviews / Content</p>
             </div>
-            <div className="p-5 rounded-2xl bg-[#0D1014] border border-white/10 space-y-2">
-              <span className="text-xs font-mono text-[#28D7FF] font-bold">04. COMPARE</span>
-              <p className="text-xs text-[#9A9DA7]">Expertise & Proof</p>
+            <div className="p-5 rounded-2xl bg-[#0D1014] border border-white/10 space-y-1">
+              <span className="text-xs font-mono text-[#FF7A18] font-bold">04 COMPARE</span>
+              <p className="text-xs text-[#9A9DA7]">Services / Expertise / Trust</p>
             </div>
-            <div className="p-5 rounded-2xl bg-[#0D1014] border border-white/10 space-y-2">
-              <span className="text-xs font-mono text-[#FF3154] font-bold">05. ACT</span>
-              <p className="text-xs text-white font-bold">Enquiry / Call</p>
+            <div className="p-5 rounded-2xl bg-[#0D1014] border border-white/10 space-y-1">
+              <span className="text-xs font-mono text-[#FF3154] font-bold">05 ACT</span>
+              <p className="text-xs text-[#9A9DA7]">Enquiry / Call / Booking</p>
             </div>
           </div>
 
           <div className="text-center pt-4">
-            <Link to="/get-customers" className="text-xs font-mono font-bold uppercase text-[#FF3154] hover:text-white flex items-center justify-center gap-2">
-              <span>Next Step: Get Customers →</span>
+            <p className="text-sm text-[#9A9DA7] mb-3">Getting found is only the first step. The rest of the journey has to work too.</p>
+            <Link to="/get-customers" className="inline-flex items-center gap-1.5 text-xs font-mono font-bold uppercase tracking-wider text-[#FF3154] hover:text-white transition-colors">
+              <span>Next: Explore Get Customers →</span>
             </Link>
           </div>
         </div>
       </section>
 
-      {/* 8. FAQ */}
+      {/* 8. WHO NEEDS GET FOUND? */}
+      <section className="py-20 border-t border-white/10">
+        <div className="max-w-5xl mx-auto px-6 md:px-10 text-center space-y-6">
+          <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#FF3154]">
+            AUDIENCE FIT
+          </span>
+          <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
+            Get Found Is Especially Valuable When Search Influences the Sale.
+          </h2>
+          <p className="text-base text-[#9A9DA7] max-w-3xl mx-auto leading-relaxed">
+            If potential customers research a business before making contact, search visibility can play an important role in growth.
+          </p>
+          <div className="flex flex-wrap justify-center gap-3 pt-2">
+            <span className="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-xs font-mono text-white">Search for a service</span>
+            <span className="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-xs font-mono text-white">Compare providers</span>
+            <span className="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-xs font-mono text-white">Look for local businesses</span>
+            <span className="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-xs font-mono text-white">Research expertise</span>
+            <span className="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-xs font-mono text-white">Ask questions before buying</span>
+          </div>
+          <div className="pt-4">
+            <Link to="/who-we-help" className="text-xs font-mono font-bold uppercase tracking-wider text-[#FF3154] hover:text-white transition-colors">
+              <span>See Who We Help →</span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* 9. QUESTIONS BUSINESS OWNERS ACTUALLY ASK */}
       <FaqSection 
         title="Questions Businesses Ask About Search Visibility"
         faqs={getFoundFaqs}
-        ctaText="How easily can customers find you? Get a Free Search Audit →"
+        ctaText="Not sure where you stand in search? Get a Free Search Audit →"
         ctaLink="/lets-talk"
       />
 
-      {/* 9. FINAL CTA */}
-      <section className="py-20 border-t border-white/10 text-center">
+      {/* 10. FINAL CTA */}
+      <section className="py-20 md:py-28 text-center border-t border-white/10 bg-gradient-to-b from-[#050608] to-[#0A0D12]">
         <div className="max-w-4xl mx-auto px-6 space-y-6">
-          <h2 className="text-3xl sm:text-5xl font-black text-white">
+          <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
             How Easily Can Customers Find You?
           </h2>
-          <p className="text-base text-[#9A9DA7]">
+          <p className="text-base sm:text-lg text-[#9A9DA7] max-w-2xl mx-auto leading-relaxed">
             We'll look at your current search visibility, website structure and opportunities across organic, local and AI-powered search.
           </p>
-          <div className="pt-2">
-            <MagneticButton to="/lets-talk" variant="primary" className="!px-8 !py-4 !text-xs uppercase tracking-wider">
-              <span>Get a Free Search Audit</span>
+          <div className="pt-4 flex flex-wrap justify-center gap-4">
+            <MagneticButton to="/lets-talk" variant="primary" className="!px-8 !py-4 !text-xs uppercase tracking-wider shadow-[0_0_30px_rgba(255,49,84,0.5)]">
+              <span>GET A FREE SEARCH AUDIT</span>
               <ArrowRight size={16} />
+            </MagneticButton>
+            <MagneticButton to="/lets-talk" variant="secondary" className="!px-7 !py-4 !text-xs uppercase tracking-wider">
+              <span>LET'S TALK →</span>
             </MagneticButton>
           </div>
         </div>

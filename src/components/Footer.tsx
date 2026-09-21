@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin } from 'lucide-react';
-import { navItems, footerServices, footerIndustries, companyContact } from '../data/navigation';
+import { footerServices, footerIndustries, companyContact } from '../data/navigation';
 import { Logo } from './Logo';
 import { InstagramIcon, LinkedinIcon, FacebookIcon, YoutubeIcon, TwitterXIcon } from './SocialIcons';
 
@@ -14,7 +14,7 @@ export const Footer: React.FC = () => {
           <div className="lg:col-span-2 space-y-6">
             <Logo size="lg" />
             <p className="text-sm text-[#9A9DA7] leading-relaxed max-w-sm">
-              SRMUCANVAS is a full-service Digital Marketing, Performance Marketing, and AI Search Optimization company helping businesses get found, get customers, and get remembered.
+              Redcanvass is a digital marketing and performance marketing agency helping businesses grow through paid advertising, SEO, AI Search, Answer Engine Optimization (AEO), lead generation and conversion-focused creative.
             </p>
 
             {/* Social Icons */}
@@ -84,7 +84,7 @@ export const Footer: React.FC = () => {
           {/* Col 4: Contact Info */}
           <div className="space-y-4">
             <h4 className="text-xs font-mono uppercase tracking-widest text-white font-bold">
-              Contact Us
+              Contact
             </h4>
             <ul className="space-y-3.5 text-xs text-[#9A9DA7]">
               <li className="flex items-start gap-2.5">
@@ -110,10 +110,10 @@ export const Footer: React.FC = () => {
         {/* Bottom Bar */}
         <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#9A9DA7]">
           <div>
-            © 2026 SRMUCANVAS. All rights reserved.
+            © 2026 Redcanvass. All rights reserved.
           </div>
-          <div className="font-handwriting text-lg text-white/90">
-            Designed to Make Things Happen
+          <div className="font-mono text-[11px] text-white/60 tracking-wider">
+            GET FOUND • GET CUSTOMERS • GET REMEMBERED
           </div>
         </div>
       </div>

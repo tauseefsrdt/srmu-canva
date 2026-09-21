@@ -15,18 +15,6 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
   const menuRef = useRef<HTMLDivElement>(null);
   const linksRef = useRef<HTMLDivElement>(null);
 
-  const mobileNavItems = [
-    { label: 'Home', path: '/' },
-    { label: 'What We Do', path: '/what-we-do' },
-    { label: 'Get Found (SEO & AI)', path: '/get-found' },
-    { label: 'Get Customers (Ads & Leads)', path: '/get-customers' },
-    { label: 'Get Remembered (Creative)', path: '/get-remembered' },
-    { label: 'Who We Help', path: '/who-we-help' },
-    { label: 'Projects', path: '/projects' },
-    { label: 'About Us', path: '/about' },
-    { label: "Let's Talk", path: '/lets-talk' },
-  ];
-
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
@@ -75,27 +63,115 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
         </button>
       </div>
 
-      {/* Navigation Links with GSAP Stagger */}
-      <div ref={linksRef} className="flex flex-col gap-4 my-auto py-6">
-        {mobileNavItems.map((item, idx) => {
-          const isActive = location.pathname === item.path;
-          return (
-            <Link
-              key={item.label}
-              to={item.path}
-              onClick={onClose}
-              className="group flex items-center justify-between text-2xl sm:text-3xl font-black uppercase tracking-tight text-white/85 hover:text-white transition-colors py-1"
-            >
-              <div className="flex items-center gap-3">
-                <span className="text-[11px] font-mono text-[#FF3154]">0{idx + 1}</span>
-                <span className={`transition-transform duration-300 group-hover:translate-x-2 ${isActive ? 'text-[#FF3154]' : ''}`}>
-                  {item.label}
-                </span>
+      {/* Navigation Tree strictly mirroring DOCX structure */}
+      <div ref={linksRef} className="flex flex-col gap-6 my-auto py-6">
+        {/* HOME */}
+        <Link
+          to="/"
+          onClick={onClose}
+          className={`flex items-center justify-between text-2xl sm:text-3xl font-black uppercase tracking-tight transition-colors ${
+            location.pathname === '/' ? 'text-[#FF3154]' : 'text-white/90 hover:text-white'
+          }`}
+        >
+          <span>HOME</span>
+          <ArrowRight size={18} className="text-[#FF3154]" />
+        </Link>
+
+        {/* WHAT WE DO */}
+        <div className="space-y-3">
+          <Link
+            to="/what-we-do"
+            onClick={onClose}
+            className={`flex items-center justify-between text-2xl sm:text-3xl font-black uppercase tracking-tight transition-colors ${
+              location.pathname === '/what-we-do' ? 'text-[#FF3154]' : 'text-white/90 hover:text-white'
+            }`}
+          >
+            <span>WHAT WE DO</span>
+            <ArrowRight size={18} className="text-[#FF3154]" />
+          </Link>
+
+          {/* Sub-Pillars Tree */}
+          <div className="pl-4 border-l-2 border-white/10 space-y-4 pt-1">
+            {/* GET FOUND */}
+            <div className="space-y-1.5">
+              <Link
+                to="/get-found"
+                onClick={onClose}
+                className="flex items-center gap-2 text-base font-bold text-white hover:text-[#FF3154] uppercase tracking-wider"
+              >
+                <Search size={14} className="text-[#FF3154]" />
+                <span>GET FOUND</span>
+              </Link>
+              <div className="flex flex-wrap gap-2 text-xs font-mono text-[#9A9DA7] pl-5">
+                <Link to="/get-found" onClick={onClose} className="hover:text-white">SEO</Link> •
+                <Link to="/get-found" onClick={onClose} className="hover:text-white">Local SEO</Link> •
+                <Link to="/get-found" onClick={onClose} className="hover:text-white">AI Search</Link> •
+                <Link to="/get-found" onClick={onClose} className="hover:text-white">AEO</Link>
               </div>
-              <ArrowRight size={18} className="opacity-0 -translate-x-3 group-hover:opacity-100 group-hover:translate-x-0 transition-all text-[#FF3154]" />
-            </Link>
-          );
-        })}
+            </div>
+
+            {/* GET CUSTOMERS */}
+            <div className="space-y-1.5">
+              <Link
+                to="/get-customers"
+                onClick={onClose}
+                className="flex items-center gap-2 text-base font-bold text-white hover:text-[#8B3DFF] uppercase tracking-wider"
+              >
+                <TrendingUp size={14} className="text-[#8B3DFF]" />
+                <span>GET CUSTOMERS</span>
+              </Link>
+              <div className="flex flex-wrap gap-2 text-xs font-mono text-[#9A9DA7] pl-5">
+                <Link to="/get-customers" onClick={onClose} className="hover:text-white">Google Ads</Link> •
+                <Link to="/get-customers" onClick={onClose} className="hover:text-white">Meta Ads</Link> •
+                <Link to="/get-customers" onClick={onClose} className="hover:text-white">YouTube Ads</Link> •
+                <Link to="/get-customers" onClick={onClose} className="hover:text-white">Lead Generation</Link> •
+                <Link to="/get-customers" onClick={onClose} className="hover:text-white">Remarketing</Link>
+              </div>
+            </div>
+
+            {/* GET REMEMBERED */}
+            <div className="space-y-1.5">
+              <Link
+                to="/get-remembered"
+                onClick={onClose}
+                className="flex items-center gap-2 text-base font-bold text-white hover:text-[#28D7FF] uppercase tracking-wider"
+              >
+                <Sparkles size={14} className="text-[#28D7FF]" />
+                <span>GET REMEMBERED</span>
+              </Link>
+              <div className="flex flex-wrap gap-2 text-xs font-mono text-[#9A9DA7] pl-5">
+                <Link to="/get-remembered" onClick={onClose} className="hover:text-white">Ad Creatives</Link> •
+                <Link to="/get-remembered" onClick={onClose} className="hover:text-white">Landing Pages</Link> •
+                <Link to="/get-remembered" onClick={onClose} className="hover:text-white">Campaign Design</Link> •
+                <Link to="/get-remembered" onClick={onClose} className="hover:text-white">Flyers & Posters</Link>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* WHO WE HELP */}
+        <Link
+          to="/who-we-help"
+          onClick={onClose}
+          className={`flex items-center justify-between text-2xl sm:text-3xl font-black uppercase tracking-tight transition-colors ${
+            location.pathname === '/who-we-help' ? 'text-[#FF3154]' : 'text-white/90 hover:text-white'
+          }`}
+        >
+          <span>WHO WE HELP</span>
+          <ArrowRight size={18} className="text-[#FF3154]" />
+        </Link>
+
+        {/* LET'S TALK */}
+        <Link
+          to="/lets-talk"
+          onClick={onClose}
+          className={`flex items-center justify-between text-2xl sm:text-3xl font-black uppercase tracking-tight transition-colors ${
+            location.pathname === '/lets-talk' ? 'text-[#FF3154]' : 'text-white/90 hover:text-white'
+          }`}
+        >
+          <span>LET'S TALK</span>
+          <ArrowRight size={18} className="text-[#FF3154]" />
+        </Link>
       </div>
 
       {/* Bottom Contact Details */}
