@@ -14,9 +14,15 @@ declare global {
 
 export function useLenis() {
   useEffect(() => {
-    // Initialize Lenis
+    // Force browser to always restore scroll at the very top on reload
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
+
+    // Initialize Lenis smooth scroll
     const lenis = new Lenis({
-      duration: 1.1,
+      duration: 1.2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       orientation: 'vertical',
       smoothWheel: true,
@@ -25,6 +31,9 @@ export function useLenis() {
     });
 
     window.__lenis = lenis;
+
+    // Immediately reset Lenis to top on load
+    lenis.scrollTo(0, { immediate: true });
 
     // Sync Lenis with GSAP ScrollTrigger
     lenis.on('scroll', ScrollTrigger.update);
@@ -35,6 +44,11 @@ export function useLenis() {
 
     gsap.ticker.add(updateTicker);
     gsap.ticker.lagSmoothing(0);
+
+    // Refresh ScrollTrigger once DOM layout finishes
+    setTimeout(() => {
+      ScrollTrigger.refresh();
+    }, 200);
 
     return () => {
       gsap.ticker.remove(updateTicker);

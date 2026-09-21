@@ -19,6 +19,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Hero } from '../components/Hero';
 import { HorizontalProjects } from '../components/HorizontalProjects';
+import { PinnedParallaxSection } from '../components/PinnedParallaxSection';
 import { FaqSection, FaqItem } from '../components/FaqSection';
 import { MagneticButton } from '../components/MagneticButton';
 import { isReducedMotion, createParallax } from '../utils/animations';
@@ -453,6 +454,9 @@ export const Home: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* 6.5 PINNED 3D SYSTEM ARCHITECTURE WITH SCRUBBED PARALLAX */}
+      <PinnedParallaxSection />
 
       {/* 7. CINEMATIC HORIZONTAL PORTFOLIO SHOWCASE */}
       <HorizontalProjects />

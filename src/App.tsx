@@ -6,6 +6,7 @@ import { Preloader } from './components/Preloader';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { PageTransition } from './components/PageTransition';
+import { ScrollProgressBar } from './components/ScrollProgressBar';
 
 // Pages
 import { Home } from './pages/Home';
@@ -33,6 +34,9 @@ export const App: React.FC = () => {
 
       {/* Interactive Custom Magnetic Cursor */}
       <CustomCursor />
+
+      {/* Global Scroll Progress Bar */}
+      <ScrollProgressBar />
 
       <div className="min-h-screen flex flex-col bg-[#050608] text-white selection:bg-[#FF3154] selection:text-white relative">
         {/* Persistent Floating Navbar */}
