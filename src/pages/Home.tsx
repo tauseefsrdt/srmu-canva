@@ -33,15 +33,15 @@ export const Home: React.FC = () => {
     if (isReducedMotion() || !homeContainerRef.current) return;
 
     const ctx = gsap.context(() => {
-      // 1. Entity / Intro Section Reveal
+      // 1. Entity / Intro Section Reveal with Masked Glow
       gsap.fromTo(
         '.entity-card',
-        { opacity: 0, y: 35, scale: 0.96 },
+        { opacity: 0, y: 45, scale: 0.94 },
         {
           opacity: 1,
           y: 0,
           scale: 1,
-          duration: 0.9,
+          duration: 1.0,
           ease: 'power3.out',
           clearProps: 'all',
           scrollTrigger: {
@@ -51,75 +51,78 @@ export const Home: React.FC = () => {
         }
       );
 
-      // 2. Pillars Staggered Entrance
+      // 2. Pillars Staggered 3D Tilt Entrance
       gsap.fromTo(
         '.pillar-card',
-        { opacity: 0, y: 40, scale: 0.96 },
+        { opacity: 0, y: 50, scale: 0.92, rotateX: 6 },
         {
           opacity: 1,
           y: 0,
           scale: 1,
-          stagger: 0.12,
-          duration: 0.8,
+          rotateX: 0,
+          stagger: 0.15,
+          duration: 0.9,
           ease: 'power3.out',
           clearProps: 'all',
           scrollTrigger: {
             trigger: '#three-core-areas',
+            start: 'top 80%',
+          },
+        }
+      );
+
+      // 3. Philosophy Section Text Mask & Scale Reveal
+      gsap.fromTo(
+        '.philosophy-heading',
+        { opacity: 0, y: 40, filter: 'blur(10px)', scale: 0.96 },
+        {
+          opacity: 1,
+          y: 0,
+          filter: 'blur(0px)',
+          scale: 1,
+          duration: 1.0,
+          ease: 'power4.out',
+          clearProps: 'all',
+          scrollTrigger: {
+            trigger: '.philosophy-section',
             start: 'top 82%',
           },
         }
       );
 
-      // 3. Philosophy Text Reveal
-      gsap.fromTo(
-        '.philosophy-heading',
-        { opacity: 0, y: 30, filter: 'blur(6px)' },
-        {
-          opacity: 1,
-          y: 0,
-          filter: 'blur(0px)',
-          duration: 0.85,
-          ease: 'power3.out',
-          clearProps: 'all',
-          scrollTrigger: {
-            trigger: '.philosophy-section',
-            start: 'top 85%',
-          },
-        }
-      );
+      // Scrubbed Parallax background drift on philosophy
+      createParallax('.philosophy-bg-glow', '.philosophy-section', { yPercent: -20 });
 
-      // Parallax background drift on philosophy
-      createParallax('.philosophy-bg-glow', '.philosophy-section', { yPercent: -15 });
-
-      // 4. Different by Design Cards Stagger
+      // 4. Different by Design Cards Stagger with Floating Accent
       gsap.fromTo(
         '.diff-card',
-        { opacity: 0, y: 35 },
+        { opacity: 0, y: 45, scale: 0.94 },
         {
           opacity: 1,
           y: 0,
-          stagger: 0.1,
-          duration: 0.75,
-          ease: 'power3.out',
+          scale: 1,
+          stagger: 0.12,
+          duration: 0.85,
+          ease: 'back.out(1.3)',
           clearProps: 'all',
           scrollTrigger: {
             trigger: '.diff-section',
-            start: 'top 85%',
+            start: 'top 82%',
           },
         }
       );
 
-      // 5. Target Sectors Staggered Grid Reveal
+      // 5. Target Sectors Staggered Grid Reveal with Momentum
       gsap.fromTo(
         '.sector-item',
-        { opacity: 0, scale: 0.9, y: 20 },
+        { opacity: 0, scale: 0.85, y: 25 },
         {
           opacity: 1,
           scale: 1,
           y: 0,
-          stagger: 0.06,
-          duration: 0.6,
-          ease: 'back.out(1.4)',
+          stagger: 0.08,
+          duration: 0.7,
+          ease: 'back.out(1.6)',
           clearProps: 'all',
           scrollTrigger: {
             trigger: '.sectors-section',
@@ -128,20 +131,21 @@ export const Home: React.FC = () => {
         }
       );
 
-      // 6. Final CTA Scale & Glow Reveal
+      // 6. Final CTA Scale, Glow & Button Stagger Reveal
       gsap.fromTo(
         '.cta-box',
-        { opacity: 0, scale: 0.95, y: 30 },
+        { opacity: 0, scale: 0.92, y: 40, filter: 'blur(6px)' },
         {
           opacity: 1,
           scale: 1,
           y: 0,
-          duration: 0.85,
-          ease: 'power3.out',
+          filter: 'blur(0px)',
+          duration: 1.0,
+          ease: 'power4.out',
           clearProps: 'all',
           scrollTrigger: {
             trigger: '.final-cta-section',
-            start: 'top 85%',
+            start: 'top 82%',
           },
         }
       );
