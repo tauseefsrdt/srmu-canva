@@ -102,10 +102,85 @@ export const Hero: React.FC = () => {
         });
       });
 
+      // Animated background geometric shapes
+      gsap.to('.hero-bg-shape-1', {
+        rotation: 360,
+        x: '+=30',
+        y: '-=20',
+        duration: 25,
+        repeat: -1,
+        ease: 'none',
+      });
+
+      gsap.to('.hero-bg-shape-2', {
+        rotation: -360,
+        x: '-=25',
+        y: '+=35',
+        duration: 30,
+        repeat: -1,
+        ease: 'none',
+      });
+
+      // Interactive pulsing radar / orbital rings
+      gsap.to('.hero-orbit-ring', {
+        scale: 1.3,
+        opacity: 0,
+        duration: 3.5,
+        repeat: -1,
+        stagger: 1.2,
+        ease: 'power1.out',
+      });
+
+      // GSAP On-Scroll Parallax for Hero Background
+      gsap.to('.hero-bg-marquee', {
+        xPercent: -30,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: heroRef.current,
+          start: 'top top',
+          end: 'bottom top',
+          scrub: 1,
+        },
+      });
+
+      gsap.to('.hero-bg-shape-1, .hero-bg-shape-2', {
+        yPercent: -40,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: heroRef.current,
+          start: 'top top',
+          end: 'bottom top',
+          scrub: 1.2,
+        },
+      });
+
+      gsap.to('.hero-glow-blob', {
+        yPercent: -25,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: heroRef.current,
+          start: 'top top',
+          end: 'bottom top',
+          scrub: 1,
+        },
+      });
+
+      gsap.to(rightMockupRef.current, {
+        yPercent: 18,
+        rotateZ: 3,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: heroRef.current,
+          start: 'top top',
+          end: 'bottom top',
+          scrub: 1,
+        },
+      });
+
       // Ambient glow pulsing
       gsap.to('.hero-glow-blob', {
-        scale: 1.2,
-        opacity: 0.3,
+        scale: 1.25,
+        opacity: 0.35,
         duration: 5,
         repeat: -1,
         yoyo: true,
@@ -221,10 +296,46 @@ export const Hero: React.FC = () => {
       ref={heroRef}
       className="relative min-h-[92vh] md:min-h-screen pt-28 md:pt-36 pb-16 flex flex-col justify-between overflow-hidden bg-[#050608] noise-bg"
     >
-      {/* Cinematic Studio Lights */}
-      <div className="hero-glow-blob absolute top-1/4 -left-32 w-[500px] h-[500px] bg-[#FF3154]/15 rounded-full blur-[120px] pointer-events-none" />
-      <div className="hero-glow-blob absolute top-1/3 -right-32 w-[600px] h-[600px] bg-[#8B3DFF]/15 rounded-full blur-[140px] pointer-events-none" />
-      <div className="hero-glow-blob absolute -top-20 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-gradient-to-b from-[#28D7FF]/10 to-transparent blur-[120px] pointer-events-none" />
+      {/* 1. Cinematic Studio Atmosphere & Lights */}
+      <div className="hero-glow-blob absolute top-1/4 -left-32 w-[500px] h-[500px] bg-[#FF3154]/20 rounded-full blur-[130px] pointer-events-none" />
+      <div className="hero-glow-blob absolute top-1/3 -right-32 w-[600px] h-[600px] bg-[#8B3DFF]/20 rounded-full blur-[150px] pointer-events-none" />
+      <div className="hero-glow-blob absolute -top-20 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-gradient-to-b from-[#28D7FF]/15 to-transparent blur-[120px] pointer-events-none" />
+
+      {/* 2. Kinetic Background Perspective Grid, Oversized Typography & Orbital Pulses */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden select-none">
+        {/* Visible Oversized Parallax Background Typography */}
+        <div 
+          className="hero-bg-marquee absolute top-[28%] left-0 whitespace-nowrap text-[14vw] sm:text-[16vw] font-black uppercase text-white/[0.06] font-mono tracking-tighter leading-none pointer-events-none"
+          style={{
+            WebkitTextStroke: '1.5px rgba(255, 255, 255, 0.12)',
+          }}
+        >
+          SRMUCANVAS • DIGITAL MARKETING • PERFORMANCE • GROWTH •
+        </div>
+
+        {/* Subtle Perspective Grid Lines */}
+        <div 
+          className="absolute inset-0 opacity-[0.07]"
+          style={{
+            backgroundImage: `linear-gradient(to right, rgba(255, 255, 255, 0.2) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 1px, transparent 1px)`,
+            backgroundSize: '48px 48px',
+            maskImage: 'radial-gradient(ellipse 60% 60% at 50% 40%, black 20%, transparent 80%)',
+            WebkitMaskImage: 'radial-gradient(ellipse 60% 60% at 50% 40%, black 20%, transparent 80%)',
+          }}
+        />
+
+        {/* Orbit Radar Rings around right mockup */}
+        <div className="absolute right-[15%] top-[35%] -translate-x-1/2 -translate-y-1/2 hidden md:block">
+          <div className="hero-orbit-ring absolute -inset-24 rounded-full border border-[#FF3154]/25 pointer-events-none" />
+          <div className="hero-orbit-ring absolute -inset-36 rounded-full border border-[#8B3DFF]/25 pointer-events-none" />
+          <div className="hero-orbit-ring absolute -inset-48 rounded-full border border-[#28D7FF]/20 pointer-events-none" />
+        </div>
+
+        {/* Floating Kinetic Shapes with Subtle Glow */}
+        <div className="hero-bg-shape-1 absolute top-[18%] left-[10%] w-24 h-24 rounded-3xl border border-white/15 bg-gradient-to-br from-white/[0.05] to-transparent backdrop-blur-[2px] transform rotate-12 hidden lg:block shadow-[0_0_30px_rgba(255,255,255,0.05)]" />
+        <div className="hero-bg-shape-2 absolute bottom-[22%] left-[45%] w-32 h-32 rounded-full border border-dashed border-[#FF3154]/30 hidden lg:block" />
+        <div className="hero-bg-shape-1 absolute top-[28%] right-[8%] w-20 h-20 rounded-2xl border border-[#8B3DFF]/30 bg-gradient-to-tr from-[#8B3DFF]/10 to-transparent hidden lg:block shadow-[0_0_30px_rgba(139,61,255,0.15)]" />
+      </div>
 
       <div className="max-w-7xl mx-auto px-6 md:px-10 w-full relative z-10 my-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
