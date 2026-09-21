@@ -1,25 +1,58 @@
-import React from 'react';
+import React, { useRef, useLayoutEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { 
   Search, 
   MapPin, 
   Cpu, 
-  HelpCircle, 
   ArrowRight, 
   ChevronRight, 
   CheckCircle2, 
   Sparkles, 
-  ShieldCheck, 
-  Layers, 
   Compass, 
-  ArrowUpRight,
   Database,
-  Share2
+  HelpCircle,
 } from 'lucide-react';
+import gsap from 'gsap';
 import { MagneticButton } from '../components/MagneticButton';
 import { FaqSection, FaqItem } from '../components/FaqSection';
+import { isReducedMotion } from '../utils/animations';
 
 export const GetFound: React.FC = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useLayoutEffect(() => {
+    if (isReducedMotion() || !containerRef.current) return;
+
+    const ctx = gsap.context(() => {
+      // Header entrance
+      gsap.fromTo(
+        '.gf-header-content',
+        { opacity: 0, y: 35, filter: 'blur(8px)' },
+        { opacity: 1, y: 0, filter: 'blur(0px)', duration: 0.9, ease: 'power3.out', clearProps: 'all' }
+      );
+
+      // Pillars stagger
+      gsap.fromTo(
+        '.gf-area-card',
+        { opacity: 0, y: 40, scale: 0.95 },
+        {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          stagger: 0.12,
+          duration: 0.85,
+          ease: 'power3.out',
+          clearProps: 'all',
+          scrollTrigger: {
+            trigger: '.gf-areas-section',
+            start: 'top 85%',
+          },
+        }
+      );
+    }, containerRef);
+
+    return () => ctx.revert();
+  }, []);
   const getFoundFaqs: FaqItem[] = [
     {
       question: "Is SEO still worth investing in?",
@@ -61,7 +94,7 @@ export const GetFound: React.FC = () => {
   ];
 
   return (
-    <div className="w-full pt-32 pb-20">
+    <div ref={containerRef} className="w-full pt-32 pb-20">
       {/* 1. HERO */}
       <section className="relative py-12 md:py-24 overflow-hidden border-b border-white/10">
         <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-[#FF3154]/20 rounded-full blur-[140px] pointer-events-none" />
@@ -75,7 +108,7 @@ export const GetFound: React.FC = () => {
             <span className="text-[#FF3154]">Get Found</span>
           </nav>
 
-          <div className="space-y-4 max-w-3xl">
+          <div className="gf-header-content space-y-4 max-w-3xl">
             <span className="inline-flex items-center gap-2 text-xs font-mono font-bold tracking-[0.3em] uppercase text-[#FF3154]">
               <Search size={14} />
               PILLAR 01 • SEARCH & AI VISIBILITY

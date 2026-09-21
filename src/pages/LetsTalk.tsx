@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useLayoutEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { 
   Sparkles, 
@@ -10,15 +10,50 @@ import {
   Phone, 
   MapPin, 
   CheckCircle2, 
-  HelpCircle,
   Loader2,
   FileCheck
 } from 'lucide-react';
+import gsap from 'gsap';
 import { companyContact } from '../data/navigation';
 import { FaqSection, FaqItem } from '../components/FaqSection';
 import { MagneticButton } from '../components/MagneticButton';
+import { isReducedMotion } from '../utils/animations';
 
 export const LetsTalk: React.FC = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useLayoutEffect(() => {
+    if (isReducedMotion() || !containerRef.current) return;
+
+    const ctx = gsap.context(() => {
+      // Header entrance
+      gsap.fromTo(
+        '.lt-header-content',
+        { opacity: 0, y: 35, filter: 'blur(8px)' },
+        { opacity: 1, y: 0, filter: 'blur(0px)', duration: 0.9, ease: 'power3.out', clearProps: 'all' }
+      );
+
+      // Form container reveal
+      gsap.fromTo(
+        '.lt-form-box',
+        { opacity: 0, y: 40, scale: 0.97 },
+        {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          duration: 0.9,
+          ease: 'power3.out',
+          clearProps: 'all',
+          scrollTrigger: {
+            trigger: '.lt-form-section',
+            start: 'top 85%',
+          },
+        }
+      );
+    }, containerRef);
+
+    return () => ctx.revert();
+  }, []);
   // Conversational Form State
   const [servicesSelected, setServicesSelected] = useState<string[]>(['SEO / Search Visibility']);
   const [challengeSelected, setChallengeSelected] = useState<string>('We are not getting enough enquiries');
@@ -73,7 +108,7 @@ export const LetsTalk: React.FC = () => {
   ];
 
   return (
-    <div className="w-full pt-32 pb-20">
+    <div ref={containerRef} className="w-full pt-32 pb-20">
       {/* 1. HERO */}
       <section className="relative py-12 md:py-24 overflow-hidden border-b border-white/10">
         <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-[#FF3154]/15 rounded-full blur-[140px] pointer-events-none" />
@@ -85,7 +120,7 @@ export const LetsTalk: React.FC = () => {
             <span className="text-[#FF3154]">Let's Talk</span>
           </nav>
 
-          <div className="space-y-4 max-w-3xl">
+          <div className="lt-header-content space-y-4 max-w-3xl">
             <span className="inline-flex items-center gap-2 text-xs font-mono font-bold tracking-[0.3em] uppercase text-[#FF3154]">
               <Sparkles size={14} />
               START THE CONVERSATION
@@ -105,9 +140,9 @@ export const LetsTalk: React.FC = () => {
       </section>
 
       {/* 2. CONVERSATIONAL AUDIT FORM */}
-      <section className="py-20">
+      <section className="lt-form-section py-20">
         <div className="max-w-5xl mx-auto px-6 md:px-10">
-          <div className="p-8 md:p-14 rounded-3xl bg-[#0D1014] border border-white/15 shadow-2xl space-y-12">
+          <div className="lt-form-box p-8 md:p-14 rounded-3xl bg-[#0D1014] border border-white/15 shadow-2xl space-y-12">
             
             {isSubmitted ? (
               <div className="py-16 text-center space-y-6 animate-fade-in">
@@ -409,7 +444,7 @@ export const LetsTalk: React.FC = () => {
             </div>
             <div className="p-6 rounded-2xl bg-[#0D1014] border border-white/10 space-y-2">
               <MapPin size={20} className="text-[#FF3154] mx-auto" />
-              <div className="text-white font-bold">Lucknow, India</div>
+              <div className="text-white font-bold max-w-xs mx-auto leading-relaxed">{companyContact.address}</div>
             </div>
           </div>
         </div>

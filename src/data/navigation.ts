@@ -62,7 +62,7 @@ export const footerIndustries = [
 ];
 
 export const companyContact = {
-  address: 'Kakoriama Business Solution Private Limited, C-142, Vibhuti Khand, Near Pake Hospital, Gomtinagar, Lucknow, UP 226010',
+  address: 'C-2/42, Vishesh Khand, Opposite Chote Lal Nursery, Gomtinagar, Lucknow',
   phone: '+91 7305092924',
   phoneDisplay: '+91 7305092924',
   whatsapp: '+91 7305092924',

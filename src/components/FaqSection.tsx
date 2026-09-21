@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useLayoutEffect } from 'react';
 import { ChevronDown, HelpCircle, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import gsap from 'gsap';
+import { isReducedMotion } from '../utils/animations';
 
 export interface FaqItem {
   question: string;
@@ -28,13 +30,39 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
   ctaLink = "/lets-talk"
 }) => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const sectionRef = useRef<HTMLDivElement>(null);
+
+  useLayoutEffect(() => {
+    if (isReducedMotion() || !sectionRef.current) return;
+
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        '.faq-accordion-item',
+        { opacity: 0, y: 25 },
+        {
+          opacity: 1,
+          y: 0,
+          stagger: 0.08,
+          duration: 0.7,
+          ease: 'power3.out',
+          clearProps: 'all',
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: 'top 85%',
+          },
+        }
+      );
+    }, sectionRef);
+
+    return () => ctx.revert();
+  }, [faqs]);
 
   const toggleFaq = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
   return (
-    <section className="py-20 md:py-28 relative border-t border-white/10 overflow-hidden">
+    <section ref={sectionRef} className="py-20 md:py-28 relative border-t border-white/10 overflow-hidden">
       {/* Background ambient glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-[#FF3154]/5 rounded-full blur-[140px] pointer-events-none" />
 
@@ -61,7 +89,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
             return (
               <div
                 key={idx}
-                className={`rounded-2xl border transition-all duration-300 overflow-hidden ${
+                className={`faq-accordion-item rounded-2xl border transition-all duration-300 overflow-hidden ${
                   isOpen
                     ? 'bg-[#0D1014] border-[#FF3154]/40 shadow-[0_10px_30px_rgba(255,49,84,0.15)]'
                     : 'bg-[#0D1014]/60 border-white/10 hover:border-white/20'

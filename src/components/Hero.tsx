@@ -1,13 +1,15 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { ArrowRight, Sparkles, ArrowDown, Search, CheckCircle2, TrendingUp, Zap } from 'lucide-react';
+import React, { useState, useEffect, useRef, useLayoutEffect } from 'react';
+import { ArrowRight, Sparkles, ArrowDown } from 'lucide-react';
+import gsap from 'gsap';
 import { MagneticButton } from './MagneticButton';
-import { useMouseParallax } from '../hooks/useMouseParallax';
 import { ShowreelModal } from './ShowreelModal';
+import { createFloating, isReducedMotion } from '../utils/animations';
 
 export const Hero: React.FC = () => {
   const [isShowreelOpen, setIsShowreelOpen] = useState(false);
   const heroRef = useRef<HTMLDivElement>(null);
-  const mouseOffset = useMouseParallax(heroRef, 14);
+  const rightMockupRef = useRef<HTMLDivElement>(null);
+  const glowRingRef = useRef<HTMLDivElement>(null);
 
   // Animated counters
   const [counts, setCounts] = useState({
@@ -17,6 +19,163 @@ export const Hero: React.FC = () => {
     dedication: 0,
   });
 
+  // Entrance GSAP Timeline
+  useLayoutEffect(() => {
+    if (isReducedMotion() || !heroRef.current) return;
+
+    const ctx = gsap.context(() => {
+      const tl = gsap.timeline({ defaults: { ease: 'power4.out' } });
+
+      // Studio RS style curtain reveal / mask slide
+      tl.fromTo(
+        '.hero-eyebrow',
+        { opacity: 0, y: 30, filter: 'blur(10px)' },
+        { opacity: 1, y: 0, filter: 'blur(0px)', duration: 1.0, delay: 0.1 }
+      )
+      // Words reveal upward from overflow hidden mask
+      .fromTo(
+        '.hero-word',
+        { yPercent: 120, rotate: 4, opacity: 0 },
+        { 
+          yPercent: 0, 
+          rotate: 0, 
+          opacity: 1, 
+          duration: 1.2, 
+          stagger: 0.08, 
+          ease: 'power4.out',
+          clearProps: 'transform,opacity'
+        },
+        '-=0.7'
+      )
+      .fromTo(
+        '.hero-desc',
+        { opacity: 0, y: 30, filter: 'blur(8px)' },
+        { opacity: 1, y: 0, filter: 'blur(0px)', duration: 0.9, ease: 'power3.out' },
+        '-=0.7'
+      )
+      .fromTo(
+        '.hero-pipeline',
+        { opacity: 0, scale: 0.95, y: 20 },
+        { opacity: 1, scale: 1, y: 0, duration: 0.8 },
+        '-=0.6'
+      )
+      .fromTo(
+        '.hero-cta-btn',
+        { opacity: 0, y: 25, scale: 0.9 },
+        { opacity: 1, y: 0, scale: 1, stagger: 0.1, duration: 0.8, ease: 'back.out(1.5)' },
+        '-=0.5'
+      )
+      // Studio RS style fluid 3D mockup reveal with scale & rotation
+      .fromTo(
+        '.hero-mockup-wrapper',
+        { opacity: 0, scale: 0.85, y: 60, rotateX: 12 },
+        { opacity: 1, scale: 1, y: 0, rotateX: 0, duration: 1.4, ease: 'power4.out' },
+        '-=1.0'
+      )
+      .fromTo(
+        glowRingRef.current,
+        { scale: 0.5, opacity: 0 },
+        { scale: 1, opacity: 1, duration: 1.6, ease: 'power3.out' },
+        '-=1.2'
+      )
+      .fromTo(
+        '.hero-tag',
+        { opacity: 0, scale: 0.5, y: 20 },
+        { opacity: 1, scale: 1, y: 0, stagger: 0.08, duration: 0.7, ease: 'back.out(2)' },
+        '-=0.8'
+      )
+      .fromTo(
+        '.hero-stats-row',
+        { opacity: 0, y: 30 },
+        { opacity: 1, y: 0, duration: 0.8, clearProps: 'all' },
+        '-=0.5'
+      );
+
+      // Organic floating micro-animations for tags
+      document.querySelectorAll('.hero-tag').forEach((el, index) => {
+        createFloating(el, {
+          yOffset: index % 2 === 0 ? -12 : -16,
+          xOffset: index % 3 === 0 ? 6 : -6,
+          rotation: index % 2 === 0 ? 3 : -3,
+          duration: 3.5 + index * 0.4,
+          delay: index * 0.2,
+        });
+      });
+
+      // Ambient glow pulsing
+      gsap.to('.hero-glow-blob', {
+        scale: 1.2,
+        opacity: 0.3,
+        duration: 5,
+        repeat: -1,
+        yoyo: true,
+        ease: 'sine.inOut',
+        stagger: 1.2,
+      });
+    }, heroRef);
+
+    return () => ctx.revert();
+  }, []);
+
+  // Smooth mouse movement with GSAP quickTo for zero-lag 60fps performance
+  useEffect(() => {
+    if (isReducedMotion() || !heroRef.current || !rightMockupRef.current) return;
+
+    const el = heroRef.current;
+    const mockup = rightMockupRef.current;
+    const ring = glowRingRef.current;
+
+    const xTo = gsap.quickTo(mockup, 'x', { duration: 0.6, ease: 'power2.out' });
+    const yTo = gsap.quickTo(mockup, 'y', { duration: 0.6, ease: 'power2.out' });
+    const rotYTo = gsap.quickTo(mockup, 'rotationY', { duration: 0.6, ease: 'power2.out' });
+    const rotXTo = gsap.quickTo(mockup, 'rotationX', { duration: 0.6, ease: 'power2.out' });
+
+    let ringXTo: gsap.QuickToFunc | null = null;
+    let ringYTo: gsap.QuickToFunc | null = null;
+    if (ring) {
+      ringXTo = gsap.quickTo(ring, 'x', { duration: 0.8, ease: 'power2.out' });
+      ringYTo = gsap.quickTo(ring, 'y', { duration: 0.8, ease: 'power2.out' });
+    }
+
+    const handleMouseMove = (e: MouseEvent) => {
+      const rect = el.getBoundingClientRect();
+      const centerX = rect.left + rect.width / 2;
+      const centerY = rect.top + rect.height / 2;
+      const normalizedX = (e.clientX - centerX) / (rect.width / 2);
+      const normalizedY = (e.clientY - centerY) / (rect.height / 2);
+
+      xTo(normalizedX * 16);
+      yTo(normalizedY * 16);
+      rotYTo(normalizedX * 5);
+      rotXTo(-normalizedY * 5);
+
+      if (ringXTo && ringYTo) {
+        ringXTo(normalizedX * 10);
+        ringYTo(normalizedY * 10);
+      }
+    };
+
+    const handleMouseLeave = () => {
+      xTo(0);
+      yTo(0);
+      rotYTo(0);
+      rotXTo(0);
+      if (ringXTo && ringYTo) {
+        ringXTo(0);
+        ringYTo(0);
+      }
+    };
+
+    el.addEventListener('mousemove', handleMouseMove);
+    el.addEventListener('mouseleave', handleMouseLeave);
+
+    return () => {
+      el.removeEventListener('mousemove', handleMouseMove);
+      el.removeEventListener('mouseleave', handleMouseLeave);
+    };
+  }, []);
+
+  // Numbers counter
   useEffect(() => {
     const duration = 1600;
     const steps = 40;
@@ -49,12 +208,12 @@ export const Hero: React.FC = () => {
   };
 
   const floatingTags = [
-    { label: 'Google Ads', color: '#267BFF', top: '-10%', left: '5%' },
-    { label: 'SEO & Maps', color: '#FF7A18', top: '15%', right: '-8%' },
-    { label: 'AI Search', color: '#8B3DFF', bottom: '25%', left: '-10%' },
-    { label: 'AEO Engine', color: '#FF167D', top: '55%', right: '-5%' },
-    { label: 'Meta Ads', color: '#28D7FF', bottom: '-5%', right: '20%' },
-    { label: 'Qualified Leads', color: '#FF3154', bottom: '-8%', left: '10%' },
+    { label: 'Google Ads', color: '#267BFF', top: '-6%', left: '5%' },
+    { label: 'SEO & Maps', color: '#FF7A18', top: '15%', right: '-4%' },
+    { label: 'AI Search', color: '#8B3DFF', bottom: '25%', left: '-6%' },
+    { label: 'AEO Engine', color: '#FF167D', top: '55%', right: '-3%' },
+    { label: 'Meta Ads', color: '#28D7FF', bottom: '-4%', right: '15%' },
+    { label: 'Qualified Leads', color: '#FF3154', bottom: '-6%', left: '10%' },
   ];
 
   return (
@@ -63,9 +222,9 @@ export const Hero: React.FC = () => {
       className="relative min-h-[92vh] md:min-h-screen pt-28 md:pt-36 pb-16 flex flex-col justify-between overflow-hidden bg-[#050608] noise-bg"
     >
       {/* Cinematic Studio Lights */}
-      <div className="absolute top-1/4 -left-32 w-[500px] h-[500px] bg-[#FF3154]/15 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute top-1/3 -right-32 w-[600px] h-[600px] bg-[#8B3DFF]/15 rounded-full blur-[140px] pointer-events-none" />
-      <div className="absolute -top-20 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-gradient-to-b from-[#28D7FF]/10 to-transparent blur-[120px] pointer-events-none" />
+      <div className="hero-glow-blob absolute top-1/4 -left-32 w-[500px] h-[500px] bg-[#FF3154]/15 rounded-full blur-[120px] pointer-events-none" />
+      <div className="hero-glow-blob absolute top-1/3 -right-32 w-[600px] h-[600px] bg-[#8B3DFF]/15 rounded-full blur-[140px] pointer-events-none" />
+      <div className="hero-glow-blob absolute -top-20 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-gradient-to-b from-[#28D7FF]/10 to-transparent blur-[120px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-10 w-full relative z-10 my-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
@@ -74,28 +233,33 @@ export const Hero: React.FC = () => {
           <div className="lg:col-span-7 space-y-6 md:space-y-8">
             
             {/* Supporting headline badge */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-mono font-bold tracking-wider text-[#FF3154]">
-              <Sparkles size={14} />
+            <div className="hero-eyebrow inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-mono font-bold tracking-wider text-[#FF3154]">
+              <Sparkles size={14} className="animate-spin-slow" />
               <span>GET FOUND • GET CUSTOMERS • GET REMEMBERED</span>
             </div>
 
-            {/* Main Display H1 (Exact from Doc) */}
-            <div className="space-y-2">
-              <h1 className="text-4xl sm:text-6xl lg:text-7xl xl:text-[76px] font-black uppercase tracking-tight leading-[0.96] text-white">
-                <span className="block font-black">Digital Marketing</span>
-                <span className="block text-gradient-brand text-gradient-glow font-black">
-                  That Means Business.
+            {/* Main Display H1 with Studio RS masked word splits */}
+            <div className="space-y-1">
+              <h1 className="text-4xl sm:text-6xl lg:text-7xl xl:text-[76px] font-black uppercase tracking-tight leading-[1.05] text-white select-none">
+                <span className="block overflow-hidden py-1">
+                  <span className="hero-word inline-block font-black mr-3.5 text-white">Digital</span>
+                  <span className="hero-word inline-block font-black text-white">Marketing</span>
+                </span>
+                <span className="block overflow-hidden py-1">
+                  <span className="hero-word inline-block mr-3.5 text-gradient-brand font-black">That</span>
+                  <span className="hero-word inline-block mr-3.5 text-gradient-brand font-black">Means</span>
+                  <span className="hero-word inline-block text-gradient-brand font-black">Business.</span>
                 </span>
               </h1>
             </div>
 
-            {/* Body Copy (Exact from Doc) */}
-            <p className="text-sm sm:text-base md:text-lg text-[#9A9DA7] leading-relaxed max-w-xl font-normal">
+            {/* Body Copy */}
+            <p className="hero-desc text-sm sm:text-base md:text-lg text-[#9A9DA7] leading-relaxed max-w-xl font-normal">
               SRMUCANVAS is a digital marketing and performance marketing agency helping businesses grow through paid advertising, SEO, AI Search, Answer Engine Optimization (AEO), lead generation and conversion-focused creative.
             </p>
 
-            {/* Journey Pill Pipeline: SEARCH → DISCOVER → CLICK → ENQUIRE → GROW */}
-            <div className="hidden sm:flex items-center gap-2 text-[11px] font-mono font-bold tracking-wider text-white/80 py-2 overflow-x-auto no-scrollbar">
+            {/* Journey Pill Pipeline */}
+            <div className="hero-pipeline hidden sm:flex items-center gap-2 text-[11px] font-mono font-bold tracking-wider text-white/80 py-2 overflow-x-auto no-scrollbar">
               <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10">SEARCH</span>
               <span className="text-[#FF3154]">→</span>
               <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10">DISCOVER</span>
@@ -109,48 +273,49 @@ export const Hero: React.FC = () => {
 
             {/* CTAs */}
             <div className="flex flex-wrap items-center gap-4 pt-2">
-              <MagneticButton
-                to="/lets-talk"
-                variant="primary"
-                className="!px-7 !py-3.5 !text-xs uppercase tracking-wider shadow-[0_0_30px_rgba(255,49,84,0.5)]"
-              >
-                <span>Get a Free Audit</span>
-                <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-              </MagneticButton>
+              <div className="hero-cta-btn">
+                <MagneticButton
+                  to="/lets-talk"
+                  variant="primary"
+                  className="!px-7 !py-3.5 !text-xs uppercase tracking-wider shadow-[0_0_30px_rgba(255,49,84,0.5)]"
+                >
+                  <span>Get a Free Audit</span>
+                  <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                </MagneticButton>
+              </div>
 
-              <MagneticButton
-                to="/what-we-do"
-                variant="secondary"
-                className="!px-6 !py-3.5 !text-xs uppercase tracking-wider"
-              >
-                <span>See What We Do</span>
-                <ArrowRight size={14} className="text-[#FF3154] group-hover:translate-x-1 transition-transform" />
-              </MagneticButton>
+              <div className="hero-cta-btn">
+                <MagneticButton
+                  to="/what-we-do"
+                  variant="secondary"
+                  className="!px-6 !py-3.5 !text-xs uppercase tracking-wider"
+                >
+                  <span>See What We Do</span>
+                  <ArrowRight size={14} className="text-[#FF3154] group-hover:translate-x-1 transition-transform" />
+                </MagneticButton>
+              </div>
             </div>
           </div>
 
-          {/* RIGHT: Studio Mockup Composition + Floating AI/Ads Pills (5 cols) */}
-          <div className="lg:col-span-5 relative flex items-center justify-center">
+          {/* RIGHT: Studio Mockup Composition */}
+          <div className="lg:col-span-5 relative flex items-center justify-center [perspective:1200px]">
             
             {/* Red Circular Glow Ring */}
             <div 
-              className="absolute w-72 h-72 sm:w-96 sm:h-96 md:w-[460px] md:h-[460px] rounded-full border-2 border-[#FF3154]/40 shadow-[0_0_80px_rgba(255,49,84,0.35)] pointer-events-none transform transition-transform duration-700"
-              style={{
-                transform: `translate3d(${mouseOffset.x * 0.5}px, ${mouseOffset.y * 0.5}px, 0)`
-              }}
+              ref={glowRingRef}
+              className="absolute w-72 h-72 sm:w-96 sm:h-96 md:w-[460px] md:h-[460px] rounded-full border-2 border-[#FF3154]/40 shadow-[0_0_80px_rgba(255,49,84,0.35)] pointer-events-none"
             />
 
-            {/* Floating Tags (Google Ads, SEO, AI Search, AEO, Meta Ads, Leads) */}
-            {floatingTags.map((tag, i) => (
+            {/* Floating Tags */}
+            {floatingTags.map((tag) => (
               <div
                 key={tag.label}
-                className="absolute hidden md:flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#0D1014]/90 border border-white/15 backdrop-blur-md text-[10px] font-mono font-bold uppercase tracking-wider text-white shadow-xl z-30 transition-transform duration-500"
+                className="hero-tag absolute hidden md:flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#0D1014]/90 border border-white/15 backdrop-blur-md text-[10px] font-mono font-bold uppercase tracking-wider text-white shadow-xl z-30 pointer-events-none"
                 style={{
                   top: tag.top,
                   bottom: tag.bottom,
                   left: tag.left,
                   right: tag.right,
-                  transform: `translate3d(${mouseOffset.x * (i % 2 === 0 ? 0.8 : -0.8)}px, ${mouseOffset.y * (i % 2 === 0 ? 0.8 : -0.8)}px, 0)`
                 }}
               >
                 <span className="w-2 h-2 rounded-full animate-ping" style={{ backgroundColor: tag.color }} />
@@ -160,10 +325,9 @@ export const Hero: React.FC = () => {
 
             {/* 3D Mockup Container */}
             <div 
-              className="relative w-full max-w-[460px] transition-transform duration-500 ease-out z-10"
-              style={{
-                transform: `translate3d(${mouseOffset.x * 1.1}px, ${mouseOffset.y * 1.1}px, 0) perspective(1000px) rotateY(${mouseOffset.x * 0.12}deg) rotateX(${-mouseOffset.y * 0.12}deg)`
-              }}
+              ref={rightMockupRef}
+              className="hero-mockup-wrapper relative w-full max-w-[460px] z-10"
+              style={{ transformStyle: 'preserve-3d' }}
             >
               {/* Laptop UI */}
               <div className="relative rounded-2xl bg-[#0D1014] border border-white/20 p-2 sm:p-3 shadow-2xl backdrop-blur-xl">
@@ -191,10 +355,8 @@ export const Hero: React.FC = () => {
 
               {/* Mobile Device Overlay */}
               <div 
-                className="absolute -bottom-6 -right-4 sm:-right-8 w-28 sm:w-36 aspect-[9/18] rounded-2xl sm:rounded-3xl bg-[#050608] border-2 border-white/25 p-1.5 shadow-[0_25px_50px_rgba(0,0,0,0.9)] overflow-hidden transition-transform duration-700 z-20"
-                style={{
-                  transform: `translate3d(${mouseOffset.x * -0.7}px, ${mouseOffset.y * -0.7}px, 0)`
-                }}
+                className="absolute -bottom-6 -right-4 sm:-right-8 w-28 sm:w-36 aspect-[9/18] rounded-2xl sm:rounded-3xl bg-[#050608] border-2 border-white/25 p-1.5 shadow-[0_25px_50px_rgba(0,0,0,0.9)] overflow-hidden z-20"
+                style={{ transform: 'translateZ(30px)' }}
               >
                 <div className="w-full h-full rounded-xl overflow-hidden relative">
                   <img
@@ -207,8 +369,8 @@ export const Hero: React.FC = () => {
               </div>
             </div>
 
-            {/* Right Side Vertical Editorial Badge */}
-            <div className="hidden xl:flex flex-col items-center absolute -right-20 top-1/2 -translate-y-1/2 space-y-6 select-none opacity-80">
+            {/* Right Side Vertical Editorial Badge (Contained safely inside) */}
+            <div className="hidden 2xl:flex flex-col items-center absolute -right-12 top-1/2 -translate-y-1/2 space-y-6 select-none opacity-80 pointer-events-none">
               <div className="font-handwriting text-2xl text-white transform -rotate-90 origin-center whitespace-nowrap">
                 Good Design Better Business
               </div>
@@ -223,7 +385,7 @@ export const Hero: React.FC = () => {
         </div>
 
         {/* BOTTOM STATS & SCROLL DOWN */}
-        <div className="mt-14 md:mt-20 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="hero-stats-row mt-14 md:mt-20 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-8">
           
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-10 w-full md:w-auto">
             <div>

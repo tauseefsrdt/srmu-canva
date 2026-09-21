@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useLayoutEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { 
   Search, 
@@ -6,18 +6,68 @@ import {
   Sparkles, 
   ArrowRight, 
   ChevronRight, 
-  Layers, 
   CheckCircle2, 
-  Zap, 
-  ShieldCheck, 
-  HelpCircle,
-  BarChart2,
-  Compass
 } from 'lucide-react';
+import gsap from 'gsap';
 import { MagneticButton } from '../components/MagneticButton';
 import { FaqSection, FaqItem } from '../components/FaqSection';
+import { isReducedMotion } from '../utils/animations';
 
 export const WhatWeDo: React.FC = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useLayoutEffect(() => {
+    if (isReducedMotion() || !containerRef.current) return;
+
+    const ctx = gsap.context(() => {
+      // Header entrance
+      gsap.fromTo(
+        '.wwd-header-content',
+        { opacity: 0, y: 35, filter: 'blur(8px)' },
+        { opacity: 1, y: 0, filter: 'blur(0px)', duration: 0.9, ease: 'power3.out', clearProps: 'all' }
+      );
+
+      // Pillars entrance
+      gsap.fromTo(
+        '.wwd-pillar-card',
+        { opacity: 0, y: 45, scale: 0.95 },
+        {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          stagger: 0.12,
+          duration: 0.85,
+          ease: 'power3.out',
+          clearProps: 'all',
+          scrollTrigger: {
+            trigger: '.wwd-pillars-section',
+            start: 'top 85%',
+          },
+        }
+      );
+
+      // Methodology stagger
+      gsap.fromTo(
+        '.method-step',
+        { opacity: 0, y: 30 },
+        {
+          opacity: 1,
+          y: 0,
+          stagger: 0.1,
+          duration: 0.75,
+          ease: 'power3.out',
+          clearProps: 'all',
+          scrollTrigger: {
+            trigger: '.method-section',
+            start: 'top 85%',
+          },
+        }
+      );
+    }, containerRef);
+
+    return () => ctx.revert();
+  }, []);
+
   const whatWeDoFaqs: FaqItem[] = [
     {
       question: "Which digital marketing services does my business actually need?",
@@ -50,7 +100,7 @@ export const WhatWeDo: React.FC = () => {
   ];
 
   return (
-    <div className="w-full pt-32 pb-20">
+    <div ref={containerRef} className="w-full pt-32 pb-20">
       {/* 1. HERO */}
       <section className="relative py-12 md:py-24 overflow-hidden border-b border-white/10">
         <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-[#FF3154]/15 rounded-full blur-[140px] pointer-events-none" />
@@ -62,7 +112,7 @@ export const WhatWeDo: React.FC = () => {
             <span className="text-[#FF3154]">What We Do</span>
           </nav>
 
-          <div className="space-y-4 max-w-3xl">
+          <div className="wwd-header-content space-y-4 max-w-3xl">
             <span className="inline-flex items-center gap-2 text-xs font-mono font-bold tracking-[0.3em] uppercase text-[#FF3154]">
               <Sparkles size={14} />
               SERVICES & STRATEGY
@@ -92,7 +142,7 @@ export const WhatWeDo: React.FC = () => {
       </section>
 
       {/* 2. INTRODUCTION */}
-      <section className="py-20 border-t border-white/10">
+      <section className="wwd-pillars-section py-20 border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6 md:px-10 space-y-12">
           <div className="max-w-3xl space-y-4">
             <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#FF3154]">
@@ -109,7 +159,7 @@ export const WhatWeDo: React.FC = () => {
           {/* 3 Pillars Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Pillar 1: GET FOUND */}
-            <div className="p-8 rounded-3xl bg-[#0D1014] border border-white/10 space-y-6 flex flex-col justify-between">
+            <div className="wwd-pillar-card p-8 rounded-3xl bg-[#0D1014] border border-white/10 space-y-6 flex flex-col justify-between">
               <div className="space-y-4">
                 <div className="w-12 h-12 rounded-2xl bg-[#FF3154]/10 text-[#FF3154] flex items-center justify-center">
                   <Search size={24} />
@@ -136,7 +186,7 @@ export const WhatWeDo: React.FC = () => {
             </div>
 
             {/* Pillar 2: GET CUSTOMERS */}
-            <div className="p-8 rounded-3xl bg-[#0D1014] border border-white/10 space-y-6 flex flex-col justify-between">
+            <div className="wwd-pillar-card p-8 rounded-3xl bg-[#0D1014] border border-white/10 space-y-6 flex flex-col justify-between">
               <div className="space-y-4">
                 <div className="w-12 h-12 rounded-2xl bg-[#8B3DFF]/10 text-[#8B3DFF] flex items-center justify-center">
                   <TrendingUp size={24} />
@@ -163,7 +213,7 @@ export const WhatWeDo: React.FC = () => {
             </div>
 
             {/* Pillar 3: GET REMEMBERED */}
-            <div className="p-8 rounded-3xl bg-[#0D1014] border border-white/10 space-y-6 flex flex-col justify-between">
+            <div className="wwd-pillar-card p-8 rounded-3xl bg-[#0D1014] border border-white/10 space-y-6 flex flex-col justify-between">
               <div className="space-y-4">
                 <div className="w-12 h-12 rounded-2xl bg-[#28D7FF]/10 text-[#28D7FF] flex items-center justify-center">
                   <Sparkles size={24} />

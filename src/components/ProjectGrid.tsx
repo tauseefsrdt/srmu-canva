@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useRef, useLayoutEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Send, ArrowUpRight } from 'lucide-react';
+import gsap from 'gsap';
 import { Project } from '../types';
 import { ProjectCard } from './ProjectCard';
+import { isReducedMotion } from '../utils/animations';
 
 interface ProjectGridProps {
   projects: Project[];
@@ -15,19 +17,48 @@ export const ProjectGrid: React.FC<ProjectGridProps> = ({
   includeCtaCard = true,
   columns = 3 
 }) => {
+  const gridRef = useRef<HTMLDivElement>(null);
+
+  useLayoutEffect(() => {
+    if (isReducedMotion() || !gridRef.current) return;
+
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        '.project-grid-item',
+        { opacity: 0, y: 40, scale: 0.95 },
+        {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          stagger: 0.1,
+          duration: 0.85,
+          ease: 'power3.out',
+          clearProps: 'all',
+          scrollTrigger: {
+            trigger: gridRef.current,
+            start: 'top 85%',
+          },
+        }
+      );
+    }, gridRef);
+
+    return () => ctx.revert();
+  }, [projects]);
+
   return (
-    <div className={`grid grid-cols-1 md:grid-cols-2 ${columns === 3 ? 'lg:grid-cols-3' : ''} gap-6 md:gap-8`}>
+    <div ref={gridRef} className={`grid grid-cols-1 md:grid-cols-2 ${columns === 3 ? 'lg:grid-cols-3' : ''} gap-6 md:gap-8`}>
       {projects.map((project, idx) => (
-        <ProjectCard 
-          key={project.id} 
-          project={project} 
-          index={idx}
-        />
+        <div key={project.id} className="project-grid-item">
+          <ProjectCard 
+            project={project} 
+            index={idx}
+          />
+        </div>
       ))}
 
-      {/* Special "Have a Project in Mind?" Interactive Card (From Reference Design) */}
+      {/* Special "Have a Project in Mind?" Interactive Card */}
       {includeCtaCard && (
-        <div className="relative rounded-card overflow-hidden p-8 md:p-10 flex flex-col justify-between bg-gradient-to-br from-[#FF3154] via-[#FF167D] to-[#8B3DFF] text-white shadow-[0_20px_50px_rgba(255,49,84,0.35)] group min-h-[280px]">
+        <div className="project-grid-item relative rounded-card overflow-hidden p-8 md:p-10 flex flex-col justify-between bg-gradient-to-br from-[#FF3154] via-[#FF167D] to-[#8B3DFF] text-white shadow-[0_20px_50px_rgba(255,49,84,0.35)] group min-h-[280px]">
           {/* Animated decorative circles */}
           <div className="absolute -right-10 -bottom-10 w-48 h-48 rounded-full bg-white/10 blur-2xl group-hover:scale-125 transition-transform duration-700 pointer-events-none" />
           
@@ -45,7 +76,7 @@ export const ProjectGrid: React.FC<ProjectGridProps> = ({
 
           <div className="pt-6 relative z-10 flex items-center justify-between">
             <Link
-              to="/contact"
+              to="/lets-talk"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-[#050608] font-bold text-xs uppercase tracking-wider hover:bg-black hover:text-white transition-all shadow-lg hover:shadow-2xl"
             >
               <span>Get in Touch</span>
@@ -61,3 +92,4 @@ export const ProjectGrid: React.FC<ProjectGridProps> = ({
     </div>
   );
 };
+

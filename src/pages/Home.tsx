@@ -1,41 +1,153 @@
-import React, { useState, useMemo } from 'react';
+import React, { useRef, useLayoutEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { 
-  Search, 
-  TrendingUp, 
-  Sparkles, 
-  ArrowRight, 
-  CheckCircle2, 
-  ShieldCheck, 
-  Zap, 
-  Users, 
-  Layers, 
-  BarChart3, 
-  Target,
-  GraduationCap,
-  Stethoscope,
-  Building2,
-  Briefcase,
-  Hotel,
-  Factory
+   Search, 
+   TrendingUp, 
+   Sparkles, 
+   ArrowRight, 
+   Zap, 
+   Users, 
+   Target,
+   GraduationCap,
+   Stethoscope,
+   Building2,
+   Briefcase,
+   Hotel,
+   Factory
 } from 'lucide-react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Hero } from '../components/Hero';
-import { ProjectFilter } from '../components/ProjectFilter';
-import { ProjectGrid } from '../components/ProjectGrid';
+import { HorizontalProjects } from '../components/HorizontalProjects';
 import { FaqSection, FaqItem } from '../components/FaqSection';
 import { MagneticButton } from '../components/MagneticButton';
-import { projectsData } from '../data/projects';
-import { ProjectCategory } from '../types';
+import { isReducedMotion, createParallax } from '../utils/animations';
+
+gsap.registerPlugin(ScrollTrigger);
 
 export const Home: React.FC = () => {
-  const [activeCategory, setActiveCategory] = useState<ProjectCategory>('All Projects');
+  const homeContainerRef = useRef<HTMLDivElement>(null);
 
-  const filteredProjects = useMemo(() => {
-    if (activeCategory === 'All Projects') {
-      return projectsData.slice(0, 6);
-    }
-    return projectsData.filter((p) => p.category === activeCategory);
-  }, [activeCategory]);
+  useLayoutEffect(() => {
+    if (isReducedMotion() || !homeContainerRef.current) return;
+
+    const ctx = gsap.context(() => {
+      // 1. Entity / Intro Section Reveal
+      gsap.fromTo(
+        '.entity-card',
+        { opacity: 0, y: 35, scale: 0.96 },
+        {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          duration: 0.9,
+          ease: 'power3.out',
+          clearProps: 'all',
+          scrollTrigger: {
+            trigger: '.entity-section',
+            start: 'top 85%',
+          },
+        }
+      );
+
+      // 2. Pillars Staggered Entrance
+      gsap.fromTo(
+        '.pillar-card',
+        { opacity: 0, y: 40, scale: 0.96 },
+        {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          stagger: 0.12,
+          duration: 0.8,
+          ease: 'power3.out',
+          clearProps: 'all',
+          scrollTrigger: {
+            trigger: '#three-core-areas',
+            start: 'top 82%',
+          },
+        }
+      );
+
+      // 3. Philosophy Text Reveal
+      gsap.fromTo(
+        '.philosophy-heading',
+        { opacity: 0, y: 30, filter: 'blur(6px)' },
+        {
+          opacity: 1,
+          y: 0,
+          filter: 'blur(0px)',
+          duration: 0.85,
+          ease: 'power3.out',
+          clearProps: 'all',
+          scrollTrigger: {
+            trigger: '.philosophy-section',
+            start: 'top 85%',
+          },
+        }
+      );
+
+      // Parallax background drift on philosophy
+      createParallax('.philosophy-bg-glow', '.philosophy-section', { yPercent: -15 });
+
+      // 4. Different by Design Cards Stagger
+      gsap.fromTo(
+        '.diff-card',
+        { opacity: 0, y: 35 },
+        {
+          opacity: 1,
+          y: 0,
+          stagger: 0.1,
+          duration: 0.75,
+          ease: 'power3.out',
+          clearProps: 'all',
+          scrollTrigger: {
+            trigger: '.diff-section',
+            start: 'top 85%',
+          },
+        }
+      );
+
+      // 5. Target Sectors Staggered Grid Reveal
+      gsap.fromTo(
+        '.sector-item',
+        { opacity: 0, scale: 0.9, y: 20 },
+        {
+          opacity: 1,
+          scale: 1,
+          y: 0,
+          stagger: 0.06,
+          duration: 0.6,
+          ease: 'back.out(1.4)',
+          clearProps: 'all',
+          scrollTrigger: {
+            trigger: '.sectors-section',
+            start: 'top 85%',
+          },
+        }
+      );
+
+      // 6. Final CTA Scale & Glow Reveal
+      gsap.fromTo(
+        '.cta-box',
+        { opacity: 0, scale: 0.95, y: 30 },
+        {
+          opacity: 1,
+          scale: 1,
+          y: 0,
+          duration: 0.85,
+          ease: 'power3.out',
+          clearProps: 'all',
+          scrollTrigger: {
+            trigger: '.final-cta-section',
+            start: 'top 85%',
+          },
+        }
+      );
+    }, homeContainerRef);
+
+    return () => ctx.revert();
+  }, []);
 
   const homeFaqs: FaqItem[] = [
     {
@@ -66,14 +178,14 @@ export const Home: React.FC = () => {
   ];
 
   return (
-    <div className="w-full">
+    <div ref={homeContainerRef} className="w-full">
       {/* 1. HERO */}
       <Hero />
 
       {/* 2. ENTITY / INTRODUCTION: Meet SRMUCANVAS */}
-      <section className="py-20 md:py-28 relative border-t border-white/10 bg-[#050608]">
+      <section className="entity-section py-20 md:py-28 relative border-t border-white/10 bg-[#050608]">
         <div className="max-w-6xl mx-auto px-6 md:px-10">
-          <div className="p-8 md:p-14 rounded-3xl bg-[#0D1014] border border-white/10 relative overflow-hidden shadow-2xl space-y-6">
+          <div className="entity-card p-8 md:p-14 rounded-3xl bg-[#0D1014] border border-white/10 relative overflow-hidden shadow-2xl space-y-6">
             <div className="flex items-center gap-3">
               <span className="w-2.5 h-2.5 rounded-full bg-[#FF3154] animate-pulse" />
               <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#FF3154]">
@@ -81,7 +193,7 @@ export const Home: React.FC = () => {
               </span>
             </div>
 
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight leading-tight">
+            <h2 className="entity-title text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight leading-tight">
               Meet SRMUCANVAS
             </h2>
 
@@ -123,7 +235,7 @@ export const Home: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Pillar 1: Get Found */}
-            <div className="p-8 md:p-10 rounded-3xl bg-[#0D1014] border border-white/10 hover:border-[#FF3154]/40 transition-all duration-300 space-y-6 flex flex-col justify-between group shadow-card">
+            <div className="pillar-card p-8 md:p-10 rounded-3xl bg-[#0D1014] border border-white/10 hover:border-[#FF3154]/40 transition-all duration-300 space-y-6 flex flex-col justify-between group shadow-card">
               <div className="space-y-4">
                 <div className="w-14 h-14 rounded-2xl bg-[#FF3154]/10 border border-[#FF3154]/30 flex items-center justify-center text-[#FF3154] group-hover:bg-[#FF3154] group-hover:text-white transition-colors">
                   <Search size={26} />
@@ -156,7 +268,7 @@ export const Home: React.FC = () => {
             </div>
 
             {/* Pillar 2: Get Customers */}
-            <div className="p-8 md:p-10 rounded-3xl bg-[#0D1014] border border-white/10 hover:border-[#8B3DFF]/40 transition-all duration-300 space-y-6 flex flex-col justify-between group shadow-card">
+            <div className="pillar-card p-8 md:p-10 rounded-3xl bg-[#0D1014] border border-white/10 hover:border-[#8B3DFF]/40 transition-all duration-300 space-y-6 flex flex-col justify-between group shadow-card">
               <div className="space-y-4">
                 <div className="w-14 h-14 rounded-2xl bg-[#8B3DFF]/10 border border-[#8B3DFF]/30 flex items-center justify-center text-[#8B3DFF] group-hover:bg-[#8B3DFF] group-hover:text-white transition-colors">
                   <TrendingUp size={26} />
@@ -189,7 +301,7 @@ export const Home: React.FC = () => {
             </div>
 
             {/* Pillar 3: Get Remembered */}
-            <div className="p-8 md:p-10 rounded-3xl bg-[#0D1014] border border-white/10 hover:border-[#28D7FF]/40 transition-all duration-300 space-y-6 flex flex-col justify-between group shadow-card">
+            <div className="pillar-card p-8 md:p-10 rounded-3xl bg-[#0D1014] border border-white/10 hover:border-[#28D7FF]/40 transition-all duration-300 space-y-6 flex flex-col justify-between group shadow-card">
               <div className="space-y-4">
                 <div className="w-14 h-14 rounded-2xl bg-[#28D7FF]/10 border border-[#28D7FF]/30 flex items-center justify-center text-[#28D7FF] group-hover:bg-[#28D7FF] group-hover:text-white transition-colors">
                   <Sparkles size={26} />
@@ -225,12 +337,13 @@ export const Home: React.FC = () => {
       </section>
 
       {/* 4. THE PHILOSOPHY */}
-      <section className="py-20 md:py-28 relative border-t border-white/10 bg-[#080A0E]">
-        <div className="max-w-5xl mx-auto px-6 md:px-10 text-center space-y-6">
+      <section className="philosophy-section py-20 md:py-28 relative border-t border-white/10 bg-[#080A0E] overflow-hidden">
+        <div className="philosophy-bg-glow absolute -top-24 left-1/2 -translate-x-1/2 w-[700px] h-[300px] bg-[#FF3154]/10 rounded-full blur-[140px] pointer-events-none" />
+        <div className="max-w-5xl mx-auto px-6 md:px-10 text-center space-y-6 relative z-10">
           <span className="text-xs font-mono font-bold tracking-widest uppercase text-[#FF3154]">
             OUR PHILOSOPHY
           </span>
-          <h2 className="text-3xl sm:text-5xl md:text-6xl font-black text-white tracking-tight leading-tight">
+          <h2 className="philosophy-heading text-3xl sm:text-5xl md:text-6xl font-black text-white tracking-tight leading-tight">
             We're Not Here to Make Your Marketing Look Busy. <br />
             <span className="text-gradient-brand">We're Here to Make It Work.</span>
           </h2>
@@ -244,7 +357,7 @@ export const Home: React.FC = () => {
       </section>
 
       {/* 5. DIFFERENT BY DESIGN */}
-      <section className="py-20 md:py-28 border-t border-white/10">
+      <section className="diff-section py-20 md:py-28 border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6 md:px-10 space-y-16">
           <div className="text-center max-w-2xl mx-auto space-y-3">
             <span className="text-xs font-mono font-bold tracking-widest uppercase text-[#FF3154]">
@@ -256,7 +369,7 @@ export const Home: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="p-8 rounded-3xl bg-[#0D1014] border border-white/10 space-y-4">
+            <div className="diff-card p-8 rounded-3xl bg-[#0D1014] border border-white/10 space-y-4">
               <div className="w-12 h-12 rounded-2xl bg-[#FF3154]/10 border border-[#FF3154]/30 flex items-center justify-center text-[#FF3154]">
                 <Target size={22} />
               </div>
@@ -266,7 +379,7 @@ export const Home: React.FC = () => {
               </p>
             </div>
 
-            <div className="p-8 rounded-3xl bg-[#0D1014] border border-white/10 space-y-4">
+            <div className="diff-card p-8 rounded-3xl bg-[#0D1014] border border-white/10 space-y-4">
               <div className="w-12 h-12 rounded-2xl bg-[#8B3DFF]/10 border border-[#8B3DFF]/30 flex items-center justify-center text-[#8B3DFF]">
                 <Search size={22} />
               </div>
@@ -276,7 +389,7 @@ export const Home: React.FC = () => {
               </p>
             </div>
 
-            <div className="p-8 rounded-3xl bg-[#0D1014] border border-white/10 space-y-4">
+            <div className="diff-card p-8 rounded-3xl bg-[#0D1014] border border-white/10 space-y-4">
               <div className="w-12 h-12 rounded-2xl bg-[#28D7FF]/10 border border-[#28D7FF]/30 flex items-center justify-center text-[#28D7FF]">
                 <Users size={22} />
               </div>
@@ -290,7 +403,7 @@ export const Home: React.FC = () => {
       </section>
 
       {/* 6. TARGET SECTORS */}
-      <section className="py-20 md:py-28 border-t border-white/10 bg-[#080A0E]">
+      <section className="sectors-section py-20 md:py-28 border-t border-white/10 bg-[#080A0E]">
         <div className="max-w-7xl mx-auto px-6 md:px-10 space-y-12">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div className="space-y-3 max-w-2xl">
@@ -328,7 +441,7 @@ export const Home: React.FC = () => {
                 <Link
                   key={ind.name}
                   to={ind.href}
-                  className="p-6 rounded-2xl bg-[#0D1014] border border-white/10 hover:border-[#FF3154] hover:bg-[#151920] transition-all flex flex-col items-center text-center gap-3 group"
+                  className="sector-item p-6 rounded-2xl bg-[#0D1014] border border-white/10 hover:border-[#FF3154] hover:bg-[#151920] transition-all flex flex-col items-center text-center gap-3 group"
                 >
                   <Icon size={24} className="text-[#9A9DA7] group-hover:text-[#FF3154] transition-colors" />
                   <span className="text-xs font-bold text-white uppercase tracking-wider">
@@ -341,35 +454,8 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* 7. PROOF */}
-      <section className="py-20 md:py-28 border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-6 md:px-10 space-y-12">
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
-            <div className="space-y-3">
-              <span className="text-xs font-mono font-bold tracking-widest uppercase text-[#FF3154]">
-                OUR PORTFOLIO
-              </span>
-              <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
-                Work That Has a Purpose.
-              </h2>
-              <p className="text-sm text-[#9A9DA7]">
-                Real case studies with measurable business results, clear challenges, and tailored solutions.
-              </p>
-            </div>
-            
-            <ProjectFilter 
-              activeCategory={activeCategory} 
-              onSelectCategory={setActiveCategory} 
-            />
-          </div>
-
-          <ProjectGrid 
-            projects={filteredProjects} 
-            includeCtaCard={true}
-            columns={3}
-          />
-        </div>
-      </section>
+      {/* 7. CINEMATIC HORIZONTAL PORTFOLIO SHOWCASE */}
+      <HorizontalProjects />
 
       {/* 8. HOME FAQ */}
       <FaqSection 
@@ -380,13 +466,13 @@ export const Home: React.FC = () => {
       />
 
       {/* 9. FINAL CTA */}
-      <section className="py-20 md:py-32 relative overflow-hidden border-t border-white/10">
+      <section className="final-cta-section py-20 md:py-32 relative overflow-hidden border-t border-white/10">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute -left-20 top-1/2 -translate-y-1/2 w-[450px] h-[450px] bg-[#FF3154]/20 rounded-full blur-[120px]" />
           <div className="absolute -right-20 top-1/2 -translate-y-1/2 w-[450px] h-[450px] bg-[#8B3DFF]/20 rounded-full blur-[120px]" />
         </div>
 
-        <div className="max-w-5xl mx-auto px-6 md:px-10 relative z-10 text-center space-y-8">
+        <div className="cta-box max-w-5xl mx-auto px-6 md:px-10 relative z-10 text-center space-y-8">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-mono uppercase tracking-widest bg-white/5 border border-white/10 text-[#FF3154]">
             <Zap size={14} />
             <span>LET'S TALK BUSINESS</span>

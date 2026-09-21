@@ -1,10 +1,39 @@
-import React from 'react';
+import React, { useRef, useLayoutEffect } from 'react';
 import { ArrowRight, Sparkles } from 'lucide-react';
+import gsap from 'gsap';
 import { MagneticButton } from './MagneticButton';
+import { isReducedMotion } from '../utils/animations';
 
 export const CTASection: React.FC = () => {
+  const sectionRef = useRef<HTMLDivElement>(null);
+
+  useLayoutEffect(() => {
+    if (isReducedMotion() || !sectionRef.current) return;
+
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        '.cta-inner-card',
+        { opacity: 0, scale: 0.94, y: 40 },
+        {
+          opacity: 1,
+          scale: 1,
+          y: 0,
+          duration: 0.9,
+          ease: 'power3.out',
+          clearProps: 'all',
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: 'top 85%',
+          },
+        }
+      );
+    }, sectionRef);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <section className="py-20 md:py-32 relative overflow-hidden">
+    <section ref={sectionRef} className="py-20 md:py-32 relative overflow-hidden">
       {/* Abstract Colorful Blobs & Gradients */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute -left-20 top-1/2 -translate-y-1/2 w-[450px] h-[450px] bg-gradient-to-r from-[#FF3154]/30 via-[#FF167D]/20 to-transparent rounded-full blur-[100px] animate-pulse-slow" />
@@ -12,7 +41,7 @@ export const CTASection: React.FC = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 md:px-10 relative z-10">
-        <div className="relative rounded-[32px] p-10 md:p-20 bg-gradient-to-r from-[#151920]/90 via-[#0D1014]/95 to-[#151920]/90 border border-white/15 backdrop-blur-xl overflow-hidden shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-10">
+        <div className="cta-inner-card relative rounded-[32px] p-10 md:p-20 bg-gradient-to-r from-[#151920]/90 via-[#0D1014]/95 to-[#151920]/90 border border-white/15 backdrop-blur-xl overflow-hidden shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-10">
           {/* Subtle fluid ribbon overlay */}
           <div className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-[#FF3154] via-[#8B3DFF] to-[#28D7FF]" />
           
@@ -34,7 +63,7 @@ export const CTASection: React.FC = () => {
 
           <div className="flex flex-col sm:flex-row items-center gap-4 flex-shrink-0">
             <MagneticButton
-              to="/contact"
+              to="/lets-talk"
               variant="primary"
               className="!px-8 !py-4.5 !text-sm uppercase tracking-wider shadow-[0_0_40px_rgba(255,49,84,0.6)]"
             >
@@ -47,3 +76,4 @@ export const CTASection: React.FC = () => {
     </section>
   );
 };
+

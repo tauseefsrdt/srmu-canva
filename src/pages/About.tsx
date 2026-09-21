@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useRef, useLayoutEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronRight, Sparkles, ArrowRight } from 'lucide-react';
+import gsap from 'gsap';
 import { teamMembers, agencyValues } from '../data/team';
 import { MagneticButton } from '../components/MagneticButton';
 import { CTASection } from '../components/CTASection';
 import { useTilt } from '../hooks/useTilt';
-import { LinkedinIcon, TwitterXIcon, DribbbleIcon, InstagramIcon } from '../components/SocialIcons';
+import { LinkedinIcon, TwitterXIcon, DribbbleIcon } from '../components/SocialIcons';
+import { isReducedMotion, revealImage } from '../utils/animations';
 
 // Team Card Subcomponent with 3D Tilt
 const TeamCardItem: React.FC<{ member: typeof teamMembers[0] }> = ({ member }) => {
@@ -17,7 +19,7 @@ const TeamCardItem: React.FC<{ member: typeof teamMembers[0] }> = ({ member }) =
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       style={tiltStyle}
-      className="group relative rounded-card overflow-hidden bg-[#0D1014] border border-white/10 hover:border-white/25 transition-all duration-400 p-4 space-y-4 shadow-card"
+      className="team-card group relative rounded-card overflow-hidden bg-[#0D1014] border border-white/10 hover:border-white/25 transition-all duration-400 p-4 space-y-4 shadow-card"
     >
       <div className="relative aspect-[4/5] rounded-2xl overflow-hidden bg-[#151920]">
         <img
@@ -59,8 +61,68 @@ const TeamCardItem: React.FC<{ member: typeof teamMembers[0] }> = ({ member }) =
 };
 
 export const About: React.FC = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useLayoutEffect(() => {
+    if (isReducedMotion() || !containerRef.current) return;
+
+    const ctx = gsap.context(() => {
+      // Header text reveal
+      gsap.fromTo(
+        '.about-header-text',
+        { opacity: 0, y: 35, filter: 'blur(8px)' },
+        { opacity: 1, y: 0, filter: 'blur(0px)', duration: 0.9, ease: 'power3.out', clearProps: 'all' }
+      );
+
+      // Story image mask reveal
+      revealImage('.about-story-img', {
+        trigger: '.about-story-section',
+        direction: 'up',
+      });
+
+      // Values cards stagger
+      gsap.fromTo(
+        '.value-card',
+        { opacity: 0, y: 40, scale: 0.95 },
+        {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          stagger: 0.1,
+          duration: 0.8,
+          ease: 'power3.out',
+          clearProps: 'all',
+          scrollTrigger: {
+            trigger: '.values-section',
+            start: 'top 85%',
+          },
+        }
+      );
+
+      // Team cards stagger
+      gsap.fromTo(
+        '.team-card',
+        { opacity: 0, y: 45 },
+        {
+          opacity: 1,
+          y: 0,
+          stagger: 0.12,
+          duration: 0.85,
+          ease: 'power3.out',
+          clearProps: 'all',
+          scrollTrigger: {
+            trigger: '#team',
+            start: 'top 85%',
+          },
+        }
+      );
+    }, containerRef);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <div className="w-full pt-32 pb-20">
+    <div ref={containerRef} className="w-full pt-32 pb-20">
       {/* 1. Header Banner */}
       <section className="relative py-12 md:py-20 overflow-hidden border-b border-white/10">
         <div className="absolute -top-10 left-1/4 w-[500px] h-[500px] bg-[#8B3DFF]/15 rounded-full blur-[120px] pointer-events-none" />
@@ -72,7 +134,7 @@ export const About: React.FC = () => {
             <span className="text-[#FF3154]">About Us</span>
           </nav>
 
-          <div className="space-y-3 max-w-2xl">
+          <div className="about-header-text space-y-3 max-w-2xl">
             <span className="inline-flex items-center gap-2 text-xs font-mono font-bold tracking-[0.3em] uppercase text-[#FF3154]">
               <Sparkles size={14} />
               ABOUT SRMUCANVAS
@@ -88,7 +150,7 @@ export const About: React.FC = () => {
       </section>
 
       {/* 2. OUR STORY */}
-      <section className="py-20 md:py-28">
+      <section className="about-story-section py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-6 md:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Left Story Text */}
@@ -117,7 +179,7 @@ export const About: React.FC = () => {
 
             {/* Right Story Graphic */}
             <div className="lg:col-span-6 relative">
-              <div className="relative rounded-3xl overflow-hidden bg-[#0D1014] border border-white/15 p-3 shadow-2xl">
+              <div className="about-story-img relative rounded-3xl overflow-hidden bg-[#0D1014] border border-white/15 p-3 shadow-2xl">
                 <img
                   src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop"
                   alt="SRMUCANVAS Studio Collaboration"
@@ -154,7 +216,7 @@ export const About: React.FC = () => {
       </section>
 
       {/* 3. OUR VALUES */}
-      <section className="py-20 md:py-28 border-t border-white/10">
+      <section className="values-section py-20 md:py-28 border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6 md:px-10 space-y-16">
           <div className="text-center max-w-2xl mx-auto space-y-3">
             <span className="text-xs font-mono font-bold tracking-widest uppercase text-[#FF3154]">
@@ -172,7 +234,7 @@ export const About: React.FC = () => {
             {agencyValues.map((val) => (
               <div
                 key={val.id}
-                className="p-8 rounded-card bg-[#0D1014] border border-white/10 hover:border-white/25 transition-all duration-300 hover:-translate-y-2 space-y-4 shadow-card"
+                className="value-card p-8 rounded-card bg-[#0D1014] border border-white/10 hover:border-white/25 transition-all duration-300 hover:-translate-y-2 space-y-4 shadow-card"
               >
                 <div 
                   className="w-12 h-12 rounded-2xl flex items-center justify-center text-white"
@@ -222,3 +284,4 @@ export const About: React.FC = () => {
     </div>
   );
 };
+

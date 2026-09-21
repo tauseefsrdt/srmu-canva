@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useLayoutEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { 
   GraduationCap, 
@@ -11,15 +11,47 @@ import {
   ChevronRight, 
   CheckCircle2, 
   Sparkles, 
-  Search, 
-  TrendingUp, 
-  HelpCircle,
-  Compass
 } from 'lucide-react';
+import gsap from 'gsap';
 import { MagneticButton } from '../components/MagneticButton';
 import { FaqSection, FaqItem } from '../components/FaqSection';
+import { isReducedMotion } from '../utils/animations';
 
 export const WhoWeHelp: React.FC = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useLayoutEffect(() => {
+    if (isReducedMotion() || !containerRef.current) return;
+
+    const ctx = gsap.context(() => {
+      // Header entrance
+      gsap.fromTo(
+        '.wwh-header-content',
+        { opacity: 0, y: 35, filter: 'blur(8px)' },
+        { opacity: 1, y: 0, filter: 'blur(0px)', duration: 0.9, ease: 'power3.out', clearProps: 'all' }
+      );
+
+      // Industry sections stagger
+      gsap.fromTo(
+        '.industry-card',
+        { opacity: 0, y: 40 },
+        {
+          opacity: 1,
+          y: 0,
+          stagger: 0.1,
+          duration: 0.8,
+          ease: 'power3.out',
+          clearProps: 'all',
+          scrollTrigger: {
+            trigger: '.industries-grid',
+            start: 'top 85%',
+          },
+        }
+      );
+    }, containerRef);
+
+    return () => ctx.revert();
+  }, []);
   const whoWeHelpFaqs: FaqItem[] = [
     {
       question: "Which digital marketing strategy is right for my business?",
@@ -56,7 +88,7 @@ export const WhoWeHelp: React.FC = () => {
   ];
 
   return (
-    <div className="w-full pt-32 pb-20">
+    <div ref={containerRef} className="w-full pt-32 pb-20">
       {/* 1. HERO */}
       <section className="relative py-12 md:py-24 overflow-hidden border-b border-white/10">
         <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-[#FF3154]/15 rounded-full blur-[140px] pointer-events-none" />
@@ -68,7 +100,7 @@ export const WhoWeHelp: React.FC = () => {
             <span className="text-[#FF3154]">Who We Help</span>
           </nav>
 
-          <div className="space-y-4 max-w-3xl">
+          <div className="wwh-header-content space-y-4 max-w-3xl">
             <span className="inline-flex items-center gap-2 text-xs font-mono font-bold tracking-[0.3em] uppercase text-[#FF3154]">
               <Sparkles size={14} />
               INDUSTRY EXPERTISE
