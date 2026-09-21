@@ -9,12 +9,16 @@ import { PageTransition } from './components/PageTransition';
 
 // Pages
 import { Home } from './pages/Home';
+import { WhatWeDo } from './pages/WhatWeDo';
+import { GetFound } from './pages/GetFound';
+import { GetCustomers } from './pages/GetCustomers';
+import { GetRemembered } from './pages/GetRemembered';
+import { WhoWeHelp } from './pages/WhoWeHelp';
 import { Projects } from './pages/Projects';
 import { ProjectDetail } from './pages/ProjectDetail';
 import { About } from './pages/About';
-import { Services } from './pages/Services';
 import { ServiceDetail } from './pages/ServiceDetail';
-import { Contact } from './pages/Contact';
+import { LetsTalk } from './pages/LetsTalk';
 
 export const App: React.FC = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -39,12 +43,18 @@ export const App: React.FC = () => {
           <PageTransition>
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/what-we-do" element={<WhatWeDo />} />
+              <Route path="/get-found" element={<GetFound />} />
+              <Route path="/get-customers" element={<GetCustomers />} />
+              <Route path="/get-remembered" element={<GetRemembered />} />
+              <Route path="/who-we-help" element={<WhoWeHelp />} />
               <Route path="/projects" element={<Projects />} />
               <Route path="/projects/:slug" element={<ProjectDetail />} />
               <Route path="/about" element={<About />} />
-              <Route path="/services" element={<Services />} />
+              <Route path="/services" element={<WhatWeDo />} />
               <Route path="/services/:slug" element={<ServiceDetail />} />
-              <Route path="/contact" element={<Contact />} />
+              <Route path="/lets-talk" element={<LetsTalk />} />
+              <Route path="/contact" element={<LetsTalk />} />
               <Route path="*" element={<Home />} />
             </Routes>
           </PageTransition>

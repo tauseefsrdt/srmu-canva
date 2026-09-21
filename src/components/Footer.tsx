@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin } from 'lucide-react';
-import { navItems, footerServices, companyContact } from '../data/navigation';
+import { navItems, footerServices, footerIndustries, companyContact } from '../data/navigation';
 import { Logo } from './Logo';
 import { InstagramIcon, LinkedinIcon, FacebookIcon, YoutubeIcon, TwitterXIcon } from './SocialIcons';
 
@@ -14,7 +14,7 @@ export const Footer: React.FC = () => {
           <div className="lg:col-span-2 space-y-6">
             <Logo size="lg" />
             <p className="text-sm text-[#9A9DA7] leading-relaxed max-w-sm">
-              Redcanvass is a Graphic designing and Digital Marketing company with a do encompasses other facets of marketing and IT support.
+              SRMUCANVAS is a full-service Digital Marketing, Performance Marketing, and AI Search Optimization company helping businesses get found, get customers, and get remembered.
             </p>
 
             {/* Social Icons */}
@@ -43,29 +43,10 @@ export const Footer: React.FC = () => {
             </div>
           </div>
 
-          {/* Col 2: Quick Links */}
+          {/* Col 2: Core Solutions */}
           <div className="space-y-4">
             <h4 className="text-xs font-mono uppercase tracking-widest text-white font-bold">
-              Quick Links
-            </h4>
-            <ul className="space-y-2.5 text-sm text-[#9A9DA7]">
-              {navItems.map((item) => (
-                <li key={item.label}>
-                  <Link
-                    to={item.path}
-                    className="hover:text-white hover:translate-x-1 inline-flex items-center gap-1 transition-all duration-200"
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Col 3: Our Services */}
-          <div className="space-y-4">
-            <h4 className="text-xs font-mono uppercase tracking-widest text-white font-bold">
-              Our Services
+              Core Solutions
             </h4>
             <ul className="space-y-2.5 text-sm text-[#9A9DA7]">
               {footerServices.map((service) => (
@@ -81,10 +62,29 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
 
+          {/* Col 3: Who We Help */}
+          <div className="space-y-4">
+            <h4 className="text-xs font-mono uppercase tracking-widest text-white font-bold">
+              Industries
+            </h4>
+            <ul className="space-y-2.5 text-sm text-[#9A9DA7]">
+              {footerIndustries.map((ind) => (
+                <li key={ind.label}>
+                  <Link
+                    to={ind.path}
+                    className="hover:text-white hover:translate-x-1 inline-flex items-center gap-1 transition-all duration-200"
+                  >
+                    {ind.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           {/* Col 4: Contact Info */}
           <div className="space-y-4">
             <h4 className="text-xs font-mono uppercase tracking-widest text-white font-bold">
-              Contact Info
+              Contact Us
             </h4>
             <ul className="space-y-3.5 text-xs text-[#9A9DA7]">
               <li className="flex items-start gap-2.5">
@@ -110,7 +110,7 @@ export const Footer: React.FC = () => {
         {/* Bottom Bar */}
         <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#9A9DA7]">
           <div>
-            © 2026 REDCANVASS. All rights reserved.
+            © 2026 SRMUCANVAS. All rights reserved.
           </div>
           <div className="font-handwriting text-lg text-white/90">
             Designed to Make Things Happen

@@ -75,13 +75,13 @@ export const About: React.FC = () => {
           <div className="space-y-3 max-w-2xl">
             <span className="inline-flex items-center gap-2 text-xs font-mono font-bold tracking-[0.3em] uppercase text-[#FF3154]">
               <Sparkles size={14} />
-              ABOUT REDCANVASS
+              ABOUT SRMUCANVAS
             </span>
             <h1 className="text-4xl sm:text-6xl md:text-7xl font-black uppercase tracking-tight text-white">
-              About Redcanvass
+              About SRMUCANVAS
             </h1>
             <p className="text-lg md:text-xl text-[#9A9DA7]">
-              A creative team turning ideas into <span className="text-gradient-brand font-bold">impactful designs.</span>
+              A creative performance team turning ideas into <span className="text-gradient-brand font-bold">impactful business results.</span>
             </p>
           </div>
         </div>
@@ -101,14 +101,14 @@ export const About: React.FC = () => {
                 <span className="text-gradient-brand">Brighter Tomorrow</span>
               </h2>
               <p className="text-base md:text-lg text-[#9A9DA7] leading-relaxed">
-                Redcanvass is a creative design and digital marketing company with a deep passion for crafting meaningful visual experiences. We believe in the power of design to inspire, engage, and create lasting impact across borders and cultures.
+                SRMUCANVAS is a digital marketing, search visibility and creative performance agency with a deep passion for crafting meaningful digital experiences. We believe in the power of design and targeted acquisition to inspire, engage, and create lasting business impact.
               </p>
               <p className="text-sm text-[#9A9DA7] leading-relaxed">
-                Founded with the premise of "Good Design. Better Business.", we combine human-centric UX, bold graphic direction, and performance engineering to help fast-growing startups and enterprises lead their industries.
+                Founded with the premise of "Good Design. Better Business.", we combine human-centric UX, bold graphic direction, and performance engineering to help fast-growing businesses lead their industries.
               </p>
 
               <div className="pt-2">
-                <MagneticButton to="/contact" variant="primary" className="!px-7 !py-3.5 !text-xs uppercase tracking-wider">
+                <MagneticButton to="/lets-talk" variant="primary" className="!px-7 !py-3.5 !text-xs uppercase tracking-wider">
                   <span>Let's Work Together</span>
                   <ArrowRight size={16} />
                 </MagneticButton>
@@ -120,7 +120,7 @@ export const About: React.FC = () => {
               <div className="relative rounded-3xl overflow-hidden bg-[#0D1014] border border-white/15 p-3 shadow-2xl">
                 <img
                   src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop"
-                  alt="Redcanvass Studio Collaboration"
+                  alt="SRMUCANVAS Studio Collaboration"
                   className="w-full aspect-[4/3] object-cover rounded-2xl"
                 />
                 {/* Floating handwritten badge */}
@@ -135,7 +135,7 @@ export const About: React.FC = () => {
           <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 p-8 md:p-12 rounded-3xl bg-[#0D1014] border border-white/10">
             <div>
               <div className="text-3xl sm:text-5xl font-black font-mono text-white">100+</div>
-              <div className="text-xs uppercase font-semibold tracking-wider text-[#9A9DA7] mt-1">Projects Completed</div>
+              <div className="text-xs uppercase font-semibold tracking-wider text-[#9A9DA7] mt-1">Growth Campaigns</div>
             </div>
             <div>
               <div className="text-3xl sm:text-5xl font-black font-mono text-white">50+</div>
@@ -147,7 +147,7 @@ export const About: React.FC = () => {
             </div>
             <div>
               <div className="text-3xl sm:text-5xl font-black font-mono text-[#FF3154]">100%</div>
-              <div className="text-xs uppercase font-semibold tracking-wider text-[#9A9DA7] mt-1">Client Satisfaction</div>
+              <div className="text-xs uppercase font-semibold tracking-wider text-[#9A9DA7] mt-1">Client Dedication</div>
             </div>
           </div>
         </div>

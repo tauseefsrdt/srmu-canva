@@ -9,7 +9,6 @@ export const Preloader: React.FC<PreloaderProps> = ({ onComplete }) => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    // Counter animation
     let current = 0;
     const interval = setInterval(() => {
       current += Math.floor(Math.random() * 8) + 4;
@@ -18,7 +17,6 @@ export const Preloader: React.FC<PreloaderProps> = ({ onComplete }) => {
         clearInterval(interval);
         setCount(100);
 
-        // Animate screen exit
         gsap.to('.preloader-container', {
           yPercent: -100,
           duration: 0.8,
@@ -31,7 +29,7 @@ export const Preloader: React.FC<PreloaderProps> = ({ onComplete }) => {
       } else {
         setCount(current);
       }
-    }, 45);
+    }, 40);
 
     return () => clearInterval(interval);
   }, [onComplete]);
@@ -45,7 +43,7 @@ export const Preloader: React.FC<PreloaderProps> = ({ onComplete }) => {
       <div className="flex justify-between items-center text-xs tracking-widest text-[#9A9DA7] uppercase font-semibold">
         <span className="flex items-center gap-2">
           <span className="w-2 h-2 rounded-full bg-[#FF3154] animate-ping" />
-          REDCANVASS STUDIO
+          SRMUCANVAS STUDIO
         </span>
         <span>EXPERIENCE 2026</span>
       </div>
@@ -67,7 +65,7 @@ export const Preloader: React.FC<PreloaderProps> = ({ onComplete }) => {
         </div>
 
         <h1 className="text-3xl md:text-5xl font-black tracking-widest uppercase text-white mb-2">
-          REDCANVASS
+          SRMUCANVAS
         </h1>
         <p className="text-xs md:text-sm tracking-[0.3em] uppercase text-[#9A9DA7]">
           Good Design. Better Business.
@@ -77,7 +75,7 @@ export const Preloader: React.FC<PreloaderProps> = ({ onComplete }) => {
       {/* Bottom Progress Bar & Percentage */}
       <div className="w-full max-w-xl mx-auto space-y-3">
         <div className="flex justify-between items-baseline text-sm font-mono text-[#9A9DA7]">
-          <span>INITIALIZING ASSETS</span>
+          <span>INITIALIZING DIGITAL ENGINE</span>
           <span className="text-xl md:text-2xl font-bold text-white tracking-tighter">
             {count}%
           </span>

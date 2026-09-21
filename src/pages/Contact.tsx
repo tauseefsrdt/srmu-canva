@@ -174,7 +174,7 @@ export const Contact: React.FC = () => {
                     </div>
                     <h3 className="text-2xl font-black text-white">Thank You!</h3>
                     <p className="text-sm text-[#9A9DA7] max-w-md mx-auto">
-                      Your message has been delivered to the REDCANVASS team. We will review your project details and get back to you shortly.
+                      Your message has been delivered to the SRMUCANVAS team. We will review your project details and get back to you shortly.
                     </p>
                     <button
                       onClick={() => setIsSubmitted(false)}
@@ -313,7 +313,7 @@ export const Contact: React.FC = () => {
 
           <div className="relative aspect-[21/9] sm:aspect-[24/8] rounded-3xl overflow-hidden bg-[#0D1014] border border-white/15 shadow-2xl">
             <iframe
-              title="REDCANVASS Location Map"
+              title="SRMUCANVAS Location Map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14238.455088235286!2d80.99914445!3d26.8522332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be2c12574e927%3A0xe54ef98b1b51e592!2sVibhuti%20Khand%2C%20Gomti%20Nagar%2C%20Lucknow%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
               className="w-full h-full border-0 filter invert-[90%] hue-rotate-[180deg] contrast-125 opacity-70 hover:opacity-100 transition-opacity duration-500"
               allowFullScreen={false}
@@ -325,7 +325,7 @@ export const Contact: React.FC = () => {
                 <MapPin size={16} />
               </div>
               <div>
-                <p className="font-bold">Redcanvass Headquarters</p>
+                <p className="font-bold">SRMUCANVAS Headquarters</p>
                 <p className="text-[10px] text-[#9A9DA7]">C-142, Vibhuti Khand, Lucknow</p>
               </div>
             </div>
