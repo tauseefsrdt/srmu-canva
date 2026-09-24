@@ -1,0 +1,247 @@
+PAGE 3 — GET FOUND
+URL: /get-found/
+SEO Title
+SEO, AEO & AI Search Services | Get Found | Redcanvass
+Meta Description
+Get found where your customers search. Redcanvass combines SEO, Local SEO, AEO and AI Search optimisation to improve your business visibility online.
+1. HERO
+H1
+Get Found Where Your Customers Are Searching.
+Supporting copy
+Search is changing.
+People still use Google to find businesses, but they're increasingly asking questions and discovering information through AI-powered search experiences too.
+Redcanvass helps businesses build visibility across traditional search, local search and AI-powered search through SEO, Local SEO, AEO and AI Search optimisation.
+CTA
+Get a Free Search Audit
+Secondary:
+Let's Talk →
+Visual idea
+This page should have a more "search/AI" visual language than the other pages.
+Something like:
+Google Search → Maps → AI Search → Website → Enquiry
+With floating search queries around the visual.
+2. THE CORE IDEA
+H2
+Being Online Isn't the Same as Being Found.
+Copy
+Having a website doesn't guarantee visibility.
+Your potential customer might search for a service, compare businesses, look for a local provider or ask an AI-powered search tool for recommendations.
+The opportunity is to make sure your business has useful, credible and clearly structured information wherever those discoveries happen.
+That's what our Get Found services are designed to do.
+3. THE FOUR AREAS
+This should be the main body of the page.
+H2
+Four Ways We Build Search Visibility
+H3
+SEO
+Build visibility in organic search.
+SEO helps search engines understand your website and helps your content become discoverable for relevant searches.
+Our approach can include:
+Technical SEO
+On-page SEO
+Keyword and search-intent research
+Content optimisation
+Internal linking
+Website structure
+Search performance analysis
+Explore SEO →
+H3
+Local SEO
+Be easier to find in your area.
+For businesses serving specific locations, local search visibility can influence whether potential customers discover you when looking for nearby services.
+We focus on areas such as:
+Local search visibility
+Google Business Profile optimisation
+Location-focused website content
+Local landing pages
+Reviews and reputation signals
+Local search opportunities
+Explore Local SEO →
+H3
+AEO
+Make your expertise easier to understand and answer.
+Answer Engine Optimization focuses on creating and structuring useful information around the questions people ask.
+Instead of only thinking:
+"What keyword should we rank for?"
+we also ask:
+"What question is the customer trying to answer?"
+AEO can involve:
+Question-led content
+Clear answers
+Structured information
+Topic depth
+Entity clarity
+Internal linking
+Supporting evidence and sources
+Explore AEO →
+H3
+AI Search
+Prepare your digital presence for AI-powered discovery.
+Search experiences are increasingly using AI to interpret questions and organise information from multiple sources.
+We help businesses strengthen the digital signals that make their business, expertise, services and information easier for search systems to understand.
+That means combining:
+SEO + useful content + clear information + strong digital presence
+rather than chasing shortcuts.
+Explore AI Search →
+4. IMPORTANT DIFFERENTIATOR
+This section is very important for Redcanvass because AEO is currently full of exaggerated promises.
+H2
+We Don't Promise to "Make AI Recommend You."
+Copy
+No agency can control what an AI system chooses to show for every query.
+What we can do is improve the quality, clarity, structure and discoverability of the information about your business across the web.
+That means building the fundamentals that matter:
+Useful content.Clear answers.Strong website structure.Relevant search visibility.Consistent business information.
+The goal isn't to game an answer engine.
+It's to become a useful, credible source of information.
+This is a very strong positioning statement for you because it makes Redcanvass sound credible rather than like another agency selling "ChatGPT ranking."
+5. SEO + AEO + AI SEARCH
+H2
+SEO Isn't Dead. Search Is Evolving.
+Copy
+AI search doesn't mean traditional SEO suddenly becomes irrelevant.
+Google's current documentation continues to emphasise established SEO fundamentals alongside guidance for its generative AI search experiences. (Google Developers)
+So instead of treating SEO, AEO and AI Search as three completely separate worlds, we look at how they work together.
+Visual:
+SEO
+Helps search engines discover and understand your content.
+↓
+AEO
+Makes information easier to understand in answer-driven searches.
+↓
+AI Search
+Creates new ways for people to discover information and businesses.
+↓
+One stronger digital presence
+6. WHAT WE ACTUALLY OPTIMISE
+This is useful for both humans and semantic clarity.
+H2
+It's More Than Keywords.
+Copy
+Modern search visibility depends on more than placing keywords on a webpage.
+We look at:
+H3
+ContentIs your website answering the questions your audience actually has?
+H3
+StructureCan search systems clearly understand your pages, services and relationships?
+H3
+ContextDoes your website establish what your business does, who it serves and where it operates?
+H3
+AuthorityAre there credible signals supporting your expertise and reputation?
+H3
+ExperienceDoes the website provide a useful experience once someone finds it?
+H3
+ConnectionsAre your important pages, topics and services logically connected through internal linking and other relevant signals?
+7. SEARCH JOURNEY
+This is a nice visual section.
+H2
+From Question to Customer
+Show this as a horizontal journey:
+ASK
+"Best coaching centre near me?"
+↓
+DISCOVER
+Google / Maps / Search / AI
+↓
+EXPLORE
+Website / Reviews / Content
+↓
+COMPARE
+Services / Expertise / Trust
+↓
+ACT
+Enquiry / Call / Booking
+Closing copy
+Getting found is only the first step. The rest of the journey has to work too.
+Then link:
+Get Customers →
+This creates an intentional connection between your pillar pages.
+8. WHO NEEDS GET FOUND?
+I would not repeat the six industries here.
+Instead:
+H2
+Get Found Is Especially Valuable When Search Influences the Sale.
+Copy
+If potential customers research a business before making contact, search visibility can play an important role in growth.
+This can include businesses where customers:
+Search for a service
+Compare providers
+Look for local businesses
+Research expertise
+Ask questions before buying
+Need information before making an enquiry
+CTA
+See Who We Help →
+9. QUESTIONS BUSINESS OWNERS ACTUALLY ASK
+This is the most important FAQ/AEO section on this page.
+And notice: these are not questions about Redcanvass.
+They are questions a business owner might genuinely type into Google or ask an AI assistant.
+H2
+Questions Businesses Ask About Search Visibility
+H3
+Is SEO still worth investing in?
+SEO can be valuable when customers use search to discover information, compare businesses or find services. Its value depends on the business, competition, search demand, customer economics and how effectively the website converts visitors.
+H3
+How long does SEO take to work?
+There is no universal timeline. Results can depend on the site's existing authority and technical health, competition, content quality, search demand and the amount of work being implemented. SEO should generally be viewed as an ongoing growth activity rather than an instant advertising channel.
+H3
+How is AEO different from SEO?
+SEO focuses broadly on improving visibility in search engines. AEO focuses more specifically on making information useful and understandable for answer-oriented search experiences. There is significant overlap, so AEO should generally complement strong SEO rather than replace it.
+H3
+How can I get my business mentioned in AI search results?
+There is no guaranteed method for controlling whether an AI search system mentions a business. Businesses can, however, improve their digital presence by providing clear, useful and trustworthy information, maintaining strong SEO foundations and making their business, services and expertise easy to understand.
+H3
+Does SEO help with AI search?
+Yes, SEO fundamentals remain relevant to Google's AI-powered search experiences. Google specifically advises site owners to continue following its established SEO best practices while creating useful, original content. (Google Developers)
+H3
+What is Local SEO and does my business need it?
+Local SEO focuses on improving visibility for searches connected to a location. It can be particularly relevant when customers choose businesses based on where they operate or where the service is provided.
+H3
+Why isn't my website ranking on Google?
+There can be many reasons, including technical accessibility, competition, search intent mismatch, content quality, site structure, authority and overall relevance. A proper SEO assessment should identify the specific issues rather than assuming there is one universal cause.
+H3
+How much does SEO cost?
+There is no standard SEO price that applies to every business. Cost depends on factors such as website size, competition, geographic scope, technical requirements, content needs and the amount of ongoing optimisation required.
+H3
+Can a small business compete with larger companies in search?
+It can, depending on the market and search opportunity. Smaller businesses can sometimes compete by focusing on specific services, locations, customer questions and areas where larger competitors have less relevant or useful content.
+10. FINAL CTA
+H2
+How Easily Can Customers Find You?
+Copy
+We'll look at your current search visibility, website structure and opportunities across organic, local and AI-powered search.
+CTA
+GET A FREE SEARCH AUDIT
+Secondary:
+LET'S TALK →
+FINAL HEADER STRUCTURE
+This is what I'd give your developer/SEO team:
+H1 — Get Found Where Your Customers Are Searching.
+H2 — Being Online Isn't the Same as Being Found.
+H2 — Four Ways We Build Search Visibility.
+    H3 — SEO
+    H3 — Local SEO
+    H3 — AEO
+    H3 — AI Search
+H2 — We Don't Promise to "Make AI Recommend You."
+H2 — SEO Isn't Dead. Search Is Evolving.
+H2 — It's More Than Keywords.
+    H3 — Content
+    H3 — Structure
+    H3 — Context
+    H3 — Authority
+    H3 — Experience
+    H3 — Connections
+H2 — From Question to Customer.
+H2 — Get Found Is Especially Valuable When Search Influences the Sale.
+H2 — Questions Businesses Ask About Search Visibility.
+    H3 — Is SEO still worth investing in?
+    H3 — How long does SEO take to work?
+    H3 — How is AEO different from SEO?
+    H3 — How can I get my business mentioned in AI search results?
+    H3 — Does SEO help with AI search?
+    H3 — What is Local SEO and does my business need it?
+    H3 — Why isn't my website ranking on Google?
+    H3 — How much does SEO cost?
+    H3 — Can a small business compete with larger companies in search?
+H2 — How Easily Can Customers Find You?

@@ -1,0 +1,279 @@
+1431:     H3 — What digital marketing works best for local businesses?
+
+1432:     H3 — What is the best way to generate leads for a service business?
+
+1433:     H3 — How can a school generate more admission enquiries online?
+
+1434:     H3 — How can a clinic get more patients through Google?
+
+1435:     H3 — How can a real estate company generate better quality leads?
+
+1436:     H3 — Does SEO work for professional services?
+
+1437: H2 — Your Business Is Different. Your Marketing Should Be Too.
+
+1438: PAGE 8 — LET'S TALK
+
+1439: URL: /lets-talk/
+
+1440: SEO Title
+
+1441: Let's Talk About Your Digital Marketing | Redcanvass
+
+1442: Meta Description
+
+1443: Talk to Redcanvass about SEO, AEO, AI Search, Google Ads, Meta Ads, lead generation and digital marketing opportunities for your business.
+
+1444: 1. HERO
+
+1445: H1
+
+1446: Let's Talk About Your Business.
+
+1447: Supporting copy
+
+1448: Not sure whether you need SEO, Google Ads, AEO, better creatives — or something completely different?
+
+1449: Tell us what you're trying to achieve.
+
+1450: We'll look at where your digital presence is today and where there may be an opportunity to improve.
+
+1451: CTA / Form begins immediately
+
+1452: Tell Us About Your Business →
+
+1453: I would not put a giant paragraph before the form.
+
+1454: 2. FORM
+
+1455: H2
+
+1456: What Are You Looking to Improve?
+
+1457: Instead of a boring contact form with:
+
+1458: NameEmailPhoneMessage
+
+1459: make it conversational.
+
+1460: Step 1
+
+1461: What do you need help with?
+
+1462: ☐ SEO / Search Visibility☐ AEO / AI Search☐ Google Ads☐ Meta Ads☐ YouTube Ads☐ Lead Generation☐ Landing Pages☐ Ad Creatives / Campaign Design☐ Not Sure Yet
+
+1463: Multiple selections should be allowed.
+
+1464: Step 2
+
+1465: What's the biggest challenge right now?
+
+1466: ☐ We're not getting enough enquiries☐ We're getting traffic but not enough leads☐ Our ads aren't performing☐ People aren't finding us online☐ We want to improve our AI/Search visibility☐ We need better campaign creative☐ We're launching something new☐ We're not sure where the problem is
+
+1467: This is much more useful to your sales team than a blank "Message" field.
+
+1468: Step 3
+
+1469: Tell us a little about your business.
+
+1470: Large text box:
+
+1471: What do you sell, who do you serve and what are you hoping to achieve?
+
+1472: Step 4
+
+1473: Your details
+
+1474: Name
+
+1475: Business Name
+
+1476: Work Email
+
+1477: Phone / WhatsApp
+
+1478: Website
+
+1479: City / Location
+
+1480: Step 5
+
+1481: What would you like to do next?
+
+1482: ○ Get a Free Audit○ Discuss a Project○ Explore Digital Marketing Options○ Just Have a Question
+
+1483: CTA
+
+1484: START THE CONVERSATION →
+
+1485: 3. WHAT HAPPENS NEXT
+
+1486: This is important because people hesitate to submit forms when they don't know what happens afterward.
+
+1487: H2
+
+1488: What Happens Next?
+
+1489: H3
+
+1490: 01 — We Read
+
+1491: We look at what you've told us and understand the problem you're trying to solve.
+
+1492: H3
+
+1493: 02 — We Review
+
+1494: If you've requested an audit, we'll look at the relevant parts of your digital presence.
+
+1495: H3
+
+1496: 03 — We Talk
+
+1497: We'll discuss what we're seeing, what may be worth improving and what the next step could look like.
+
+1498: H3
+
+1499: 04 — You Decide
+
+1500: No pressure to buy a package before you understand what you actually need.
+
+1501: That last line is good for your brand because it feels confident rather than desperate for the lead.
+
+1502: 4. WHAT CAN WE TALK ABOUT?
+
+1503: H2
+
+1504: Bring Us a Problem.
+
+1505: Copy
+
+1506: You don't need to arrive with a marketing plan.
+
+1507: You can come to us with:
+
+1508: "We're spending on ads but the leads aren't good."
+
+1509: or
+
+1510: "We're not showing up when people search for us."
+
+1511: or
+
+1512: "We want to understand this whole AEO thing."
+
+1513: or simply:
+
+1514: "We need more enquiries."
+
+1515: We'll work backwards from there.
+
+1516: 5. QUICK ANSWERS
+
+1517: I would keep this extremely short.
+
+1518: H2
+
+1519: Before You Reach Out
+
+1520: H3
+
+1521: Do I need to know exactly which service I need?
+
+1522: No. Tell us what you're trying to achieve or where you're facing a problem. We can help identify which areas may be relevant.
+
+1523: H3
+
+1524: Do you only work with businesses that already advertise online?
+
+1525: No. Depending on the business, opportunities may exist across organic search, AI Search, paid advertising, creative, landing pages or a combination.
+
+1526: H3
+
+1527: Can you audit my current digital marketing?
+
+1528: Yes. A free audit can be used to identify potential opportunities across relevant areas of your digital presence.
+
+1529: H3
+
+1530: Do you manage social media accounts?
+
+1531: No. Redcanvass focuses on performance marketing, search visibility, AI Search/AEO, lead generation and campaign-focused creative rather than ongoing social media management.
+
+1532: That last FAQ is actually important because it pre-qualifies the wrong leads and reinforces your positioning.
+
+1533: 6. CONTACT DETAILS
+
+1534: Keep this minimal.
+
+1535: H2
+
+1536: Prefer to Reach Us Directly?
+
+1537: Email[Your official business email]
+
+1538: Phone / WhatsApp[Your official number]
+
+1539: LocationLucknow, India (if you want the location displayed)
+
+1540: I would not put a giant Google Map here unless having a physical-office location is commercially important.
+
+1541: 7. FINAL CTA
+
+1542: H2
+
+1543: Your Next Customer Is Already Looking.
+
+1544: Copy
+
+1545: Let's make it easier for them to find you, understand you and choose to talk to you.
+
+1546: CTA
+
+1547: GET A FREE AUDIT
+
+1548: FINAL H1–H3 STRUCTURE
+
+1549: H1 — Let's Talk About Your Business.
+
+1550: H2 — What Are You Looking to Improve?
+
+1551: H2 — What Happens Next?
+
+1552:     H3 — 01 — We Read
+
+1553:     H3 — 02 — We Review
+
+1554:     H3 — 03 — We Talk
+
+1555:     H3 — 04 — You Decide
+
+1556: H2 — Bring Us a Problem.
+
+1557: H2 — Before You Reach Out
+
+1558:     H3 — Do I need to know exactly which service I need?
+
+1559:     H3 — Do you only work with businesses that already advertise online?
+
+1560:     H3 — Can you audit my current digital marketing?
+
+1561:     H3 — Do you manage social media accounts?
+
+1562: H2 — Prefer to Reach Us Directly?
+
+1563: H2 — Your Next Customer Is Already Looking.
+
+1564: And I'd make one UX change
+
+1565: Your Get a Free Audit button throughout the website should probably lead to this page, with the form automatically preselected to:
+
+1566: Get a Free Audit
+
+1567: rather than creating a completely separate audit page.
+
+1568: So:
+
+1569: GET A FREE AUDIT↓Let's Talk↓Form
+
+1570: That keeps the website simple.

@@ -1,0 +1,29 @@
+Redcanvass Website
+Navigation Menu
+HOME
+│
+├── WHAT WE DO
+│
+├── GET FOUND
+│   ├── SEO
+│   ├── Local SEO
+│   ├── AI Search
+│   └── AEO
+│
+├── GET CUSTOMERS
+│   ├── Google Ads
+│   ├── Meta Ads
+│   ├── YouTube Ads
+│   ├── Lead Generation
+│   └── Remarketing
+│
+├── GET REMEMBERED
+│   ├── Ad Creatives
+│   ├── Landing Pages
+│   ├── Campaign Design
+│   └── Flyers & Posters
+│
+├── WHO WE HELP
+│
+│
+└── LET'S TALK

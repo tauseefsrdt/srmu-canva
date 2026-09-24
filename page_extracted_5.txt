@@ -1,0 +1,21 @@
+PAGE 4 — GET CUSTOMERS
+URL: /get-customers/
+SEO Title
+Performance Marketing & Lead Generation | Google & Meta Ads | Redcanvass
+Meta Description
+Generate more relevant enquiries with Google Ads, Meta Ads, YouTube Ads, lead generation and remarketing campaigns built around your business goals.
+1. HERO
+H1
+Get Customers, Not Just Clicks.
+Supporting copy
+Paid advertising can put your business in front of thousands of people.
+The real question is: how many of the right people take the next step?
+Redcanvass builds and manages performance marketing campaigns across Google Ads, Meta Ads and YouTube, supported by lead generation, remarketing, creative and conversion-focused landing pages.
+CTA
+Get a Free Advertising Audit
+Secondary:
+See How We Work →
+Visual
+Make this feel like a live campaign dashboard, rather than the usual Facebook/Google logos.
+Something like:
+AUDIENCE → AD → LANDING 

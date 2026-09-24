@@ -162,6 +162,63 @@ export const createParallax = (
 };
 
 /**
+ * Premium Smooth GSAP Background Parallax on scroll
+ * Moves background layers/images at 10–20% speed relative to the section
+ * with subtle scale + translateY to ensure no gaps or overflows occur.
+ */
+export const createBackgroundParallax = (
+  target: gsap.DOMTarget,
+  trigger: gsap.DOMTarget,
+  options: {
+    speed?: number; // 0.1 to 0.25 (default: 0.15 = 15% parallax)
+    scale?: number; // default 1.15 to avoid edge gaps
+    direction?: 'up' | 'down';
+    scrub?: number | boolean;
+    start?: string;
+    end?: string;
+  } = {}
+) => {
+  if (isReducedMotion()) return;
+
+  const {
+    speed = 0.15,
+    scale = 1.15,
+    direction = 'up',
+    scrub = 1.2,
+    start = 'top bottom',
+    end = 'bottom top',
+  } = options;
+
+  const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
+  const effectiveSpeed = isMobile ? speed * 0.4 : speed;
+  const yPercentDistance = effectiveSpeed * 100;
+  const yFrom = direction === 'up' ? yPercentDistance * 0.5 : -yPercentDistance * 0.5;
+  const yTo = direction === 'up' ? -yPercentDistance * 0.5 : yPercentDistance * 0.5;
+
+  gsap.fromTo(
+    target,
+    {
+      yPercent: yFrom,
+      scale: scale,
+      transformOrigin: 'center center',
+      force3D: true,
+    },
+    {
+      yPercent: yTo,
+      scale: scale,
+      ease: 'none',
+      scrollTrigger: {
+        trigger,
+        start,
+        end,
+        scrub,
+        invalidateOnRefresh: true,
+      },
+    }
+  );
+};
+
+/**
  * Continuous organic float micro-animation
  */
 export const createFloating = (

@@ -1,0 +1,478 @@
+Line 3: HOME
+Line 5: ├── WHAT WE DO
+Line 7: ├── GET FOUND
+Line 8: │   ├── SEO
+Line 11: │   └── AEO
+Line 13: ├── GET CUSTOMERS
+Line 20: ├── GET REMEMBERED
+Line 22: │   ├── Landing Pages
+Line 26: ├── WHO WE HELP
+Line 29: └── LET'S TALK
+Line 30: PAGE 1 — HOME
+Line 31: URL: /
+Line 36: 1. HERO
+Line 37: H1
+Line 43: CTA
+Line 46: See What We Do →
+Line 50: SEARCH → DISCOVER → CLICK → ENQUIRE → GROW
+Line 55: 2. ENTITY / INTRODUCTION
+Line 56: H2
+Line 62: 3. THE THREE CORE AREAS
+Line 63: H2
+Line 67: H3
+Line 72: H3
+Line 77: H3
+Line 79: Ad Creatives · Landing Pages · Campaign Design · Flyers & Posters
+Line 82: 4. THE REDCANVASS PHILOSOPHY
+Line 83: This is where Why Redcanvass lives on the homepage.
+Line 84: H2
+Line 86: H3
+Line 92: 5. WHAT MAKES REDCANVASS DIFFERENT
+Line 94: H2
+Line 103: 6. WHO WE HELP
+Line 105: H2
+Line 111: CTA
+Line 112: See Who We Help →
+Line 113: This gives us the industry relevance without making the homepage feel like an industry directory.
+Line 114: 7. PROOF
+Line 116: H2
+Line 126: 8. HOME FAQ / QUESTIONS BUSINESS OWNERS ASK
+Line 128: The homepage should not have 15 FAQs.
+Line 130: H2
+Line 132: H3
+Line 135: H3
+Line 138: H3
+Line 141: H3
+Line 144: H3
+Line 146: Clicks are only one part of the customer journey. Poor conversion can come from targeting, the offer, ad messaging, landing page experience, lead form friction, follow-up or the quality of traffic. Effective lead generation looks at the entire journey rather than clicks alone.
+Line 147: H3
+Line 149: There is no universal mix. The right approach depends on how customers find you, your sales cycle, geographic reach, customer value, competition and business goals. A business may need SEO, paid advertising, creative, landing pages or a combination.
+Line 151: Not sure what your business needs?
+Line 153: 9. FINAL CTA
+Line 154: H2
+Line 158: GET A FREE AUDIT
+Line 160: LET'S TALK →
+Line 161: FINAL HOMEPAGE HEADER STRUCTURE
+Line 185: PAGE 2 — WHAT WE DO
+Line 186: URL: /what-we-do/
+Line 191: 1. HERO
+Line 192: H1
+Line 196: From SEO and AI Search to Google Ads, Meta Ads, lead generation and landing pages, we build the digital mix around what your business actually needs.
+Line 197: CTA
+Line 201: 2. INTRODUCTION
+Line 202: H2
+Line 209: 3. GET FOUND
+Line 210: H2
+Line 212: H3
+Line 217: Services
+Line 222: CTA
+Line 224: 4. GET CUSTOMERS
+Line 225: H2
+Line 227: H3
+Line 232: Services
+Line 238: CTA
+Line 240: 5. GET REMEMBERED
+Line 241: H2
+Line 243: H3
+Line 249: Services
+Line 251: Landing PagesFocused pages built around a particular campaign, audience or conversion goal.
+Line 254: CTA
+Line 256: 6. HOW THE THREE WORK TOGETHER
+Line 258: H2
+Line 262: It can run ads and still lose potential customers on a weak landing page.
+Line 265: H3
+Line 268: H3
+Line 271: H3
+Line 275: 7. YOUR DIGITAL MIX DEPENDS ON YOUR BUSINESS
+Line 277: H2
+Line 283: H3
+Line 285: H3
+Line 286: Need enquiries now?Google Ads + Meta Ads + Landing Pages
+Line 287: H3
+Line 288: Have traffic but poor conversion?Landing Pages + Creative + Conversion optimisation
+Line 289: H3
+Line 291: H3
+Line 294: "Which services do you sell?"
+Line 296: "What problem are you trying to solve?"
+Line 297: 8. HOW WE APPROACH DIGITAL MARKETING
+Line 299: H2
+Line 313: That line gives the page a little personality.
+Line 314: 9. QUESTIONS BUSINESS OWNERS ASK
+Line 317: H2
+Line 319: H3
+Line 322: H3
+Line 325: H3
+Line 328: H3
+Line 330: Traffic does not automatically create conversions. The issue may involve targeting, messaging, offer clarity, landing-page experience, trust signals, forms or follow-up.
+Line 331: H3
+Line 334: H3
+Line 337: H3
+Line 340: CTA
+Line 343: 10. FINAL CTA
+Line 344: H2
+Line 348: GET A FREE AUDIT
+Line 349: FINAL HEADER STRUCTURE FOR THE DEVELOPER
+Line 354:     H3 — SEO
+Line 356:     H3 — AEO
+Line 368:     H3 — Landing Pages
+Line 398: /what-we-do/
+Line 402: /who-we-help/
+Line 404: This makes the three core propositions first-class pages, which is better for navigation, linking and building substantial content around each topic.
+Line 407: PAGE 3 — GET FOUND
+Line 413: 1. HERO
+Line 414: H1
+Line 420: CTA
+Line 425: This page should have a more "search/AI" visual language than the other pages.
+Line 429: 2. THE CORE IDEA
+Line 430: H2
+Line 437: 3. THE FOUR AREAS
+Line 438: This should be the main body of the page.
+Line 439: H2
+Line 441: H3
+Line 442: SEO
+Line 447: On-page SEO
+Line 454: H3
+Line 462: Local landing pages
+Line 466: H3
+Line 467: AEO
+Line 471: "What keyword should we rank for?"
+Line 483: H3
+Line 492: 4. IMPORTANT DIFFERENTIATOR
+Line 494: H2
+Line 504: 5. SEO + AEO + AI SEARCH
+Line 505: H2
+Line 512: SEO
+Line 515: AEO
+Line 522: 6. WHAT WE ACTUALLY OPTIMISE
+Line 524: H2
+Line 527: Modern search visibility depends on more than placing keywords on a webpage.
+Line 529: H3
+Line 531: H3
+Line 532: StructureCan search systems clearly understand your pages, services and relationships?
+Line 533: H3
+Line 535: H3
+Line 537: H3
+Line 539: H3
+Line 540: ConnectionsAre your important pages, topics and services logically connected through internal linking and other relevant signals?
+Line 541: 7. SEARCH JOURNEY
+Line 542: This is a nice visual section.
+Line 543: H2
+Line 546: ASK
+Line 549: DISCOVER
+Line 552: EXPLORE
+Line 555: COMPARE
+Line 556: Services / Expertise / Trust
+Line 558: ACT
+Line 564: This creates an intentional connection between your pillar pages.
+Line 565: 8. WHO NEEDS GET FOUND?
+Line 568: H2
+Line 573: Search for a service
+Line 579: CTA
+Line 580: See Who We Help →
+Line 581: 9. QUESTIONS BUSINESS OWNERS ACTUALLY ASK
+Line 582: This is the most important FAQ/AEO section on this page.
+Line 585: H2
+Line 587: H3
+Line 590: H3
+Line 593: H3
+Line 596: H3
+Line 599: H3
+Line 602: H3
+Line 605: H3
+Line 608: H3
+Line 611: H3
+Line 614: 10. FINAL CTA
+Line 615: H2
+Line 619: CTA
+Line 620: GET A FREE SEARCH AUDIT
+Line 622: LET'S TALK →
+Line 623: FINAL HEADER STRUCTURE
+Line 628:     H3 — SEO
+Line 630:     H3 — AEO
+Line 654: PAGE 4 — GET CUSTOMERS
+Line 660: 1. HERO
+Line 661: H1
+Line 666: Redcanvass builds and manages performance marketing campaigns across Google Ads, Meta Ads and YouTube, supported by lead generation, remarketing, creative and conversion-focused landing pages.
+Line 667: CTA
+Line 674: AUDIENCE → AD → LANDING PAGE → LEAD → FOLLOW-UP
+Line 678: 2. INTRODUCTION
+Line 679: H2
+Line 692: 3. THE SERVICES
+Line 693: H2
+Line 695: H3
+Line 707: H3
+Line 720: H3
+Line 731: H3
+Line 736: Audience → Offer → Ad → Landing Page/Form → Lead → Follow-up
+Line 738: H3
+Line 743: 4. THE BIG DIFFERENTIATOR
+Line 744: H2
+Line 752: Who are we reaching?
+Line 753: What are they doing?
+Line 755: What happens to those enquiries?
+Line 757: What can we improve next?
+Line 758: 5. THE PERFORMANCE MARKETING LOOP
+Line 760: H2
+Line 762: H3
+Line 766: H3
+Line 770: H3
+Line 774: H3
+Line 778: H3
+Line 782: H3
+Line 787: 6. GOOGLE VS META VS YOUTUBE
+Line 789: H2
+Line 793: H3
+Line 796: H3
+Line 799: H3
+Line 802: H3
+Line 805: 7. THE CLICK-TO-CUSTOMER JOURNEY
+Line 807: H2
+Line 810: AD
+Line 812: CLICK
+Line 814: LANDING PAGE
+Line 816: ENQUIRY
+Line 818: FOLLOW-UP
+Line 820: CUSTOMER
+Line 822: A great campaign can still underperform if the landing page is confusing, the offer isn't clear or the enquiry process creates friction.
+Line 825: 8. WHAT WE MEASURE
+Line 826: H2
+Line 827: What Does Performance Actually Mean?
+Line 839: Landing-page performance
+Line 844: 9. WHO IS THIS FOR?
+Line 846: H2
+Line 859: CTA:
+Line 860: See Who We Help →
+Line 861: 10. QUESTIONS BUSINESS OWNERS ASK
+Line 862: This is where the page becomes an AEO/search asset, rather than just a sales page.
+Line 863: H2
+Line 865: H3
+Line 868: H3
+Line 871: H3
+Line 873: Possible causes include poor targeting, weak messaging, an unclear offer, an ineffective landing page, slow website experience, form friction or a mismatch between the advertisement and what visitors find after clicking.
+Line 874: H3
+Line 877: H3
+Line 880: H3
+Line 881: What is a good cost per lead?
+Line 884: H3
+Line 887: H3
+Line 888: Do I need a landing page for Google Ads?
+Line 889: Not always, but a dedicated landing page can be useful when the campaign has a specific audience, offer or conversion objective. The page can be designed around the exact intent behind the advertisement rather than sending every visitor to a generic homepage.
+Line 890: H3
+Line 893: H3
+Line 895: Lowering CPL isn't necessarily the goal. First identify whether the existing leads are valuable. Improvements can come from better targeting, messaging, creative, offers, landing pages, conversion tracking and campaign optimisation.
+Line 896: 11. FINAL CTA
+Line 897: H2
+Line 901: CTA
+Line 902: GET A FREE ADVERTISING AUDIT
+Line 904: LET'S TALK →
+Line 905: FINAL H1–H3 STRUCTURE
+Line 937:     H3 — What is a good cost per lead?
+Line 939:     H3 — Do I need a landing page for Google Ads?
+Line 943: PAGE 5 — GET REMEMBERED
+Line 946: Ad Creative, Landing Page & Campaign Design Services | Redcanvass
+Line 948: Create marketing that gets noticed and drives action with ad creatives, landing pages, campaign design and marketing collateral from Redcanvass.
+Line 949: 1. HERO
+Line 950: H1
+Line 956: Redcanvass creates ad creatives, landing pages, campaign designs and marketing collateral built to support your advertising and conversion goals.
+Line 957: CTA
+Line 962: This page can be more visually expressive than Get Found and Get Customers.
+Line 964: IDEA → CREATIVE → CLICK → LANDING PAGE → ACTION
+Line 966: 2. INTRODUCTION
+Line 967: H2
+Line 972: A landing page needs to make the next step obvious.
+Line 975: 3. FOUR CORE SERVICES
+Line 976: H2
+Line 978: H3
+Line 991: H3
+Line 992: Landing Pages
+Line 995: A landing page needs to quickly communicate:
+Line 997: We create landing pages around specific campaigns, audiences and conversion goals.
+Line 998: Explore Landing Pages →
+Line 999: H3
+Line 1011: H3
+Line 1022: 4. THE BIG IDEA
+Line 1023: H2
+Line 1030: AUDIENCE
+Line 1032: MESSAGE
+Line 1034: CREATIVE
+Line 1036: LANDING PAGE
+Line 1038: ENQUIRY
+Line 1039: This connects naturally to your GET CUSTOMERS page.
+Line 1040: 5. CREATIVE FOR PERFORMANCE
+Line 1041: This should be one of the strongest sections on the page.
+Line 1042: H2
+Line 1055: 6. WHAT MAKES A CREATIVE WORK?
+Line 1057: H2
+Line 1058: What Makes Someone Stop?
+Line 1059: H3
+Line 1061: H3
+Line 1063: H3
+Line 1065: H3
+Line 1067: H3
+Line 1071: 7. LANDING PAGES
+Line 1072: I would give landing pages their own slightly deeper section because they connect directly to your performance offering.
+Line 1073: H2
+Line 1077: A campaign landing page should be built around the specific intent that brought someone there.
+Line 1078: H3
+Line 1080: H3
+Line 1082: H3
+Line 1084: H3
+Line 1086: H3
+Line 1088: CTA
+Line 1090: 8. HOW CREATIVE FITS INTO REDCANVASS
+Line 1091: H2
+Line 1096: GET FOUND
+Line 1099: GET CUSTOMERS
+Line 1102: GET REMEMBERED
+Line 1105: GROW
+Line 1106: This reinforces the entire Redcanvass positioning without repeating the homepage.
+Line 1107: 9. WHO NEEDS CREATIVE?
+Line 1109: H2
+Line 1119: Create a dedicated landing page
+Line 1120: Communicate a complex service simply
+Line 1122: CTA
+Line 1124: 10. QUESTIONS BUSINESS OWNERS ASK
+Line 1126: H2
+Line 1128: H3
+Line 1129: What makes a good advertising creative?
+Line 1131: H3
+Line 1134: H3
+Line 1137: H3
+Line 1139: The problem may be beyond the advertisement. The landing page, offer, pricing, trust signals, form experience, page speed or mismatch between the ad and landing page can all affect conversion.
+Line 1140: H3
+Line 1141: Do I need a separate landing page for every advertising campaign?
+Line 1142: Not necessarily. But when an advertisement targets a specific audience, offer or intent, a dedicated landing page can make the experience more relevant and focused than sending everyone to a generic homepage.
+Line 1143: H3
+Line 1144: What should a landing page include?
+Line 1145: A landing page generally needs a clear value proposition, relevant information, supporting proof or trust signals, a compelling offer where appropriate and an obvious next step. The exact structure depends on the audience and conversion objective.
+Line 1146: H3
+Line 1147: What is the difference between a landing page and a website homepage?
+Line 1148: A homepage usually introduces the broader business and gives visitors multiple paths. A landing page is typically designed around a specific campaign, audience, offer or conversion objective.
+Line 1149: H3
+Line 1152: H3
+Line 1155: 11. FINAL CTA
+Line 1156: H2
+Line 1159: Whether you need a new campaign, better-performing ad creatives or a landing page built around conversion, let's create something with a job to do.
+Line 1160: CTA
+Line 1161: LET'S CREATE
+Line 1163: GET A FREE AUDIT →
+Line 1164: FINAL HEADER STRUCTURE
+Line 1170:     H3 — Landing Pages
+Line 1175: H2 — What Makes Someone Stop?
+Line 1194:     H3 — Do I need a separate landing page for every advertising campaign?
+Line 1195:     H3 — What should a landing page include?
+Line 1196:     H3 — What is the difference between a landing page and a website homepage?
+Line 1200: PAGE 6 — WHO WE HELP
+Line 1201: URL: /who-we-help/
+Line 1206: 1. HERO
+Line 1207: H1
+Line 1213: CTA
+Line 1217: 2. INTRODUCTION
+Line 1218: H2
+Line 1228: 3. INDUSTRIES / BUSINESS TYPES
+Line 1230: H2
+Line 1232: H3
+Line 1238: SEO
+Line 1241: Landing pages
+Line 1244: H3
+Line 1252: Landing pages
+Line 1256: H3
+Line 1266: Landing pages
+Line 1269: H3
+Line 1270: Professional Services
+Line 1274: SEO
+Line 1275: AEO
+Line 1278: Landing pages
+Line 1281: H3
+Line 1291: Landing pages
+Line 1294: H3
+Line 1295: B2B
+Line 1299: SEO
+Line 1300: AEO
+Line 1304: Landing pages
+Line 1307: 4. THE IMPORTANT SECTION
+Line 1309: H2
+Line 1313: H3
+Line 1318: H3
+Line 1323: H3
+Line 1328: H3
+Line 1330: What happens when they're ready?
+Line 1334: 5. MATCH THE PROBLEM TO THE SOLUTION
+Line 1336: H2
+Line 1338: H3
+Line 1342: H3
+Line 1346: H3
+Line 1349: Landing Pages + Creative + Conversion
+Line 1350: H3
+Line 1354: H3
+Line 1359: 6. NOT SURE WHICH CATEGORY YOU FIT?
+Line 1361: H2
+Line 1366: CTA
+Line 1367: Tell Us About Your Business →
+Line 1368: 7. QUESTIONS BUSINESS OWNERS ASK
+Line 1370: H2
+Line 1372: H3
+Line 1375: H3
+Line 1378: H3
+Line 1381: H3
+Line 1384: H3
+Line 1386: Schools and educational organisations can use a combination of search visibility, Google Ads, Meta advertising, lead-generation campaigns, location targeting and dedicated admission landing pages. The appropriate strategy depends on the school's location, audience, admissions cycle and capacity.
+Line 1387: H3
+Line 1390: H3
+Line 1392: Lead quality can be influenced by targeting, property positioning, campaign messaging, qualification questions, landing-page experience and follow-up. Optimising purely for the lowest cost per lead can sometimes produce volume without sufficient quality.
+Line 1393: H3
+Line 1396: 8. FINAL CTA
+Line 1397: H2
+Line 1402: CTA
+Line 1403: LET'S TALK
+Line 1405: GET A FREE AUDIT →
+Line 1406: FINAL H1–H3 STRUCTURE
+Line 1413:     H3 — Professional Services
+Line 1415:     H3 — B2B
+Line 1438: PAGE 8 — LET'S TALK
+Line 1444: 1. HERO
+Line 1445: H1
+Line 1446: Let's Talk About Your Business.
+Line 1449: Tell us what you're trying to achieve.
+Line 1452: Tell Us About Your Business →
+Line 1454: 2. FORM
+Line 1455: H2
+Line 1456: What Are You Looking to Improve?
+Line 1457: Instead of a boring contact form with:
+Line 1461: What do you need help with?
+Line 1462: ☐ SEO / Search Visibility☐ AEO / AI Search☐ Google Ads☐ Meta Ads☐ YouTube Ads☐ Lead Generation☐ Landing Pages☐ Ad Creatives / Campaign Design☐ Not Sure Yet
+Line 1465: What's the biggest challenge right now?
+Line 1469: Tell us a little about your business.
+Line 1477: Phone / WhatsApp
+Line 1481: What would you like to do next?
+Line 1483: CTA
+Line 1484: START THE CONVERSATION →
+Line 1485: 3. WHAT HAPPENS NEXT
+Line 1487: H2
+Line 1488: What Happens Next?
+Line 1489: H3
+Line 1492: H3
+Line 1495: H3
+Line 1498: H3
+Line 1502: 4. WHAT CAN WE TALK ABOUT?
+Line 1503: H2
+Line 1516: 5. QUICK ANSWERS
+Line 1518: H2
+Line 1520: H3
+Line 1523: H3
+Line 1525: No. Depending on the business, opportunities may exist across organic search, AI Search, paid advertising, creative, landing pages or a combination.
+Line 1526: H3
+Line 1529: H3
+Line 1533: 6. CONTACT DETAILS
+Line 1535: H2
+Line 1538: Phone / WhatsApp[Your official number]
+Line 1541: 7. FINAL CTA
+Line 1542: H2
+Line 1546: CTA
+Line 1547: GET A FREE AUDIT
+Line 1548: FINAL H1–H3 STRUCTURE
+Line 1549: H1 — Let's Talk About Your Business.
+Line 1550: H2 — What Are You Looking to Improve?
+Line 1551: H2 — What Happens Next?
+Line 1565: Your Get a Free Audit button throughout the website should probably lead to this page, with the form automatically preselected to:
+Line 1567: rather than creating a completely separate audit page.

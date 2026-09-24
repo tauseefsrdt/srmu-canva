@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { X, ArrowRight, Mail, Phone, MapPin, Search, TrendingUp, Sparkles } from 'lucide-react';
+import { X, ArrowRight, Mail, Phone, MapPin } from 'lucide-react';
 import gsap from 'gsap';
 import { companyContact } from '../data/navigation';
 import { Logo } from './Logo';
@@ -18,12 +18,10 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
   const mobileNavItems = [
     { label: 'Home', path: '/' },
     { label: 'What We Do', path: '/what-we-do' },
-    { label: 'Get Found (SEO & AI)', path: '/get-found' },
-    { label: 'Get Customers (Ads & Leads)', path: '/get-customers' },
-    { label: 'Get Remembered (Creative)', path: '/get-remembered' },
+    { label: 'Get Found', path: '/get-found' },
+    { label: 'Get Customers', path: '/get-customers' },
+    { label: 'Get Remembered', path: '/get-remembered' },
     { label: 'Who We Help', path: '/who-we-help' },
-    { label: 'Projects', path: '/projects' },
-    { label: 'About Us', path: '/about' },
     { label: "Let's Talk", path: '/lets-talk' },
   ];
 
@@ -76,7 +74,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
       </div>
 
       {/* Navigation Links with GSAP Stagger */}
-      <div ref={linksRef} className="flex flex-col gap-4 my-auto py-6">
+      <div ref={linksRef} className="flex flex-col gap-3 my-auto py-6">
         {mobileNavItems.map((item, idx) => {
           const isActive = location.pathname === item.path;
           return (
@@ -96,6 +94,16 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
             </Link>
           );
         })}
+
+        <div className="pt-4 flex flex-col sm:flex-row gap-3">
+          <Link
+            to="/lets-talk?intent=audit"
+            onClick={onClose}
+            className="w-full text-center py-3 rounded-full bg-[#FF3154] text-white font-bold text-sm tracking-wider uppercase shadow-[0_0_20px_rgba(255,49,84,0.4)]"
+          >
+            Get a Free Audit
+          </Link>
+        </div>
       </div>
 
       {/* Bottom Contact Details */}
@@ -110,7 +118,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
         </div>
         <div className="flex items-start gap-2 md:col-span-2">
           <MapPin size={15} className="text-[#FF3154] flex-shrink-0 mt-0.5" />
-          <span>{companyContact.address}</span>
+          <span>{companyContact.location}</span>
         </div>
       </div>
     </div>

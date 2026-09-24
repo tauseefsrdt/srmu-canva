@@ -1,0 +1,24 @@
+PAGE HEADER STRUCTURE
+This is the hierarchy I would give directly to your web developer/SEO person:
+H1 — Digital Marketing That Means Business.
+H2 — Meet Redcanvass
+H2 — How We Help Businesses Grow
+    H3 — Get Found
+    H3 — Get Customers
+    H3 — Get Remembered
+H2 — We’re Not Here to Make Your Marketing Look Busy.
+H3 — We’re Here to Make It Work.
+H2 — Different by Design.
+    H3 — Performance First
+    H3 — Search Ready
+    H3 — Human Led
+H2 — Built for Businesses That Need to Be Found.
+H2 — Work That Has a Purpose.
+H2 — Questions Businesses Ask About Digital Marketing
+    H3 — What does a digital marketing agency actually do?
+    H3 — Should my business invest in SEO or Google Ads?
+    H3 — Is SEO still important with AI search?
+    H3 — What is AEO and how is it different from SEO?
+    H3 — Why are my digital ads getting clicks but not enough enquiries?
+    H3 — How do I know which digital marketing services my business actually needs?
+H2 — Ready to Make Your Digital Marketing Work Hard

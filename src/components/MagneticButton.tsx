@@ -8,6 +8,7 @@ interface MagneticButtonProps {
   onClick?: () => void;
   className?: string;
   variant?: 'primary' | 'secondary' | 'glass' | 'outline' | 'ghost';
+  size?: 'sm' | 'md' | 'lg';
   strength?: number;
   type?: 'button' | 'submit' | 'reset';
   disabled?: boolean;
@@ -20,6 +21,7 @@ export const MagneticButton: React.FC<MagneticButtonProps> = ({
   onClick,
   className = '',
   variant = 'primary',
+  size = 'md',
   strength = 15,
   type = 'button',
   disabled = false,
@@ -45,7 +47,13 @@ export const MagneticButton: React.FC<MagneticButtonProps> = ({
     setPosition({ x: 0, y: 0 });
   };
 
-  const baseStyles = 'relative inline-flex items-center justify-center font-bold text-sm tracking-wide rounded-full px-7 py-3.5 transition-all duration-300 select-none group cursor-pointer overflow-hidden';
+  const sizeStyles = {
+    sm: 'px-4 py-2 text-xs font-bold uppercase tracking-wider',
+    md: 'px-7 py-3.5 text-sm font-bold tracking-wide',
+    lg: 'px-8 py-4 text-sm font-bold uppercase tracking-wider',
+  };
+
+  const baseStyles = `relative inline-flex items-center justify-center rounded-full transition-all duration-300 select-none group cursor-pointer overflow-hidden ${sizeStyles[size]}`;
   
   const variantStyles = {
     primary: 'bg-[#FF3154] text-white hover:bg-[#ff1b43] shadow-[0_0_25px_rgba(255,49,84,0.4)] hover:shadow-[0_0_35px_rgba(255,49,84,0.7)]',
@@ -61,10 +69,13 @@ export const MagneticButton: React.FC<MagneticButtonProps> = ({
     transition: position.x === 0 && position.y === 0 ? 'transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1)' : 'transform 0.1s ease-out',
   };
 
-  if (to) {
+  // If internal link
+  const targetPath = to || (href && href.startsWith('/') ? href : undefined);
+
+  if (targetPath) {
     return (
       <Link
-        to={to}
+        to={targetPath}
         ref={buttonRef as any}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}

@@ -1,0 +1,90 @@
+1: Redcanvass Website
+
+2: Navigation Menu
+
+3: HOME
+
+4: │
+
+5: ├── WHAT WE DO
+
+6: │
+
+7: ├── GET FOUND
+
+8: │   ├── SEO
+
+9: │   ├── Local SEO
+
+10: │   ├── AI Search
+
+11: │   └── AEO
+
+12: │
+
+13: ├── GET CUSTOMERS
+
+14: │   ├── Google Ads
+
+15: │   ├── Meta Ads
+
+16: │   ├── YouTube Ads
+
+17: │   ├── Lead Generation
+
+18: │   └── Remarketing
+
+19: │
+
+20: ├── GET REMEMBERED
+
+21: │   ├── Ad Creatives
+
+22: │   ├── Landing Pages
+
+23: │   ├── Campaign Design
+
+24: │   └── Flyers & Posters
+
+25: │
+
+26: ├── WHO WE HELP
+
+27: │
+
+28: │
+
+29: └── LET'S TALK
+
+30: PAGE 1 — HOME
+
+31: URL: /
+
+32: SEO Title
+
+33: Redcanvass | Digital Marketing, Performance Marketing & AI Search
+
+34: Meta Description
+
+35: Redcanvass helps businesses grow through Google Ads, Meta Ads, SEO, AI Search, AEO, lead generation and conversion-focused creative.
+
+36: 1. HERO
+
+37: H1
+
+38: Digital Marketing That Means Business.
+
+39: Supporting headline
+
+40: Get Found. Get Customers. Get Remembered.
+
+41: Body copy
+
+42: Redcanvass is a digital marketing and performance marketing agency helping businesses grow through paid advertising, SEO, AI Search, Answer Engine Optimization (AEO), lead generation and conversion-focused creative.
+
+43: CTA
+
+44: Get a Free Audit
+
+45: Secondary CTA:
+

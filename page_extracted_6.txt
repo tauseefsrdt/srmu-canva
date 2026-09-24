@@ -1,0 +1,269 @@
+PAGE → LEAD → FOLLOW-UP
+Floating metrics:
+CTRCPCCPLConversions
+But don't manufacture numbers. These should be interface elements, not fake results.
+2. INTRODUCTION
+H2
+Clicks Are Easy. The Right Customers Are Harder.
+Copy
+Anyone can put an ad in front of an audience.
+Effective performance marketing requires more:
+The right audience
+The right message
+The right offer
+The right campaign objective
+The right landing experience
+The right measurement
+And continuous optimisation
+We look at the entire journey rather than treating the ad platform as the strategy.
+3. THE SERVICES
+H2
+Ways We Turn Attention Into Opportunity
+H3
+Google Ads
+Capture existing demand.
+Reach people who are actively searching for the products, services or solutions your business offers.
+Depending on the business and objective, campaigns can include:
+Search campaigns
+Display campaigns
+YouTube campaigns
+Remarketing
+Location-based targeting
+Conversion-focused campaigns
+Explore Google Ads →
+H3
+Meta Ads
+Reach the right audiences before they search.
+Facebook and Instagram advertising can help businesses build awareness, generate enquiries and reach specific audiences based on campaign objectives and targeting.
+We focus on:
+Audience strategy
+Campaign structure
+Ad creative
+Lead generation
+Conversion campaigns
+Remarketing
+Ongoing optimisation
+Explore Meta Ads →
+H3
+YouTube Ads
+Use video where attention happens.
+YouTube can help businesses introduce their offering, explain complex products or services and reach audiences at different stages of consideration.
+Campaigns can be built around:
+Awareness
+Consideration
+Website traffic
+Lead generation
+Remarketing
+Explore YouTube Ads →
+H3
+Lead Generation
+Don't stop at traffic.
+Lead generation campaigns are designed around a meaningful business action — such as an enquiry, consultation, admission enquiry, appointment or callback.
+We look at:
+Audience → Offer → Ad → Landing Page/Form → Lead → Follow-up
+Because a cheap lead isn't necessarily a valuable lead.
+H3
+Remarketing
+Stay relevant after the first visit.
+Most people don't convert the first time they encounter a business.
+Remarketing allows businesses to reconnect with people who have already interacted with their website, campaigns or other digital touchpoints, where appropriate.
+4. THE BIG DIFFERENTIATOR
+H2
+We Don't Optimise for Vanity Metrics.
+Copy
+Impressions can look impressive.
+Clicks can look impressive.
+Even a low cost per lead can look impressive.
+But none of those automatically tells you whether your marketing is helping the business.
+We look beyond surface-level numbers to understand:
+Who are we reaching?
+What are they doing?
+Which campaigns are creating enquiries?
+What happens to those enquiries?
+Where are people dropping off?
+What can we improve next?
+5. THE PERFORMANCE MARKETING LOOP
+This should be a visual centrepiece.
+H2
+Performance Marketing Is a Loop, Not a Launch.
+H3
+1. Understand
+Business goals, audience, offer and customer journey.
+↓
+H3
+2. Target
+Identify the audiences and search intent worth reaching.
+↓
+H3
+3. Create
+Build the message, creative and landing experience.
+↓
+H3
+4. Launch
+Put the campaign in front of the right audience.
+↓
+H3
+5. Measure
+Track meaningful actions, not just surface-level engagement.
+↓
+H3
+6. Optimise
+Use what the data tells us to improve the next iteration.
+↓
+Repeat.
+6. GOOGLE VS META VS YOUTUBE
+This is an excellent search-intent section because business owners genuinely ask this.
+H2
+Google, Meta or YouTube?
+Copy
+There isn't one platform that is automatically right for every business.
+H3
+Google AdsBest suited to capturing existing search demand.
+Someone is already looking.
+H3
+Meta AdsUseful for reaching and influencing defined audiences through Facebook and Instagram.
+You can create demand as well as capture it.
+H3
+YouTubeUseful when video can explain, demonstrate or build familiarity with a product or service.
+Show people why they should care.
+H3
+A CombinationMany businesses can use multiple channels when each has a clearly defined role.
+The channel follows the strategy — not the other way around.
+7. THE CLICK-TO-CUSTOMER JOURNEY
+This is important because it connects Get Customers with Get Remembered.
+H2
+The Ad Is Only the Beginning.
+Visual journey:
+AD
+↓
+CLICK
+↓
+LANDING PAGE
+↓
+ENQUIRY
+↓
+FOLLOW-UP
+↓
+CUSTOMER
+Copy
+A great campaign can still underperform if the landing page is confusing, the offer isn't clear or the enquiry process creates friction.
+That's why our performance work connects with creative and conversion.
+Get Customers → Get Remembered
+8. WHAT WE MEASURE
+H2
+What Does Performance Actually Mean?
+Copy
+The right metrics depend on the campaign objective.
+Depending on the business, we may look at:
+Reach
+Impressions
+Click-through rate
+Cost per click
+Conversion rate
+Cost per lead
+Qualified leads
+Enquiry volume
+Landing-page performance
+Customer acquisition cost
+Important line:
+The metric that matters most is the one connected to the business goal.
+This is much more credible than simply saying "we increase ROI."
+9. WHO IS THIS FOR?
+Again, don't repeat your industry list.
+H2
+Built for Businesses Where an Enquiry Matters.
+Copy
+Performance marketing can be particularly useful when a customer action has clear business value.
+For example:
+An admission enquiry.
+A consultation request.
+A property enquiry.
+An appointment.
+A booking.
+A sales enquiry.
+The objective isn't simply to generate more activity.
+It's to create more meaningful opportunities.
+CTA:
+See Who We Help →
+10. QUESTIONS BUSINESS OWNERS ASK
+This is where the page becomes an AEO/search asset, rather than just a sales page.
+H2
+Questions Businesses Ask About Paid Advertising
+H3
+How much should a small business spend on Google Ads?
+There is no universal budget. A sensible starting point depends on search demand, competition, customer value, geographic targeting, conversion rates and how many enquiries the business can realistically handle.
+H3
+Is Google Ads or Meta Ads better for lead generation?
+They work differently. Google Ads can capture people actively searching for a solution, while Meta Ads can reach defined audiences based on campaign objectives and targeting. The appropriate platform depends on the business and how customers make decisions.
+H3
+Why am I getting clicks but no leads?
+Possible causes include poor targeting, weak messaging, an unclear offer, an ineffective landing page, slow website experience, form friction or a mismatch between the advertisement and what visitors find after clicking.
+H3
+Why are my Meta Ads generating cheap but poor-quality leads?
+Low cost per lead does not necessarily mean high-quality acquisition. Lead quality can be affected by targeting, campaign objectives, creative, qualification questions, offer positioning and follow-up.
+H3
+How long does Google Ads take to start generating leads?
+Campaigns can begin receiving traffic shortly after becoming active, but meaningful performance evaluation requires sufficient data. Results depend on factors such as search volume, competition, targeting, budget, offer and conversion experience.
+H3
+What is a good cost per lead?
+There is no single "good" cost per lead. A useful CPL depends on the value of a customer, lead-to-sale rate, sales capacity, margins and other acquisition costs.
+For example, a ₹1,000 lead may be expensive for one business and inexpensive for another.
+H3
+Should I run Google Ads and Meta Ads together?
+They can complement each other when each platform has a defined role. Google can capture existing demand, while Meta can help reach and influence relevant audiences. The decision should be based on the customer journey and economics rather than simply using more channels.
+H3
+Do I need a landing page for Google Ads?
+Not always, but a dedicated landing page can be useful when the campaign has a specific audience, offer or conversion objective. The page can be designed around the exact intent behind the advertisement rather than sending every visitor to a generic homepage.
+H3
+How do I know whether my advertising is actually profitable?
+You need to connect advertising data with business outcomes. Depending on the business, this may involve tracking qualified leads, sales, customer acquisition cost, revenue and customer value—not just clicks or impressions.
+H3
+How can I reduce my cost per lead?
+Lowering CPL isn't necessarily the goal. First identify whether the existing leads are valuable. Improvements can come from better targeting, messaging, creative, offers, landing pages, conversion tracking and campaign optimisation.
+11. FINAL CTA
+H2
+Are Your Ads Bringing You Business — or Just Numbers?
+Copy
+Let's look at your campaigns, targeting, creative and conversion journey and identify where you're losing potential customers.
+CTA
+GET A FREE ADVERTISING AUDIT
+Secondary:
+LET'S TALK →
+FINAL H1–H3 STRUCTURE
+Give this exact hierarchy to your developer:
+H1 — Get Customers, Not Just Clicks.
+H2 — Clicks Are Easy. The Right Customers Are Harder.
+H2 — Ways We Turn Attention Into Opportunity.
+    H3 — Google Ads
+    H3 — Meta Ads
+    H3 — YouTube Ads
+    H3 — Lead Generation
+    H3 — Remarketing
+H2 — We Don't Optimise for Vanity Metrics.
+H2 — Performance Marketing Is a Loop, Not a Launch.
+    H3 — Understand
+    H3 — Target
+    H3 — Create
+    H3 — Launch
+    H3 — Measure
+    H3 — Optimise
+H2 — Google, Meta or YouTube?
+    H3 — Google Ads
+    H3 — Meta Ads
+    H3 — YouTube
+    H3 — A Combination
+H2 — The Ad Is Only the Beginning.
+H2 — What Does Performance Actually Mean?
+H2 — Built for Businesses Where an Enquiry Matters.
+H2 — Questions Businesses Ask About Paid Advertising.
+    H3 — How much should a small business spend on Google Ads?
+    H3 — Is Google Ads or Meta Ads better for lead generation?
+    H3 — Why am I getting clicks but no leads?
+    H3 — Why are my Meta Ads generating cheap but poor-quality leads?
+    H3 — How long does Google Ads take to start generating leads?
+    H3 — What is a good cost per lead?
+    H3 — Should I run Google Ads and Meta Ads together?
+    H3 — Do I need a landing page for Google Ads?
+    H3 — How do I know whether my advertising is actually profitable?
+    H3 — How can I reduce my cost per lead?
+H2 — Are Your Ads Bringing You Business — or Just Numbers?

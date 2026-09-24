@@ -1,0 +1,520 @@
+1191:     H3 — How often should I change my ad creatives?
+
+1192:     H3 — Why are my ads getting impressions but not clicks?
+
+1193:     H3 — Why are my ads getting clicks but no conversions?
+
+1194:     H3 — Do I need a separate landing page for every advertising campaign?
+
+1195:     H3 — What should a landing page include?
+
+1196:     H3 — What is the difference between a landing page and a website homepage?
+
+1197:     H3 — Should I focus on design or conversion when creating an ad?
+
+1198:     H3 — How can I improve my ad creative performance?
+
+1199: H2 — Make Your Marketing Harder to Ignore.
+
+1200: PAGE 6 — WHO WE HELP
+
+1201: URL: /who-we-help/
+
+1202: SEO Title
+
+1203: Digital Marketing for Businesses | Lead Generation, SEO & Ads | Redcanvass
+
+1204: Meta Description
+
+1205: Redcanvass helps education, healthcare, real estate, professional services, hospitality and B2B businesses grow through SEO, AI Search, paid advertising and lead generation.
+
+1206: 1. HERO
+
+1207: H1
+
+1208: Digital Marketing for Businesses That Want to Grow.
+
+1209: Supporting copy
+
+1210: Different businesses have different customers, sales cycles and reasons people choose them.
+
+1211: A school doesn't market like a real estate company. A clinic doesn't acquire customers like a B2B company.
+
+1212: We build the digital strategy around how your customers search, compare, enquire and decide.
+
+1213: CTA
+
+1214: Find Your Digital Growth Opportunity
+
+1215: Secondary:
+
+1216: Get a Free Audit →
+
+1217: 2. INTRODUCTION
+
+1218: H2
+
+1219: We Don't Believe in One-Size-Fits-All Marketing.
+
+1220: Copy
+
+1221: The right digital marketing mix depends on the business.
+
+1222: Some businesses need to capture people who are already searching.
+
+1223: Some need to create demand.
+
+1224: Some need stronger local visibility.
+
+1225: Some need better lead generation.
+
+1226: And some have plenty of traffic but struggle to convert it.
+
+1227: Our job is to understand the business first — then determine where search, advertising and creative can make the biggest difference.
+
+1228: 3. INDUSTRIES / BUSINESS TYPES
+
+1229: Here I would have six substantial cards, not tiny icon boxes.
+
+1230: H2
+
+1231: Businesses We Work With
+
+1232: H3
+
+1233: Education
+
+1234: Reach the right students and parents.
+
+1235: Digital marketing for schools, preschools, coaching centres and educational organisations can involve:
+
+1236: Google Ads
+
+1237: Meta Ads
+
+1238: SEO
+
+1239: Local SEO
+
+1240: Lead generation
+
+1241: Landing pages
+
+1242: Campaign creative
+
+1243: Explore Education Marketing →
+
+1244: H3
+
+1245: Healthcare
+
+1246: Help patients find the right care.
+
+1247: Healthcare businesses often depend heavily on local discovery, trust and clear information.
+
+1248: Digital strategies can include:
+
+1249: Local SEO
+
+1250: Google Ads
+
+1251: Search visibility
+
+1252: Landing pages
+
+1253: Lead generation
+
+1254: Conversion-focused creative
+
+1255: Explore Healthcare Marketing →
+
+1256: H3
+
+1257: Real Estate
+
+1258: Turn property interest into enquiries.
+
+1259: Real estate marketing often involves high-value decisions, competitive search and multiple touchpoints before a customer makes contact.
+
+1260: Strategies can include:
+
+1261: Google Ads
+
+1262: Meta Ads
+
+1263: YouTube
+
+1264: Lead generation
+
+1265: Remarketing
+
+1266: Landing pages
+
+1267: Campaign creative
+
+1268: Explore Real Estate Marketing →
+
+1269: H3
+
+1270: Professional Services
+
+1271: Make expertise easier to find and trust.
+
+1272: For professional service businesses, digital visibility often starts with a customer researching a problem before deciding whom to contact.
+
+1273: We can help through:
+
+1274: SEO
+
+1275: AEO
+
+1276: AI Search
+
+1277: Google Ads
+
+1278: Landing pages
+
+1279: Lead generation
+
+1280: Explore Professional Services Marketing →
+
+1281: H3
+
+1282: Hospitality
+
+1283: Get discovered. Get considered. Get booked.
+
+1284: Hospitality businesses compete for attention across search, maps, social platforms and travel-related discovery.
+
+1285: Depending on the business, opportunities can include:
+
+1286: Local SEO
+
+1287: Search advertising
+
+1288: Meta Ads
+
+1289: YouTube
+
+1290: Campaign creative
+
+1291: Landing pages
+
+1292: Remarketing
+
+1293: Explore Hospitality Marketing →
+
+1294: H3
+
+1295: B2B
+
+1296: Turn expertise into opportunities.
+
+1297: B2B buyers often research extensively before making contact.
+
+1298: Digital marketing can support that journey through:
+
+1299: SEO
+
+1300: AEO
+
+1301: AI Search
+
+1302: Google Ads
+
+1303: Lead generation
+
+1304: Landing pages
+
+1305: Remarketing
+
+1306: Explore B2B Marketing →
+
+1307: 4. THE IMPORTANT SECTION
+
+1308: This is where I would differentiate Redcanvass from agencies that sell the same package to everyone.
+
+1309: H2
+
+1310: We Start With the Customer Journey.
+
+1311: Copy
+
+1312: Before deciding which platform to use, we look at how someone becomes a customer.
+
+1313: H3
+
+1314: Discover
+
+1315: Where do potential customers first find businesses like yours?
+
+1316: Search · Maps · Ads · AI Search · Referrals
+
+1317: ↓
+
+1318: H3
+
+1319: Research
+
+1320: What do they need to know before contacting you?
+
+1321: Website · Reviews · Content · Expertise · Comparisons
+
+1322: ↓
+
+1323: H3
+
+1324: Decide
+
+1325: What makes them choose one business over another?
+
+1326: Offer · Trust · Experience · Proof · Convenience
+
+1327: ↓
+
+1328: H3
+
+1329: Enquire
+
+1330: What happens when they're ready?
+
+1331: Form · Call · Booking · Admission · Consultation
+
+1332: Closing line
+
+1333: Your marketing should support the journey, not just one stage of it.
+
+1334: 5. MATCH THE PROBLEM TO THE SOLUTION
+
+1335: This is particularly useful for conversion.
+
+1336: H2
+
+1337: Start With the Problem. Not the Platform.
+
+1338: H3
+
+1339: “People aren't finding us.”
+
+1340: Look at:
+
+1341: SEO + Local SEO + AEO + AI Search
+
+1342: H3
+
+1343: “We need more enquiries.”
+
+1344: Look at:
+
+1345: Google Ads + Meta Ads + Lead Generation
+
+1346: H3
+
+1347: “We're getting traffic but not enough leads.”
+
+1348: Look at:
+
+1349: Landing Pages + Creative + Conversion
+
+1350: H3
+
+1351: “Our ads aren't performing consistently.”
+
+1352: Look at:
+
+1353: Creative + Audience + Campaign Structure + Testing
+
+1354: H3
+
+1355: “People know us, but we're not being considered.”
+
+1356: Look at:
+
+1357: Search + Content + Remarketing + Creative
+
+1358: This is a strong section because it lets a business owner self-identify their problem.
+
+1359: 6. NOT SURE WHICH CATEGORY YOU FIT?
+
+1360: Businesses don't always fit neatly into six boxes.
+
+1361: H2
+
+1362: Don't See Your Business?
+
+1363: Copy
+
+1364: These are some of the businesses we work particularly well with, but they're not the only ones.
+
+1365: If your business relies on visibility, enquiries, appointments, admissions, bookings or sales conversations, there may be a digital growth opportunity worth exploring.
+
+1366: CTA
+
+1367: Tell Us About Your Business →
+
+1368: 7. QUESTIONS BUSINESS OWNERS ASK
+
+1369: This is where we can combine industry questions + commercial search intent.
+
+1370: H2
+
+1371: Questions Businesses Ask About Digital Marketing
+
+1372: H3
+
+1373: Which digital marketing strategy is right for my business?
+
+1374: The right strategy depends on how customers discover and evaluate your business, your sales cycle, competition, geographic reach, customer value and business goals. There isn't a universal channel mix.
+
+1375: H3
+
+1376: Is digital marketing effective for small businesses?
+
+1377: Digital marketing can help small businesses reach relevant audiences without relying exclusively on broad traditional advertising. Its effectiveness depends on the market, offer, targeting, competition, budget and ability to convert and follow up on enquiries.
+
+1378: H3
+
+1379: What digital marketing works best for local businesses?
+
+1380: Local businesses may benefit from a combination of Local SEO, Google Business Profile optimisation, location-focused content, search advertising and conversion-focused website experiences. The appropriate mix depends on the type of business and how customers search.
+
+1381: H3
+
+1382: What is the best way to generate leads for a service business?
+
+1383: Lead generation can come from organic search, paid search, social advertising, referrals and other channels. For many service businesses, the important part is connecting the right traffic with a clear offer, effective landing experience and reliable follow-up.
+
+1384: H3
+
+1385: How can a school generate more admission enquiries online?
+
+1386: Schools and educational organisations can use a combination of search visibility, Google Ads, Meta advertising, lead-generation campaigns, location targeting and dedicated admission landing pages. The appropriate strategy depends on the school's location, audience, admissions cycle and capacity.
+
+1387: H3
+
+1388: How can a clinic get more patients through Google?
+
+1389: Healthcare businesses can improve discoverability through Local SEO, Google Business Profile optimisation, relevant search visibility and appropriately targeted advertising, combined with clear service information and an easy enquiry or appointment process.
+
+1390: H3
+
+1391: How can a real estate company generate better quality leads?
+
+1392: Lead quality can be influenced by targeting, property positioning, campaign messaging, qualification questions, landing-page experience and follow-up. Optimising purely for the lowest cost per lead can sometimes produce volume without sufficient quality.
+
+1393: H3
+
+1394: Does SEO work for professional services?
+
+1395: SEO can be valuable for professional services where potential clients research expertise, services and providers online. Content that clearly addresses customer questions and demonstrates relevant expertise can support organic visibility and consideration.
+
+1396: 8. FINAL CTA
+
+1397: H2
+
+1398: Your Business Is Different. Your Marketing Should Be Too.
+
+1399: Copy
+
+1400: Tell us what you're trying to achieve, where you're getting stuck and what you've already tried.
+
+1401: We'll help identify where search, advertising and creative could fit into the picture.
+
+1402: CTA
+
+1403: LET'S TALK
+
+1404: Secondary:
+
+1405: GET A FREE AUDIT →
+
+1406: FINAL H1–H3 STRUCTURE
+
+1407: H1 — Digital Marketing for Businesses That Want to Grow.
+
+1408: H2 — We Don't Believe in One-Size-Fits-All Marketing.
+
+1409: H2 — Businesses We Work With.
+
+1410:     H3 — Education
+
+1411:     H3 — Healthcare
+
+1412:     H3 — Real Estate
+
+1413:     H3 — Professional Services
+
+1414:     H3 — Hospitality
+
+1415:     H3 — B2B
+
+1416: H2 — We Start With the Customer Journey.
+
+1417:     H3 — Discover
+
+1418:     H3 — Research
+
+1419:     H3 — Decide
+
+1420:     H3 — Enquire
+
+1421: H2 — Start With the Problem. Not the Platform.
+
+1422:     H3 — “People aren't finding us.”
+
+1423:     H3 — “We need more enquiries.”
+
+1424:     H3 — “We're getting traffic but not enough leads.”
+
+1425:     H3 — “Our ads aren't performing consistently.”
+
+1426:     H3 — “People know us, but we're not being considered.”
+
+1427: H2 — Don't See Your Business?
+
+1428: H2 — Questions Businesses Ask About Digital Marketing.
+
+1429:     H3 — Which digital marketing strategy is right for my business?
+
+1430:     H3 — Is digital marketing effective for small businesses?
+
+1431:     H3 — What digital marketing works best for local businesses?
+
+1432:     H3 — What is the best way to generate leads for a service business?
+
+1433:     H3 — How can a school generate more admission enquiries online?
+
+1434:     H3 — How can a clinic get more patients through Google?
+
+1435:     H3 — How can a real estate company generate better quality leads?
+
+1436:     H3 — Does SEO work for professional services?
+
+1437: H2 — Your Business Is Different. Your Marketing Should Be Too.
+
+1438: PAGE 8 — LET'S TALK
+
+1439: URL: /lets-talk/
+
+1440: SEO Title
+
+1441: Let's Talk About Your Digital Marketing | Redcanvass
+
+1442: Meta Description
+
+1443: Talk to Redcanvass about SEO, AEO, AI Search, Google Ads, Meta Ads, lead generation and digital marketing opportunities for your business.
+
+1444: 1. HERO
+
+1445: H1
+
+1446: Let's Talk About Your Business.
+
+1447: Supporting copy
+
+1448: Not sure whether you need SEO, Google Ads, AEO, better creatives — or something completely different?
+
+1449: Tell us what you're trying to achieve.
+
+1450: We'll look at where your digital presence is today and where there may be an opportunity to improve.
+

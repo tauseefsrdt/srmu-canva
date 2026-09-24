@@ -1,0 +1,133 @@
+PAGE 8 — LET'S TALK
+URL: /lets-talk/
+SEO Title
+Let's Talk About Your Digital Marketing | Redcanvass
+Meta Description
+Talk to Redcanvass about SEO, AEO, AI Search, Google Ads, Meta Ads, lead generation and digital marketing opportunities for your business.
+1. HERO
+H1
+Let's Talk About Your Business.
+Supporting copy
+Not sure whether you need SEO, Google Ads, AEO, better creatives — or something completely different?
+Tell us what you're trying to achieve.
+We'll look at where your digital presence is today and where there may be an opportunity to improve.
+CTA / Form begins immediately
+Tell Us About Your Business →
+I would not put a giant paragraph before the form.
+2. FORM
+H2
+What Are You Looking to Improve?
+Instead of a boring contact form with:
+NameEmailPhoneMessage
+make it conversational.
+Step 1
+What do you need help with?
+☐ SEO / Search Visibility☐ AEO / AI Search☐ Google Ads☐ Meta Ads☐ YouTube Ads☐ Lead Generation☐ Landing Pages☐ Ad Creatives / Campaign Design☐ Not Sure Yet
+Multiple selections should be allowed.
+Step 2
+What's the biggest challenge right now?
+☐ We're not getting enough enquiries☐ We're getting traffic but not enough leads☐ Our ads aren't performing☐ People aren't finding us online☐ We want to improve our AI/Search visibility☐ We need better campaign creative☐ We're launching something new☐ We're not sure where the problem is
+This is much more useful to your sales team than a blank "Message" field.
+Step 3
+Tell us a little about your business.
+Large text box:
+What do you sell, who do you serve and what are you hoping to achieve?
+Step 4
+Your details
+Name
+Business Name
+Work Email
+Phone / WhatsApp
+Website
+City / Location
+Step 5
+What would you like to do next?
+○ Get a Free Audit○ Discuss a Project○ Explore Digital Marketing Options○ Just Have a Question
+CTA
+START THE CONVERSATION →
+3. WHAT HAPPENS NEXT
+This is important because people hesitate to submit forms when they don't know what happens afterward.
+H2
+What Happens Next?
+H3
+01 — We Read
+We look at what you've told us and understand the problem you're trying to solve.
+H3
+02 — We Review
+If you've requested an audit, we'll look at the relevant parts of your digital presence.
+H3
+03 — We Talk
+We'll discuss what we're seeing, what may be worth improving and what the next step could look like.
+H3
+04 — You Decide
+No pressure to buy a package before you understand what you actually need.
+That last line is good for your brand because it feels confident rather than desperate for the lead.
+4. WHAT CAN WE TALK ABOUT?
+H2
+Bring Us a Problem.
+Copy
+You don't need to arrive with a marketing plan.
+You can come to us with:
+"We're spending on ads but the leads aren't good."
+or
+"We're not showing up when people search for us."
+or
+"We want to understand this whole AEO thing."
+or simply:
+"We need more enquiries."
+We'll work backwards from there.
+5. QUICK ANSWERS
+I would keep this extremely short.
+H2
+Before You Reach Out
+H3
+Do I need to know exactly which service I need?
+No. Tell us what you're trying to achieve or where you're facing a problem. We can help identify which areas may be relevant.
+H3
+Do you only work with businesses that already advertise online?
+No. Depending on the business, opportunities may exist across organic search, AI Search, paid advertising, creative, landing pages or a combination.
+H3
+Can you audit my current digital marketing?
+Yes. A free audit can be used to identify potential opportunities across relevant areas of your digital presence.
+H3
+Do you manage social media accounts?
+No. Redcanvass focuses on performance marketing, search visibility, AI Search/AEO, lead generation and campaign-focused creative rather than ongoing social media management.
+That last FAQ is actually important because it pre-qualifies the wrong leads and reinforces your positioning.
+6. CONTACT DETAILS
+Keep this minimal.
+H2
+Prefer to Reach Us Directly?
+Email[Your official business email]
+Phone / WhatsApp[Your official number]
+LocationLucknow, India (if you want the location displayed)
+I would not put a giant Google Map here unless having a physical-office location is commercially important.
+7. FINAL CTA
+H2
+Your Next Customer Is Already Looking.
+Copy
+Let's make it easier for them to find you, understand you and choose to talk to you.
+CTA
+GET A FREE AUDIT
+FINAL H1–H3 STRUCTURE
+H1 — Let's Talk About Your Business.
+H2 — What Are You Looking to Improve?
+H2 — What Happens Next?
+    H3 — 01 — We Read
+    H3 — 02 — We Review
+    H3 — 03 — We Talk
+    H3 — 04 — You Decide
+H2 — Bring Us a Problem.
+H2 — Before You Reach Out
+    H3 — Do I need to know exactly which service I need?
+    H3 — Do you only work with businesses that already advertise online?
+    H3 — Can you audit my current digital marketing?
+    H3 — Do you manage social media accounts?
+H2 — Prefer to Reach Us Directly?
+H2 — Your Next Customer Is Already Looking.
+And I'd make one UX change
+Your Get a Free Audit button throughout the website should probably lead to this page, with the form automatically preselected to:
+Get a Free Audit
+rather than creating a completely separate audit page.
+So:
+GET A FREE AUDIT↓Let's Talk↓Form
+That keeps the website simple.

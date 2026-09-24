@@ -1,20 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin } from 'lucide-react';
-import { navItems, footerServices, footerIndustries, companyContact } from '../data/navigation';
+import { Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
+import { footerServices, footerIndustries, companyContact } from '../data/navigation';
 import { Logo } from './Logo';
 import { InstagramIcon, LinkedinIcon, FacebookIcon, YoutubeIcon, TwitterXIcon } from './SocialIcons';
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#050608] border-t border-white/10 text-white relative z-10 pt-16 md:pt-24 pb-12">
+    <footer className="bg-[#050608] border-t border-white/10 text-white relative z-10 pt-16 md:pt-20 pb-12">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-12 mb-16">
           {/* Col 1: Brand & Socials (2 cols on lg) */}
           <div className="lg:col-span-2 space-y-6">
             <Logo size="lg" />
             <p className="text-sm text-[#9A9DA7] leading-relaxed max-w-sm">
-              SRMUCANVAS is a full-service Digital Marketing, Performance Marketing, and AI Search Optimization company helping businesses get found, get customers, and get remembered.
+              Redcanvass is a digital marketing and performance marketing agency helping businesses grow through paid advertising, SEO, AI Search, Answer Engine Optimization (AEO), lead generation and conversion-focused creative.
             </p>
 
             {/* Social Icons */}
@@ -65,7 +65,7 @@ export const Footer: React.FC = () => {
           {/* Col 3: Who We Help */}
           <div className="space-y-4">
             <h4 className="text-xs font-mono uppercase tracking-widest text-white font-bold">
-              Industries
+              Who We Help
             </h4>
             <ul className="space-y-2.5 text-sm text-[#9A9DA7]">
               {footerIndustries.map((ind) => (
@@ -81,15 +81,15 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Col 4: Contact Info */}
+          {/* Col 4: Contact & Free Audit */}
           <div className="space-y-4">
             <h4 className="text-xs font-mono uppercase tracking-widest text-white font-bold">
-              Contact Us
+              Contact &amp; Audit
             </h4>
             <ul className="space-y-3.5 text-xs text-[#9A9DA7]">
               <li className="flex items-start gap-2.5">
                 <MapPin size={16} className="text-[#FF3154] flex-shrink-0 mt-0.5" />
-                <span>{companyContact.address}</span>
+                <span>{companyContact.location}</span>
               </li>
               <li className="flex items-center gap-2.5">
                 <Phone size={15} className="text-[#FF3154] flex-shrink-0" />
@@ -104,16 +104,26 @@ export const Footer: React.FC = () => {
                 </a>
               </li>
             </ul>
+
+            <div className="pt-2">
+              <Link
+                to="/lets-talk?intent=audit"
+                className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#FF3154] hover:text-white transition-colors"
+              >
+                <span>Get a Free Audit</span>
+                <ArrowRight size={13} />
+              </Link>
+            </div>
           </div>
         </div>
 
         {/* Bottom Bar */}
         <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#9A9DA7]">
           <div>
-            © 2026 SRMUCANVAS. All rights reserved.
+            © {new Date().getFullYear()} Redcanvass. All rights reserved.
           </div>
-          <div className="font-handwriting text-lg text-white/90">
-            Designed to Make Things Happen
+          <div className="font-sans text-sm text-white/80 font-medium">
+            Get Found. Get Customers. Get Remembered.
           </div>
         </div>
       </div>

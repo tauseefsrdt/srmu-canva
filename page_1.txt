@@ -1,0 +1,155 @@
+PAGE 1 — HOME
+URL: /
+SEO Title
+Redcanvass | Digital Marketing, Performance Marketing & AI Search
+Meta Description
+Redcanvass helps businesses grow through Google Ads, Meta Ads, SEO, AI Search, AEO, lead generation and conversion-focused creative.
+1. HERO
+H1
+Digital Marketing That Means Business.
+Supporting headline
+Get Found. Get Customers. Get Remembered.
+Body copy
+Redcanvass is a digital marketing and performance marketing agency helping businesses grow through paid advertising, SEO, AI Search, Answer Engine Optimization (AEO), lead generation and conversion-focused creative.
+CTA
+Get a Free Audit
+Secondary CTA:
+See What We Do →
+Visual direction
+I would make this visually strong rather than a generic agency hero.
+Something like:
+SEARCH → DISCOVER → CLICK → ENQUIRE → GROW
+with subtle floating elements:
+Google AdsSEOAI SearchAEOMeta AdsLeads
+The hero should immediately communicate:
+We help businesses get discovered and generate business.
+2. ENTITY / INTRODUCTION
+H2
+Meet Redcanvass
+Copy
+Redcanvass is a digital marketing agency focused on helping businesses become more visible, attract the right audiences and turn digital attention into meaningful enquiries.
+Our work brings together performance marketing, search visibility, AI search optimisation and creative — because getting noticed is only useful when it helps move the business forward.
+This section is important for AEO because it gives search systems a very clear understanding of what Redcanvass is, what it does and who it serves.
+3. THE THREE CORE AREAS
+H2
+How We Help Businesses Grow
+Short intro:
+Digital marketing works best when visibility, acquisition and conversion work together. We organise what we do around three simple outcomes.
+H3
+Get Found
+SEO · Local SEO · AI Search · AEO
+Help potential customers discover your business across traditional search and emerging AI-powered search experiences.
+Explore Get Found →
+H3
+Get Customers
+Google Ads · Meta Ads · YouTube · Lead Generation · Remarketing
+Put your business in front of relevant audiences and turn digital attention into enquiries and opportunities.
+Explore Get Customers →
+H3
+Get Remembered
+Ad Creatives · Landing Pages · Campaign Design · Flyers & Posters
+Give your campaigns the creative and conversion assets they need to communicate clearly and make an impact.
+Explore Get Remembered →
+4. THE REDCANVASS PHILOSOPHY
+This is where Why Redcanvass lives on the homepage.
+H2
+We’re Not Here to Make Your Marketing Look Busy.
+H3
+We’re Here to Make It Work.
+Copy
+More posts don't automatically mean more business. More clicks don't automatically mean more customers.
+We look at the bigger picture — where people discover you, what makes them click, what happens when they arrive and what turns attention into action.
+Our approach is built around the things that can actually move a business forward: visibility, qualified traffic, enquiries and conversion.
+5. WHAT MAKES REDCANVASS DIFFERENT
+Keep this short. Do not create a giant “Why Us” section.
+H2
+Different by Design.
+Three points:
+H3 — Performance First
+We focus on marketing activity that can be measured, tested and improved.
+H3 — Search Ready
+We build visibility across traditional search, local search and the evolving world of AI-powered search.
+H3 — Human Led
+Strategy, creative and optimisation are handled by people who understand the business behind the campaign.
+6. WHO WE HELP
+This is not where I would list six industries with long descriptions.
+H2
+Built for Businesses That Need to Be Found.
+Copy
+We work particularly well with businesses where digital visibility can lead to a real conversation, enquiry, appointment, admission or opportunity.
+Then visually show:
+Education | Healthcare | Real EstateProfessional Services | Hospitality | B2B
+CTA
+See Who We Help →
+This gives us the industry relevance without making the homepage feel like an industry directory.
+7. PROOF
+This section depends entirely on what Redcanvass can genuinely substantiate.
+H2
+Work That Has a Purpose.
+Instead of inventing impressive statistics, use:
+Client logos
+2–3 genuine testimonials
+Selected case studies
+Specific measurable outcomes where you actually have the data
+For example:
+The challengeWhat we changedWhat happened
+This will eventually become one of the strongest conversion sections on the site.
+8. HOME FAQ / QUESTIONS BUSINESS OWNERS ASK
+Here's where I would make an important distinction from our earlier discussion.
+The homepage should not have 15 FAQs.
+It should have around 5–6 broad commercial questions that introduce the subjects Redcanvass specialises in.
+H2
+Questions Businesses Ask About Digital Marketing
+H3
+What does a digital marketing agency actually do?
+A digital marketing agency helps businesses attract and convert customers through channels such as search engines, paid advertising, websites, social platforms and other digital channels. The right mix depends on the business, audience, goals and customer journey.
+H3
+Should my business invest in SEO or Google Ads?
+SEO and Google Ads solve different problems. SEO builds organic visibility over time, while Google Ads can put your business in front of relevant searchers immediately. Many businesses can benefit from using both, depending on their goals and budget.
+H3
+Is SEO still important with AI search?
+Yes. AI-powered search experiences still rely on information available across the web, and Google's current guidance continues to emphasise strong SEO fundamentals alongside useful, original content for its generative AI search experiences. (Google Developers)
+H3
+What is AEO and how is it different from SEO?
+SEO focuses primarily on helping content perform in search engines. AEO, or Answer Engine Optimization, focuses on making information clear, structured and useful for systems that provide direct answers to user questions. The two overlap significantly, and strong SEO fundamentals remain important.
+H3
+Why are my digital ads getting clicks but not enough enquiries?
+Clicks are only one part of the customer journey. Poor conversion can come from targeting, the offer, ad messaging, landing page experience, lead form friction, follow-up or the quality of traffic. Effective lead generation looks at the entire journey rather than clicks alone.
+H3
+How do I know which digital marketing services my business actually needs?
+There is no universal mix. The right approach depends on how customers find you, your sales cycle, geographic reach, customer value, competition and business goals. A business may need SEO, paid advertising, creative, landing pages or a combination.
+CTA below FAQs
+Not sure what your business needs?
+Get a Free Audit →
+9. FINAL CTA
+H2
+Ready to Make Your Digital Marketing Work Harder?
+Copy
+Let's look at what's working, what's missing and where your biggest digital growth opportunities may be.
+GET A FREE AUDIT
+Secondary:
+LET'S TALK →
+FINAL HOMEPAGE HEADER STRUCTURE
+This is the hierarchy I would give directly to your web developer/SEO person:
+H1 — Digital Marketing That Means Business.
+H2 — Meet Redcanvass
+H2 — How We Help Businesses Grow
+    H3 — Get Found
+    H3 — Get Customers
+    H3 — Get Remembered
+H2 — We’re Not Here to Make Your Marketing Look Busy.
+H3 — We’re Here to Make It Work.
+H2 — Different by Design.
+    H3 — Performance First
+    H3 — Search Ready
+    H3 — Human Led
+H2 — Built for Businesses That Need to Be Found.
+H2 — Work That Has a Purpose.
+H2 — Questions Businesses Ask About Digital Marketing
+    H3 — What does a digital marketing agency actually do?
+    H3 — Should my business invest in SEO or Google Ads?
+    H3 — Is SEO still important with AI search?
+    H3 — What is AEO and how is it different from SEO?
+    H3 — Why are my digital ads getting clicks but not enough enquiries?
+    H3 — How do I know which digital marketing services my business actually needs?
+H2 — Ready to Make Your Digital Marketing Work Hard

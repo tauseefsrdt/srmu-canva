@@ -1,0 +1,222 @@
+PAGE 2 — WHAT WE DO
+URL: /what-we-do/
+SEO Title
+Digital Marketing Services | SEO, AEO & Performance Marketing | Redcanvass
+Meta Description
+Explore Redcanvass digital marketing services across SEO, AEO, AI Search, Google Ads, Meta Ads, lead generation, creative and conversion.
+1. HERO
+H1
+Digital Marketing Built Around Growth.
+Supporting copy
+Redcanvass brings together search visibility, performance marketing and conversion-focused creative to help businesses get discovered, generate enquiries and turn attention into action.
+From SEO and AI Search to Google Ads, Meta Ads, lead generation and landing pages, we build the digital mix around what your business actually needs.
+CTA
+Find Your Growth Opportunity →
+Secondary:
+Get a Free Audit
+2. INTRODUCTION
+H2
+Three Ways We Help Your Business Move Forward
+Copy
+Digital marketing isn't one channel.
+Someone might discover you through Google. Someone else might see an ad on Instagram. Another potential customer might ask an AI search tool about businesses like yours.
+The challenge is making sure your business is visible, relevant and ready to convert wherever that discovery happens.
+That's why our work is organised around three simple outcomes:
+3. GET FOUND
+H2
+Get Found
+H3
+Search & AI Visibility
+Copy
+Before someone becomes a customer, they need to discover you.
+We help businesses build visibility across organic search, local search and AI-powered search experiences.
+Services
+SEOImprove your website's organic visibility and make it easier for search engines to understand your business.
+Local SEOHelp customers find your business when they search for products or services in a specific location.
+AEOAnswer Engine Optimization focuses on making your information clear, structured and useful for answer-driven search experiences.
+AI SearchOptimise your digital presence so your business and its expertise are easier for AI-powered search systems to understand.
+CTA
+Explore Get Found →
+4. GET CUSTOMERS
+H2
+Get Customers
+H3
+Performance Marketing & Lead Generation
+Copy
+Being seen is only the beginning.
+We use paid advertising and lead-generation strategies to put your business in front of relevant audiences and move them towards an enquiry, booking, admission, consultation or other meaningful action.
+Services
+Google AdsReach people actively searching for what your business offers.
+Meta AdsReach relevant audiences across Facebook and Instagram with targeted campaigns.
+YouTube AdsUse video to build awareness, consideration and action.
+Lead GenerationBuild campaigns designed around generating relevant enquiries rather than simply generating traffic.
+RemarketingReconnect with people who have already interacted with your business.
+CTA
+Explore Get Customers →
+5. GET REMEMBERED
+H2
+Get Remembered
+H3
+Creative & Conversion
+Copy
+Good marketing needs more than targeting.
+Your message needs to stop someone, make sense quickly and give them a reason to take the next step.
+We create the campaign assets and conversion experiences that support that journey.
+Services
+Ad CreativesVisuals designed specifically for digital advertising.
+Landing PagesFocused pages built around a particular campaign, audience or conversion goal.
+Campaign DesignCreative direction and campaign concepts that bring the message together.
+Flyers & PostersOffline marketing collateral when your campaign needs to move beyond the screen.
+CTA
+Explore Get Remembered →
+6. HOW THE THREE WORK TOGETHER
+This is an important section for both humans and semantic understanding.
+H2
+Because Visibility Alone Isn't Enough.
+Copy
+A business can rank well and still struggle to generate enquiries.
+It can run ads and still lose potential customers on a weak landing page.
+It can have great creative and still be invisible to the right audience.
+The three areas work together:
+H3
+Get FoundMake your business discoverable.
+↓
+H3
+Get CustomersBring the right people to you.
+↓
+H3
+Get RememberedGive them a reason to engage, trust and act.
+Closing line
+Different jobs. One growth journey.
+7. YOUR DIGITAL MIX DEPENDS ON YOUR BUSINESS
+I would include this, but not list industries here. That's what Who We Help is for.
+H2
+You Don't Need Every Digital Marketing Service.
+Copy
+The right strategy isn't about doing everything.
+It's about identifying where your biggest opportunities are and putting your budget, time and creative effort behind them.
+For example:
+H3
+Need more organic visibility?SEO + Local SEO + AEO
+H3
+Need enquiries now?Google Ads + Meta Ads + Landing Pages
+H3
+Have traffic but poor conversion?Landing Pages + Creative + Conversion optimisation
+H3
+Want stronger visibility in AI-powered search?SEO + AEO + AI Search
+H3
+Want to scale lead generation?Paid Advertising + Remarketing + Conversion-focused Creative
+This section is particularly useful because it shifts the conversation from:
+"Which services do you sell?"
+to:
+"What problem are you trying to solve?"
+8. HOW WE APPROACH DIGITAL MARKETING
+Don't make this a generic four-step agency process with meaningless words.
+H2
+Strategy Before Spend.
+Copy
+Before recommending a channel, we look at the business behind it.
+H3 — Understand
+Your business, audience, offer, market and goals.
+H3 — Identify
+Where people are searching, discovering and dropping off.
+H3 — Build
+The right combination of search, advertising and creative.
+H3 — Optimise
+Test, measure, learn and improve.
+Small closing line
+No channel gets a free pass just because it's trending.
+That line gives the page a little personality.
+9. QUESTIONS BUSINESS OWNERS ASK
+This is where we begin building your question-led AEO content architecture.
+Don't make these questions about Redcanvass.
+H2
+Questions Businesses Ask Before Investing in Digital Marketing
+H3
+Which digital marketing services does my business actually need?
+There is no universal combination. The right mix depends on your audience, sales cycle, competition, geographic reach, customer value and growth objectives.
+H3
+Should I invest in SEO or paid advertising first?
+SEO and paid advertising serve different purposes. Paid search can provide immediate visibility for relevant searches, while SEO focuses on building organic visibility over time. Businesses often use both, depending on their goals and resources.
+H3
+Is Google Ads better than Meta Ads for lead generation?
+They reach people at different stages of the decision process. Google Ads can capture existing search demand, while Meta advertising can help businesses reach and influence audiences based on targeting and campaign objectives. The appropriate channel depends on the business and customer journey.
+H3
+Why am I getting website traffic but not enough enquiries?
+Traffic does not automatically create conversions. The issue may involve targeting, messaging, offer clarity, landing-page experience, trust signals, forms or follow-up.
+H3
+Does SEO help with AI search visibility?
+SEO fundamentals remain important because AI-powered search experiences use information from websites and the wider web. AI search optimisation should therefore complement—not replace—good technical SEO, useful content and a well-understood digital presence.
+H3
+What is the difference between SEO, AEO and AI Search?
+SEO focuses on visibility in search engines. AEO focuses on structuring and presenting information so it can effectively answer user questions. AI Search refers to search experiences that use AI to interpret queries and generate or organise answers. There is significant overlap between the three.
+H3
+How much should a business spend on digital marketing?
+There is no meaningful universal percentage or number. Budget should be considered alongside customer value, sales capacity, competition, target market, acquisition economics and the expected role of each channel.
+CTA
+Have a question about your digital strategy?
+Let's Talk →
+10. FINAL CTA
+H2
+Not Sure Where Your Biggest Opportunity Is?
+Copy
+We'll help you identify where your digital presence can work harder — and which activities are actually worth investing in.
+GET A FREE AUDIT
+FINAL HEADER STRUCTURE FOR THE DEVELOPER
+H1 — Digital Marketing Built Around Growth.
+H2 — Three Ways We Help Your Business Move Forward
+H2 — Get Found
+    H3 — Search & AI Visibility
+    H3 — SEO
+    H3 — Local SEO
+    H3 — AEO
+    H3 — AI Search
+H2 — Get Customers
+    H3 — Performance Marketing & Lead Generation
+    H3 — Google Ads
+    H3 — Meta Ads
+    H3 — YouTube Ads
+    H3 — Lead Generation
+    H3 — Remarketing
+H2 — Get Remembered
+    H3 — Creative & Conversion
+    H3 — Ad Creatives
+    H3 — Landing Pages
+    H3 — Campaign Design
+    H3 — Flyers & Posters
+H2 — Because Visibility Alone Isn't Enough.
+    H3 — Get Found
+    H3 — Get Customers
+    H3 — Get Remembered
+H2 — You Don't Need Every Digital Marketing Service.
+    H3 — Need more organic visibility?
+    H3 — Need enquiries now?
+    H3 — Have traffic but poor conversion?
+    H3 — Want stronger visibility in AI-powered search?
+    H3 — Want to scale lead generation?
+H2 — Strategy Before Spend.
+    H3 — Understand
+    H3 — Identify
+    H3 — Build
+    H3 — Optimise
+H2 — Questions Businesses Ask Before Investing in Digital Marketing
+    H3 — Which digital marketing services does my business actually need?
+    H3 — Should I invest in SEO or paid advertising first?
+    H3 — Is Google Ads better than Meta Ads for lead generation?
+    H3 — Why am I getting website traffic but not enough enquiries?
+    H3 — Does SEO help with AI search visibility?
+    H3 — What is the difference between SEO, AEO and AI Search?
+    H3 — How much should a business spend on digital marketing?
+H2 — Not Sure Where Your Biggest Opportunity Is?
+One architectural point before we move on
+I would not make /what-we-do/ the parent URL of the three pillars.
+Use:
+/what-we-do/
+/get-found/
+/get-customers/
+/get-remembered/
+/who-we-help/
+/resources/
+This makes the three core propositions first-class pages, which is better for navigation, linking and building substantial content around each topic.
+Then later, if Redcanvass has enough depth, we can create:
+/get-found/seo//get-found/aeo//get-found/local-seo//get-customers/google-ads/etc.
